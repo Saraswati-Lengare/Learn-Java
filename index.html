@@ -498,50 +498,7 @@ figcaption {
   margin-top: 5px;
 }
 
-.center-title {
-        text-align: center;
-        font-size: 24px;
-        margin-top: 40px;
-        margin-bottom: 10px;
-}
 
-.section-btn {
-    display: block;
-    margin: 0 auto 20px auto;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-/* First button - Easy (Green) */
-.section-btn:nth-of-type(1) {
-    background-color: #4CAF50;
-    color: white;
-}
-.section-btn:nth-of-type(1):hover {
-    background-color: #45a049;
-}
-
-/* Second button - Medium (Faint Yellow) */
-.section-btn:nth-of-type(2) {
-    background-color: #beae1a;
-    color: black;
-}
-.section-btn:nth-of-type(2):hover {
-    background-color: #f0e68c;
-}
-
-/* Third button - Hard (Faint Red) */
-.section-btn:nth-of-type(3) {
-    background-color: #fd5f5c;
-    color: black;
-}
-.section-btn:nth-of-type(3):hover {
-    background-color: #f28b82;
-}
 
 
 
@@ -768,20 +725,13 @@ figcaption {
   </details>
 </li>
 
+
+
 <!-- /////////////////////////////////////////////////////////////////////////////// -->
 
-
-    <!-- <div class="button-container">
-        <button class="scroll-btn" onclick="document.getElementById('easy').scrollIntoView({behavior:'smooth'})">Easy Questions</button>
-        <button class="scroll-btn" onclick="document.getElementById('medium').scrollIntoView({behavior:'smooth'})">Medium Questions</button>
-        <button class="scroll-btn" onclick="document.getElementById('hard').scrollIntoView({behavior:'smooth'})">Hard Questions</button>
-    </div> -->
-
     <!-- EASY QUESTIONS -->
-    <h2 id="easy"></h2>
-    <button class="section-btn" onclick="document.getElementById('easy').scrollIntoView({behavior:'smooth'})">
-    Easy Questions
-    </button>
+    <h2 id="section1" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+    <!-- <div class="easy-heading">Easy Questions</div> -->
     
         <li><span class="section-title">1. What is a Computer?</span>
             <details>
@@ -858,10 +808,8 @@ figcaption {
     
 
     <!-- MEDIUM QUESTIONS -->
-    <h2 id="medium"></h2>
-    <button class="section-btn" onclick="document.getElementById('medium').scrollIntoView({behavior:'smooth'})">
-    Medium Questions
-    </button>
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+    <!-- <div class="medium-heading">Medium Questions</div> -->
     
         <li><span class="section-title">13. Why are C and C++ Platform Dependent?</span>
             <details>
@@ -878,10 +826,8 @@ figcaption {
     
 
     <!-- HARD QUESTIONS -->
-    <h2 id="hard"></h2>
-    <button class="section-btn" onclick="document.getElementById('hard').scrollIntoView({behavior:'smooth'})">
-    Hard Questions
-    </button>
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+    <!-- <div class="hard-heading">Hard Questions</div> -->
     
         <li><span class="section-title">15. When was Java Invented?</span>
             <details>
@@ -935,472 +881,414 @@ figcaption {
     <h1 id="Operator" style="color: rgb(164, 118, 233); font-size: 40px;">OPERATOR</h1>
 
     <h1 id="increment-decrement-operator">Increment and Decrement Operator</h1>
+    
     <ul>
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+        
+    <!-- EASY QUESTIONS -->
         <li><span class="section-title">1. Which type of operator is this: unary, binary, ternary?</span>
             <details>
                 <summary>Answer</summary>
-                <p>It is a statement used to control the flow of execution in a program. It is known as a control flow statement.</p>
+                <p>It is a <b><u>unary operator</u></b> because it works on <b><u>a single operand</u></b> to perform an operation.</p>
             </details>
         </li>
-        <li><span class="section-title">2. What is an increment operator?</span></li>
-        <li><span class="section-title">3. Types of increment operators?</span></li>
-        <li><span class="section-title">4. What is a pre-increment operator and how does it work?</span></li>
-        <li><span class="section-title">5. What is a post-increment operator and how does it work?</span></li>
-        <li><span class="section-title">6. Write a program using increment and decrement operators?</span></li>
-        <li><span class="section-title">7. What is a decrement operator?</span></li>
-        <li><span class="section-title">8. Types of decrement operators?</span></li>
-        <li><span class="section-title">9. What is a pre-decrement operator and how does it work?</span></li>
-        <li><span class="section-title">10. What is a post-decrement operator and how does it work?</span></li>
-        <li><span class="section-title">11. Write a program using increment and decrement operators.</span></li>
+        <li><span class="section-title">2. What is an increment operator?</span>
+            <details>
+                <summary>Answer</summary>
+                <p>An <b><u>increment operator</u></b> is used to <b><u>increase the value</u></b> of a variable by <b><u>one</u></b>.</p>
+            </details>
+        </li>
+        <li><span class="section-title">3. Types of increment operators?</span>
+            <details>
+                <summary>Answer</summary>
+                <p>The <b><u>two types</u></b> of increment operators are: <b><u>Pre-increment (++x)</u></b> and <b><u>Post-increment (x++)</u></b>.</p>
+            </details>
+        </li>
+        <li><span class="section-title">4. What is a decrement operator?</span>
+            <details>
+                <summary>Answer</summary>
+                <p>A <b><u>decrement operator</u></b> is used to <b><u>decrease the value</u></b> of a variable by <b><u>one</u></b>.</p>
+            </details>
+        </li>
+        <li><span class="section-title">5. Types of decrement operators?</span>
+            <details>
+                <summary>Answer</summary>
+                <p>The <b><u>two types</u></b> of decrement operators are: <b><u>Pre-decrement (--x)</u></b> and <b><u>Post-decrement (x--)</u></b>.</p>
+            </details>
+        </li>
+
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <!-- MEDIUM QUESTIONS -->
+        <li><span class="section-title">6. What is a pre-increment operator and how does it work?</span>
+            <details>
+                <summary>Answer</summary>
+                <p>A <b><u>pre-increment operator (++x)</u></b> <b><u>increases</u></b> the variable's value by <b><u>one</u></b> <b><u>before</u></b> it is used in an expression.</p>
+            </details>
+        </li>
+        <li><span class="section-title">7. What is a post-increment operator and how does it work?</span>
+            <details>
+                <summary>Answer</summary>
+                <p>A <b><u>post-increment operator (x++)</u></b> <b><u>increases</u></b> the variable's value by <b><u>one</u></b> <b><u>after</u></b> it is used in an expression.</p>
+            </details>
+        </li>
+        <li><span class="section-title">8. What is a pre-decrement operator and how does it work?</span>
+            <details>
+                <summary>Answer</summary>
+                <p>A <b><u>pre-decrement operator (--x)</u></b> <b><u>decreases</u></b> the variable's value by <b><u>one</u></b> <b><u>before</u></b> it is used in an expression.</p>
+            </details>
+        </li>
+        <li><span class="section-title">9. What is a post-decrement operator and how does it work?</span>
+            <details>
+                <summary>Answer</summary>
+                <p>A <b><u>post-decrement operator (x--)</u></b> <b><u>decreases</u></b> the variable's value by <b><u>one</u></b> <b><u>after</u></b> it is used in an expression.</p>
+            </details>
+        </li>
+
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>    
+
+    <!-- HARD QUESTIONS -->
+    <li><span class="section-title">10. Write a program using increment and decrement operators?</span>
+        <details>
+            <summary>Answer</summary>
+            <pre>
+    public class IncrementDecrementExample1 {
+        public static void main(String[] args) {
+            int x = 5;
+            System.out.println("Pre-increment: " + (++x)); // 6
+            System.out.println("Post-increment: " + (x++)); // 6 then x=7
+            System.out.println("Pre-decrement: " + (--x)); // 6
+            System.out.println("Post-decrement: " + (x--)); // 6 then x=5
+        }
+    }
+           </pre>
+           </details>
+    </li>
+
+    <li><span class="section-title">11. Write a program using increment and decrement operators.</span>
+        <details>
+            <summary>Answer</summary>
+            <pre>
+    public class IncrementDecrementExample2 {
+        public static void main(String[] args) {
+            int a = 10;
+            System.out.println("Initial value: " + a); // 10
+            a++; 
+            System.out.println("After increment: " + a); // 11
+            a--;
+            System.out.println("After decrement: " + a); // 10
+        }
+    }
+            </pre>
+        </details>
+    </li>
+
+        
+
     </ul>
 
     <h1 id="logical-operator">Logical Operator</h1>
 <ul>
+
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+    <!-- EASY QUESTIONS -->
     <li><span class="section-title">1. What is a Logical Operator?</span>
         <details>
             <summary>Answer</summary>
-            <p>A Logical Operator is used for <b>logical decision-making</b>. The operand type of a logical operator must be boolean.</p>
+            <p>A <b><u>Logical Operator</u></b> is used for <b><u>logical decision-making</u></b>. The operand type of a logical operator must be <b><u>boolean</u></b>.</p>
         </details>
     </li>
-
-
-    
 
     <li><span class="section-title">2. What are the Logical Operators?</span>
         <details>
             <summary>Answer</summary>
-            <p>There are three types: 1. AND 2. OR 3. NOT</p>
+            <p>There are <b><u>three types</u></b>: <b><u>AND</u></b>, <b><u>OR</u></b>, and <b><u>NOT</u></b>.</p>
         </details>
     </li>
 
-    <li><span class="section-title">3. How many Logical Operators are present in Java?</span>
+    <li><span class="section-title">3. What is the AND Operator?</span>
         <details>
             <summary>Answer</summary>
-            <p>There are three types.</p>
+            <p>It is a <b><u>binary operator</u></b>. The <b><u>AND</u></b> operator returns <b><u>true</u></b> only if <b><u>both operands</u></b> are true; if even one is false, the result is <b><u>false</u></b>.</p>
         </details>
     </li>
 
-    <li><span class="section-title">4. What is the AND Operator?</span>
+    <li><span class="section-title">4. What is the OR Operator?</span>
         <details>
             <summary>Answer</summary>
-            <p>It is a binary operator . AND operator written to if the both the operands are true then it is true. if one one will be false then it is false.</p>
-        </details></li>
+            <p>It is a <b><u>binary operator</u></b>. The <b><u>OR</u></b> operator returns <b><u>true</u></b> if <b><u>any operand</u></b> is true.</p>
+        </details>
+    </li>
 
-
-
-    <li><span class="section-title">5. What is the OR Operator?</span>
+    <li><span class="section-title">5. What is the NOT Operator?</span>
         <details>
             <summary>Answer</summary>
-            <p>It is a binary operator. If OR operator is any operand is true then it is true.</p>
-        </details></li>
-    <li><span class="section-title">6. What is the NOT Operator?</span>
+            <p>It is a <b><u>unary operator</u></b>. The <b><u>NOT</u></b> operator returns <b><u>false</u></b> if the operand is true, and <b><u>true</u></b> if the operand is false.</p>
+        </details>
+    </li>
+
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+<!-- MEDIUM QUESTIONS -->
+    <li><span class="section-title">6. How many Logical Operators are present in Java?</span>
         <details>
             <summary>Answer</summary>
-            <p>It is a Unary operator. If one is true then it is false If it is false then it is true.</p>
-        </details></li>
+            <p>There are <b><u>three logical operators</u></b> in Java: <b><u>AND</u></b>, <b><u>OR</u></b>, and <b><u>NOT</u></b>.</p>
+        </details>
+    </li>
 
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>    
+
+<!-- HARD QUESTIONS -->
     <li><span class="section-title">7. In the AND operator, if operand1 is true and operand2 is false, what is the output?</span>
         <details>
             <summary>Answer</summary>
-            <p>The output will be false.</p>
+            <p>The output will be <b><u>false</u></b> because <b><u>both operands</u></b> must be true for the result to be true.</p>
         </details>
     </li>
+
     <li><span class="section-title">8. In the AND operator, if operand1 is true and operand2 is true, what is the output?</span>
         <details>
             <summary>Answer</summary>
-            <p>The output will be True.</p>
+            <p>The output will be <b><u>true</u></b> because <b><u>both operands</u></b> are true.</p>
         </details>
     </li>
+
 </ul>
 
   <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
   <h1 id="section3">Control Flow Statements</h1>
   <ul>
-      <li>
-          <span class="section-title">1. What is a control flow statement?</span>
-          <details>
-              <summary>Answer</summary>
-              <p>It is a statement used to <b>control the flow of execution in a program</b>. It is known as a control flow statement.</p>
-          </details>
-      </li>
-      <li>
-          <span class="section-title">2. Types of control flow statements?</span>
-          <details>
-              <summary>Answer</summary>
-              <p>1. Decision Statements</p>
-              <p>2. Loop Statements</p>
-          </details>
-      </li>
-      <li>
-          <span class="section-title">3. What is a decision statement?</span>
-          <details>
-              <summary>Answer</summary>
-              <p>The statement which helps a programmer <b>decide whether to execute a set of instructions or skip them</b> is known as a decision statement.</p>
-          </details>
-      </li>
-      <li>
-          <span class="section-title">4. Types of decision statements?</span>
-          <details>
-              <summary>Answer</summary>
-              <p>1. if statement</p>
-              <p>2. if else statement</p>
-              <p>3. if else if ladder</p>
-              <p>4. switch statement</p>
-          </details>
-      </li>
-      <li>
-          <span class="section-title">5. Solve the following using if-else statements: Even or Odd, Positive or Negative, Pass or Fail, Interview Eligibility, Largest of Two, Pin Verification, Rating, and Check Alphabet or Not.</span>
-          <details>
-              <summary>Answer</summary>
-              
-              <!-- Even or Odd -->
-              <p>1. Even or Odd</p>
-              <pre><code>
-  int a = 20;
-  
-  if (a % 2 == 0) {
-      System.out.println("This is an even number.");
-  } else {
-      System.out.println("This is an odd number.");
-  }
-              </code></pre>
-              
-              <!-- Positive or Negative -->
-              <p>2. Positive or Negative</p>
-              <pre><code>
-  int num = -20;
-  
-  if (num > 0) {
-      System.out.println("This is a positive number.");
-  } else {
-      System.out.println("This is a negative number.");
-  }
-              </code></pre>
-              
-              <!-- Pass or Fail -->
-              <p>3. Pass or Fail</p>
-              <pre><code>
-  int percentage = 35;
-  
-  if (percentage >= 35) {
-      System.out.println("You passed.");
-  } else {
-      System.out.println("You failed.");
-  }
-              </code></pre>
-              
-              <!-- Interview Eligibility -->
-              <p>4. Interview Eligibility</p>
-              <pre><code>
-  int percentage = 75;
-  
-  if (percentage >= 65) {
-      System.out.println("You can attend the interview.");
-  } else {
-      System.out.println("You cannot attend the interview.");
-  }
-              </code></pre>
-              
-              <!-- Largest of Two -->
-              <p>5. Largest of Two</p>
-              <pre><code>
-  int num1 = 90;
-  int num2 = 99;
-  
-  if (num1 > num2) {
-      System.out.println("The 1st number is greater: " + num1);
-  } else {
-      System.out.println("The 2nd number is greater: " + num2);
-  }
-              </code></pre>
-              
-              <!-- Pin Verification -->
-              <p>6. Pin Verification</p>
-              <pre><code>
-  int pin = 7865;
-  
-  if (pin == 7878) {
-      System.out.println("You entered the correct pin.");
-  } else {
-      System.out.println("You entered the wrong pin.");
-  }
-              </code></pre>
-              
-              <!-- Rating -->
-              <p>7. Rating</p>
-              <pre><code>
-  char rating = '*';
-  
-  if (rating == '*') {
-      System.out.println("You can give the interview.");
-  } else {
-      System.out.println("Please go to the mock interview.");
-  }
-              </code></pre>
-              
-              <!-- Check Alphabet or Not -->
-              <p>8. Check if Alphabet or Not</p>
-              <pre><code>
-  char alphabet = 'g';
-  
-  if ((alphabet >= 'A' && alphabet <= 'Z') || (alphabet >= 'a' && alphabet <= 'z')) {
-      System.out.println("This is an alphabet.");
-  } else {
-      System.out.println("This is not an alphabet, it is a special character or number.");
-  }
-              </code></pre>
-          </details>
-      </li>
-      <li>
-          <span class="section-title">6. What is the syntax of the if statement?</span>
-          <details>
-              <summary>Answer</summary>
-              <pre><code>
-  if (condition) {
-      statement;
-  }
-              </code></pre>
-          </details>
-      </li>
-      <li>
-          <span class="section-title">7. What is the syntax of the if-else statement?</span>
-          <details>
-              <summary>Answer</summary>
-              <pre><code>
-  if (condition) {
-      statement1;
-  } else { 
-      statement2;
-  }
-              </code></pre>
-          </details>
-      </li>
-      <li>
-          <span class="section-title">8. What is the condition for calculating a leap year?</span>
-          <details>
-              <summary>Answer</summary>
-              <p>if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)</p>
-          </details>
-      </li>
-      <li>
-          <span class="section-title">9. Solve the leap year problem using if-else?</span>
-          <details>
-              <summary>Answer</summary>
-              <pre><code>
-  Scanner sc = new Scanner(System.in);
-  int year = sc.nextInt();
-  
-  if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-      System.out.println("This is a leap year");
-  } else { 
-      System.out.println("This is not a leap year");
-  }
-              </code></pre>
-          </details>
-      </li>
 
-      <li>
-        <span class="section-title">#. When we use if else if ladder?</span>
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+      
+    <!-- EASY QUESTIONS -->
+    <li>
+        <span class="section-title">1. What is a control flow statement?</span>
         <details>
             <summary>Answer</summary>
-            <p>When we check multyple multyple condition then we use if else if ladder.</p>
-        </details>
-    </li>
-
-      <li>
-          <span class="section-title">10. What is the syntax of the if-else-if ladder statement?</span>
-          <details>
-              <summary>Answer</summary>
-              <pre><code>
-  if (condition1) {
-      statement1;
-  } else if (condition2) {
-      statement2;
-  } else if (condition3) {
-      statement3;
-  } else if (condition4) {
-      statement4;
-  } else {
-      statement5;
-  }
-              </code></pre>
-          </details>
-      </li>
-
-      <li>
-        <span class="section-title">11. What is a switch statement?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>It is a decision making statement.</p>
+            <p>It is a statement used to <b><u>control the flow of execution</u></b> in a program. It is known as a <b><u>control flow statement</u></b>.</p>
         </details>
     </li>
 
     <li>
-        <span class="section-title">12. Which type of data type is allowed in switch statement?</span>
+        <span class="section-title">2. What are the types of control flow statements?</span>
         <details>
             <summary>Answer</summary>
-            <p><b>1. byte 2. short 3. int 4. char 5. String </b></p>
-        </details>
-    </li> 
-
-    <li>
-        <span class="section-title">13. Which type of data type is not allowed in switch statement?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b>1. long 2. float 3. double 4. boolean  </b></p>
+            <p><b><u>1. Decision Statements</u></b></p>
+            <p><b><u>2. Loop Statements</u></b></p>
         </details>
     </li>
 
-   
-</li>
+    <li>
+        <span class="section-title">3. What is a decision statement?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>The statement which helps a programmer <b><u>decide whether to execute or skip a set of instructions</u></b> is called a <b><u>decision statement</u></b>.</p>
+        </details>
+    </li>
 
-<li>
-    <span class="section-title">14. What is the syntax of switch statement?</span>
-    <details>
-        <summary>Answer</summary>
+    <li>
+        <span class="section-title">4. What are the types of decision statements?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>1. if statement</u></b></p>
+            <p><b><u>2. if-else statement</u></b></p>
+            <p><b><u>3. if-else-if ladder</u></b></p>
+            <p><b><u>4. switch statement</u></b></p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">5. What is the syntax of the if statement?</span>
+        <details>
+            <summary>Answer</summary>
             <pre><code>
-         switch(value/expression/variable){
-       
-             case value/expression {
-                (statement)
-                break;
-             }
-             case value/expression {
-                (statement)
-                break;
-             }
-             case value/expression {
-                (statement)
-                break;
-             }
-             default: {
-                (statement )
-             }
-            
- 
+if (condition) {
+    statement;
+}
+            </code></pre>
+        </details>
+    </li>
 
-
-         } 
-           </code></pre>
-    </details>
-</li>
-
-<li>
-    <span class="section-title">#. Types of Loop Statement?</span>
-    <details>
-        <summary>Answer</summary>
-        <p><b>1. While loop 2. Do While Loop 3. For Loop 4. For Each Loop  </b></p>
-    </details>
-</li>
-<li>
-    <span class="section-title">#. What is the syntax of while loop?</span>
-    <details>
-        <summary>Answer</summary>
+    <li>
+        <span class="section-title">6. What is the syntax of the if-else statement?</span>
+        <details>
+            <summary>Answer</summary>
             <pre><code>
-         switch(value/expression/variable){
-       
-             case value/expression {
-                (statement)
-                break;
-             }
-             case value/expression {
-                (statement)
-                break;
-             }
-             case value/expression {
-                (statement)
-                break;
-             }
-             default: {
-                (statement )
-             }cf
-            
- 
+if (condition) {
+    statement1;
+} else {
+    statement2;
+}
+            </code></pre>
+        </details>
+    </li>
 
+    <li>
+        <span class="section-title">7. What is the condition for calculating a leap year?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>(year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)</u></b></p>
+        </details>
+    </li>
 
-         } 
-           </code></pre>
-    </details>
-</li>
-
-<li>
-    <span class="section-title">#. What is the syntax of do while loop?</span>
-    <details>
-        <summary>Answer</summary>
+    <li>
+        <span class="section-title">8. What is the syntax of the if-else-if ladder statement?</span>
+        <details>
+            <summary>Answer</summary>
             <pre><code>
-         switch(value/expression/variable){
-       
-             case value/expression {
-                (statement)
-                break;
-             }
-             case value/expression {
-                (statement)
-                break;
-             }
-             case value/expression {
-                (statement)
-                break;
-             }
-             default: {
-                (statement )
-             }
-            
- 
+if (condition1) {
+    statement1;
+} else if (condition2) {
+    statement2;
+} else if (condition3) {
+    statement3;
+} else {
+    statement4;
+}
+            </code></pre>
+        </details>
+    </li>
 
+    <li>
+        <span class="section-title">9. What is a switch statement?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>It is a <b><u>decision-making statement</u></b> used to execute one block of code among multiple options.</p>
+        </details>
+    </li>
 
-         } 
-           </code></pre>
-    </details>
-</li>
+    <li>
+        <span class="section-title">10. Which data types are allowed in a switch statement?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>byte</u></b>, <b><u>short</u></b>, <b><u>int</u></b>, <b><u>char</u></b>, <b><u>String</u></b></p>
+        </details>
+    </li>
 
+    <li>
+        <span class="section-title">11. Which data types are not allowed in a switch statement?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>long</u></b>, <b><u>float</u></b>, <b><u>double</u></b>, <b><u>boolean</u></b></p>
+        </details>
+    </li>
 
-<li>
-    <span class="section-title">#. What is the syntax of for loop?</span>
-    <details>
-        <summary>Answer</summary>
+    <li>
+        <span class="section-title">12. What is the syntax of the switch statement?</span>
+        <details>
+            <summary>Answer</summary>
             <pre><code>
+switch (expression) {
+    case value1:
+        statement;
+        break;
+    case value2:
+        statement;
+        break;
+    default:
+        statement;
+}
+            </code></pre>
+        </details>
+    </li>
 
-         switch(value/expression/variable){
-       
-             case value/expression {
-                (statement)
-                break;
-             }
-             case value/expression {
-                (statement)
-                break;
-             }
-             case value/expression {
-                (statement)
-                break;
-             }
-             default: {
-                (statement )
-             }
-            
- 
+    <li>
+        <span class="section-title">13. What are the types of loop statements?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>1. while loop</u></b>, <b><u>2. do-while loop</u></b>, <b><u>3. for loop</u></b>, <b><u>4. for-each loop</u></b></p>
+        </details>
+    </li>
 
-
-         } 
-           </code></pre>
-    </details>
-</li>
-
-
-<li>
-    <span class="section-title">#. Why we use nested  loop?</span>
-    <details>
-        <summary>Answer</summary>
+    <li>
+        <span class="section-title">14. What is the syntax of the while loop?</span>
+        <details>
+            <summary>Answer</summary>
             <pre><code>
+while (condition) {
+    statement;
+}
+            </code></pre>
+        </details>
+    </li>
 
-           </code></pre>
-    </details>
-</li>
+    <li>
+        <span class="section-title">15. What is the syntax of the do-while loop?</span>
+        <details>
+            <summary>Answer</summary>
+            <pre><code>
+do {
+    statement;
+} while (condition);
+            </code></pre>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">16. What is the syntax of the for loop?</span>
+        <details>
+            <summary>Answer</summary>
+            <pre><code>
+for (initialization; condition; increment/decrement) {
+    statement;
+}
+            </code></pre>
+        </details>
+    </li>
+
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <!-- MEDIUM QUESTIONS -->
+    <li>
+        <span class="section-title">17. How to solve leap year problem using if-else?</span>
+        <details>
+            <summary>Answer</summary>
+            <pre><code>
+Scanner sc = new Scanner(System.in);
+int year = sc.nextInt();
+
+if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+    System.out.println("This is a leap year");
+} else {
+    System.out.println("This is not a leap year");
+}
+            </code></pre>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">18. How to solve common problems using if-else statements?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Examples include: <b><u>Even or Odd</u></b>, <b><u>Positive or Negative</u></b>, <b><u>Pass or Fail</u></b>, <b><u>Interview Eligibility</u></b>, <b><u>Largest of Two</u></b>, <b><u>Pin Verification</u></b>, <b><u>Rating</u></b>, <b><u>Check Alphabet or Not</u></b>.</p>
+            <!-- Keep your example code blocks here (as given above) -->
+        </details>
+    </li>
+
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <!-- HARD QUESTIONS -->
+    <li>
+        <span class="section-title">19. When do we use the if-else-if ladder?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>We use it when we need to <b><u>check multiple conditions</u></b> in sequence.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">20. Why do we use nested loops?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>We use nested loops when we need to <b><u>perform repeated iterations inside another loop</u></b>, such as in <b><u>pattern printing</u></b> or <b><u>multi-dimensional array traversal</u></b>.</p>
+        </details>
+    </li>
 
 
-  </ul>
+    </ul>
   
 
 
@@ -1409,107 +1297,127 @@ figcaption {
 <!-- ///////////////////////////////////////////////////////////// -->
 <h1 id="section4">Dynamic Reading</h1>
 <ul>
-    <li><span class="section-title">1. What is dynamic reading?</span>
+    
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+    <!-- EASY QUESTIONS -->
+    <li>
+        <span class="section-title">1. What is dynamic reading?</span>
         <details>
             <summary>Answer</summary>
-            <p><b>Dynamic reading</b> refers to reading data from the user during the execution of a program dynamically with the help of a built-in class known as <b>Scanner</b>.</p>
-        </details>
-    </li>
-
-    <li><span class="section-title">2. Which package do we import for dynamic reading?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>We import <b>java.util.Scanner</b></p>
-        </details>
-    </li>
-
-    <li><span class="section-title">3. How do we create an object in the Scanner class?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>Using the <b>new</b> keyword, like <b>Scanner sc = new Scanner(System.in);</b></p>
-        </details>
-    </li>
-
-    <li><span class="section-title">4. Which method syntax do we use for byte in Scanner?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b>nextByte();</b></p>
-        </details>
-    </li>
-
-    <li><span class="section-title">5. Which method syntax do we use for short in Scanner?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b>nextShort();</b></p>
-        </details>
-    </li>
-
-    <li><span class="section-title">6. Which method syntax do we use for int in Scanner?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b>nextInt();</b></p>
-        </details>
-    </li>
-
-    <li><span class="section-title">7. Which method syntax do we use for long in Scanner?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b>nextLong();</b></p>
-        </details>
-    </li>
-
-    <li><span class="section-title">8. Which method syntax do we use for char in Scanner?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b>next().charAt(0);</b></p>
-        </details>
-    </li>
-
-    <li><span class="section-title">9. Which method syntax do we use for double in Scanner?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b>nextDouble();</b></p>
-        </details>
-    </li>
-
-    <li><span class="section-title">10. Which method syntax do we use for boolean in Scanner?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b>nextBoolean();</b></p>
-        </details>
-    </li>
-
-    <li><span class="section-title">11. Which method syntax do we use for String in Scanner?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b>next();</b> and <b>nextLine();</b></p>
-        </details>
-    </li>
-
-    <li><span class="section-title">12. Which method syntax do we use for float in Scanner?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b>nextFloat();</b></p>
+            <p><b><u>Dynamic reading</u></b> refers to <b><u>reading data from the user during program execution</u></b> with the help of a built-in class known as <b><u>Scanner</u></b>.</p>
         </details>
     </li>
 
     <li>
-        <span class="section-title">13. What type of error occurs when an int data type is assigned to a byte data type using Scanner?</span>
+        <span class="section-title">2. What type of error occurs when an int data type is assigned to a byte data type using Scanner?</span>
         <details>
             <summary>Answer</summary>
-            <p><b>Type Mismatch Error:</b> This error occurs because an `int` value may exceed the range of a `byte`, which can hold values from -128 to 127.</p>
+            <p><b><u>Type Mismatch Error</u></b>: This occurs because an <b><u>int</u></b> value may exceed the range of a <b><u>byte</u></b> (-128 to 127).</p>
         </details>
     </li>
 
     <li>
-        <span class="section-title">13. What type of error occurs when a `short` data type is assigned to an `int` data type using Scanner?</span>
+        <span class="section-title">3. What type of error occurs when a short data type is assigned to an int data type using Scanner?</span>
         <details>
             <summary>Answer</summary>
-            <p><b>Type Mismatch Error:</b> This error occurs because a `short` value cannot be directly assigned to an `int` without explicit casting, even though `int` has a larger range than `short`.</p>
+            <p><b><u>Type Mismatch Error</u></b>: This occurs because a <b><u>short</u></b> value cannot be directly assigned to an <b><u>int</u></b> without explicit casting, even though <b><u>int</u></b> has a larger range.</p>
         </details>
     </li>
-    
-    
+
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <!-- MEDIUM QUESTIONS -->
+    <li>
+        <span class="section-title">4. How do we create an object in the Scanner class?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Using the <b><u>new</u></b> keyword, like: <b><u>Scanner sc = new Scanner(System.in);</u></b></p>
+        </details>
+    </li>
+
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <!-- HARD QUESTIONS -->
+    <li>
+        <span class="section-title">5. Which package do we import for dynamic reading?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>We import <b><u>java.util.Scanner</u></b></p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">6. Which method syntax do we use for byte in Scanner?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>nextByte();</u></b></p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">7. Which method syntax do we use for short in Scanner?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>nextShort();</u></b></p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">8. Which method syntax do we use for int in Scanner?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>nextInt();</u></b></p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">9. Which method syntax do we use for long in Scanner?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>nextLong();</u></b></p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">10. Which method syntax do we use for char in Scanner?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>next().charAt(0);</u></b></p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">11. Which method syntax do we use for double in Scanner?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>nextDouble();</u></b></p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">12. Which method syntax do we use for boolean in Scanner?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>nextBoolean();</u></b></p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">13. Which method syntax do we use for String in Scanner?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>next();</u></b> and <b><u>nextLine();</u></b></p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">14. Which method syntax do we use for float in Scanner?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>nextFloat();</u></b></p>
+        </details>
+    </li>
+
 
 </ul>
 
@@ -1521,230 +1429,200 @@ figcaption {
 
  <ul>
 
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+    <!-- EASY QUESTIONS -->
     <li><span class="section-title">1. What is a method?</span>
         <details>
             <summary>Answer</summary>
             <p>A method is a <b><u>block of instructions</u></b> that is <b><u>used to perform a specific task</u></b>.</p>
         </details>
     </li>
-    
+
     <li><span class="section-title">2. What are the different types of methods in Java?</span>
         <details>
             <summary>Answer</summary>
-            <p>Java includes <b><u>instance methods, static methods, and abstract methods.</u></b></p>
+            <p>Java includes <b><u>instance methods, static methods, and abstract methods</u></b>.</p>
         </details>
     </li>
-    
+
     <li><span class="section-title">3. What is a built-in method?</span>
         <details>
             <summary>Answer</summary>
-            <p>Built-in methods are those that are <b><u>already designed by the creators of the language or framework</u></b>. These methods are ready to use without needing to define them yourself.</p>
+            <p>Built-in methods are <b><u>already designed by the creators of the language or framework</u></b> and ready to use without defining them yourself.</p>
         </details>
     </li>
-    
+
     <li><span class="section-title">4. What is a user-defined method?</span>
         <details>
             <summary>Answer</summary>
-            <p>A programmer can <b><u>design their own methods</u></b> that can be used by themselves and shared with others. These are known as user-defined methods.</p>
+            <p>A programmer can <b><u>design their own methods</u></b> to use themselves or share with others. These are known as <b><u>user-defined methods</u></b>.</p>
         </details>
     </li>
-    
-    <li>
-        <span class="section-title">5. Why do we use methods?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>We use methods to achieve code modularity:
-                <br>
-                <strong>Organize code:</strong> Break down tasks into smaller, manageable parts.
-                <br>
-                <strong>Reuse code:</strong> Use the same method in different places.
-                <br>
-                <strong>Encapsulate behavior:</strong> Hide details and simplify changes.
-                <br>
-                <strong>Improve maintenance:</strong> Update code easily by changing one method.
-                <br>
-                <strong>Test and debug:</strong> Test individual methods to find and fix bugs.
-                <br>
-                <strong>Enhance readability:</strong> Make code easier to read and understand.
-                <br>
-                <strong>Support OOP:</strong> Use inheritance and polymorphism in object-oriented programming.
-            </p>
-        </details>
-    </li>
-    
-    <li><span class="section-title">6. What is code modularity?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>Code modularity refers to the design of <b><u>breaking an entire task into smaller modules</u></b>, and sub-modules, and creating methods for each module. This helps in managing complexity and improving maintainability.</p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">7. Real-life scenarios for methods</span>
-        <details>
-            <summary>Answer</summary>
-            <p><strong>Smartphone App:</strong></p>
-            <p><strong>Scenario:</strong> A weather app.</p>
-            <p><strong>Method:</strong> Fetch weather data from the internet, process the data, and display the current weather and forecast.</p>
-            <p><strong>Purpose:</strong> To provide users with up-to-date weather information.</p>
-            
-            <p><strong>Online Shopping:</strong></p>
-            <p><strong>Scenario:</strong> An e-commerce website.</p>
-            <p><strong>Method:</strong> Add items to the cart, calculate the total price, process payment, and confirm the order.</p>
-            <p><strong>Purpose:</strong> To facilitate purchasing products online.</p>
-            
-            <p><strong>Fitness Tracker:</strong></p>
-            <p><strong>Scenario:</strong> A health app.</p>
-            <p><strong>Method:</strong> Track steps, monitor heart rate, log exercise, and provide progress reports.</p>
-            <p><strong>Purpose:</strong> To help users monitor and improve their fitness levels.</p>
-            
-            <p><strong>Banking App:</strong></p>
-            <p><strong>Scenario:</strong> Mobile banking.</p>
-            <p><strong>Method:</strong> Check account balance, transfer money between accounts, pay bills, and review transaction history.</p>
-            <p><strong>Purpose:</strong> To manage finances and perform banking tasks remotely.</p>
-        </details>
-    </li>
-    
-    <li><span class="section-title">8. Can we create a method inside another method?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>In Java, you can't create a method inside another method. However, you can use local classes to achieve similar functionality.</p>
-        </details>
-    </li>
-    
-    <li><span class="section-title">9. Why can't we create a method inside another method?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>In Java, you can't put one method inside another because Java requires methods to be defined at the class level.</p>
-        </details>
-    </li>
-    
-    <li><span class="section-title">10. Can we create a class inside a method?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b>Yes</b>, you can create a local class within a method in Java.</p>
-        </details>
-    </li>
-    
 
-     <!-- //////////////// -->
-     <li><span class="section-title">11. What is a local class?</span>
+    <li><span class="section-title">5. What is code modularity?</span>
         <details>
             <summary>Answer</summary>
-            <p>In Java, a local class is a <b><u>class defined inside a method, constructor, or block</u></b> and is only accessible within that scope.</p>
+            <p>Code modularity means <b><u>breaking a task into smaller modules</u></b> and sub-modules, creating methods for each to manage complexity and improve maintainability.</p>
         </details>
     </li>
-    
-    <li><span class="section-title">12. What are formal arguments?</span>
+
+    <li><span class="section-title">6. What is a local class?</span>
         <details>
             <summary>Answer</summary>
-            <p>Formal arguments are the <b><u>variables declared in the method declaration statement</u></b>. They specify the inputs that the method requires.</p>
+            <p>A local class is a <b><u>class defined inside a method, constructor, or block</u></b> and accessible only within that scope.</p>
         </details>
     </li>
-    
-    <li><span class="section-title">13. When do we use formal arguments?</span>
+
+    <li><span class="section-title">7. What are formal arguments?</span>
         <details>
             <summary>Answer</summary>
-            <p>In Java, <b><u>formal arguments are required if a method needs to accept input data</u></b>.</p>
+            <p>Formal arguments are <b><u>variables declared in the method declaration</u></b> specifying the inputs the method requires.</p>
         </details>
     </li>
-    
-    <li><span class="section-title">14. What are actual arguments?</span>
+
+    <li><span class="section-title">8. What are actual arguments?</span>
         <details>
             <summary>Answer</summary>
-            <p>Actual arguments are the <b><u>values or expressions passed to the method when it is called</u></b>. For example, in <code>methodName(10, "text")</code>, <code>10</code> and <code>"text"</code> are the actual arguments.</p>
+            <p>Actual arguments are the <b><u>values or expressions passed to a method</u></b> when calling it, e.g., <code>methodName(10, "text")</code>.</p>
         </details>
     </li>
-    
-    <li><span class="section-title">15. What is a method name?</span>
+
+    <li><span class="section-title">9. What is a method name?</span>
         <details>
             <summary>Answer</summary>
-            <p>A method name is an <b>identifier</b> that is used to <b><u>identify and call the method</u></b>.</p>
+            <p>A method name is an <b><u>identifier</u></b> used to <b><u>identify and call the method</u></b>.</p>
         </details>
     </li>
-    
-    <li><span class="section-title">16. What is a return type?</span>
+
+    <li><span class="section-title">10. What is a return type?</span>
         <details>
             <summary>Answer</summary>
-            <p>The return type specifies <b><u>whether the method will return any value at the end of execution</u></b> or if it returns nothing.</p>
+            <p>The return type <b><u>specifies whether a method returns a value</u></b> or not after execution.</p>
         </details>
     </li>
-    
-    <li><span class="section-title">17. What types of data can a method return?</span>
+
+    <li><span class="section-title">11. What types of data can a method return?</span>
         <details>
             <summary>Answer</summary>
-            <p>A method can return <b><u>both primitive data types and non-primitive data types</u></b>.</p>
+            <p>A method can return <b><u>primitive data types</u></b> and <b><u>non-primitive data types</u></b>.</p>
         </details>
     </li>
-    
-    <li><span class="section-title">18. What is a void method in Java?</span>
+
+    <li><span class="section-title">12. What is a void method in Java?</span>
         <details>
             <summary>Answer</summary>
-            <p>A void method in Java is a method that <b><u>does not return any value</u></b>. It performs an action or operation but does not provide a result back to the caller.</p>
+            <p>A void method <b><u>does not return any value</u></b> and simply performs an action.</p>
         </details>
     </li>
-    
-    <li><span class="section-title">19. What is a modifier?</span>
+
+    <li><span class="section-title">13. What is a modifier?</span>
         <details>
             <summary>Answer</summary>
-            <p>Modifiers are <b><u>keywords</u></b> that are used to <b><u>alter the behavior of Java members</u></b>.</p>
+            <p>Modifiers are <b><u>keywords</u></b> that <b><u>alter the behavior of Java members</u></b>.</p>
         </details>
     </li>
-    
-    <li><span class="section-title">20. What are the types of access modifiers?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>1. <b>public</b><br>2. <b>private</b><br>3. <b>protected</b><br>4. <b>default</b></p>
-        </details>
-    </li>
-    
-    <!-- /////////////////// -->
-    <li><span class="section-title">21. What is a void method in Java?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>A void method in Java is a method that <b><u>does not return any value</u></b>. It performs an action or operation but does not provide a result back to the caller.</p>
-        </details>
-    </li>
-    
-    <li><span class="section-title">22. What is a modifier?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>Modifiers are <b><u>keywords</u></b> used to <b><u>alter the behavior of Java members</u></b>.</p>
-        </details>
-    </li>
-    
-    <li><span class="section-title">23. What are the types of access modifiers?</span>
+
+    <li><span class="section-title">14. What are the types of access modifiers?</span>
         <details>
             <summary>Answer</summary>
             <p>1. <b>public</b><br>2. <b>private</b><br>3. <b>protected</b><br>4. <b>default</b></p>
         </details>
     </li>
-    
-    <li><span class="section-title">24. Why do we use access modifiers?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>Access modifiers in Java control the visibility and accessibility of classes, methods, and variables to implement encapsulation, security, and modularity.</p>
-        </details>
-    </li>
-    
-    <li><span class="section-title">25. What are the types of non-access modifiers?</span>
+
+    <li><span class="section-title">15. What are the types of non-access modifiers?</span>
         <details>
             <summary>Answer</summary>
             <p>1. <b>static</b><br>2. <b>abstract</b><br>3. <b>final</b><br>4. <b>synchronized</b><br>5. <b>volatile</b></p>
         </details>
     </li>
-    
-    <li><span class="section-title">26. What is a no-argument method?</span>
+
+    <li><span class="section-title">16. What is a no-argument method?</span>
         <details>
             <summary>Answer</summary>
-            <p>A no-argument method is a method that does not take any parameters. It performs its task without requiring any input from the caller.</p>
+            <p>A no-argument method <b><u>does not take any parameters</u></b> and performs its task without input.</p>
         </details>
     </li>
-    
-    <li><span class="section-title">27. When do we use a no-argument method?</span>
+
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <!-- MEDIUM QUESTIONS -->
+    <li><span class="section-title">17. How do we use methods to achieve code modularity?</span>
         <details>
             <summary>Answer</summary>
-            <p>A no-argument method is used when you need a method to perform an action that does not require any input data. It simplifies calling the method since no arguments need to be provided.</p>
+            <p>We use methods to <b><u>organize code, reuse logic, encapsulate behavior, improve maintenance, test/debug easily, enhance readability, and support OOP concepts</u></b>.</p>
+        </details>
+    </li>
+
+    <li><span class="section-title">18. How can we create a method inside another method?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>In Java, you <b><u>cannot create a method inside another method</u></b>, but you can use <b><u>local classes</u></b> to achieve similar functionality.</p>
+        </details>
+    </li>
+
+    <li><span class="section-title">19. How can we create a class inside a method?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>You can create a <b><u>local class</u></b> inside a method in Java.</p>
+        </details>
+    </li>
+
+    <li><span class="section-title">20. How do actual and formal arguments differ?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>Formal arguments</u></b> are declared in the method definition, while <b><u>actual arguments</u></b> are the values passed when calling the method.</p>
+        </details>
+    </li>
+
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <!-- HARD QUESTIONS -->
+    <li><span class="section-title">21. Why do we use methods?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>We use methods to <b><u>organize code</u></b>, <b><u>reuse logic</u></b>, <b><u>encapsulate behavior</u></b>, <b><u>improve maintenance</u></b>, <b><u>test/debug</u></b>, and <b><u>enhance readability</u></b>.</p>
+        </details>
+    </li>
+
+    <li><span class="section-title">22. Why can't we create a method inside another method?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Java <b><u>requires methods to be defined at the class level</u></b>, so nesting methods directly is not allowed.</p>
+        </details>
+    </li>
+
+    <li><span class="section-title">23. Why do we use access modifiers?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Access modifiers <b><u>control the visibility and accessibility</u></b> of classes, methods, and variables for <b><u>encapsulation, security, and modularity</u></b>.</p>
+        </details>
+    </li>
+
+    <li><span class="section-title">24. When do we use formal arguments?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>We use formal arguments <b><u>when a method needs input data</u></b> to perform its task.</p>
+        </details>
+    </li>
+
+    <li><span class="section-title">25. When do we use a no-argument method?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>We use a no-argument method <b><u>when no input is needed</u></b> for the method to perform its action.</p>
+        </details>
+    </li>
+
+    <li><span class="section-title">26. When should we return a value from a method?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>We return a value <b><u>when the result is required by the caller</u></b> for further processing.</p>
+        </details>
+    </li>
+
+    <li><span class="section-title">27. When should we use a void method?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>We use a void method <b><u>when no value needs to be returned</u></b> and the method only performs an action.</p>
         </details>
     </li>
 
@@ -1753,65 +1631,75 @@ figcaption {
 
  <h1 id="overloaded-method">Overloaded method</h1>
 <ul>
+    
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+    <!-- EASY QUESTIONS -->
     <li><span class="section-title">1. What is method overloading?</span>
         <details>
             <summary>Answer</summary>
-            <p>If a class has <b><u>multiple methods with the same name but different formal arguments</u></b>, it is known as method overloading.</p>
+            <p>If a <b><u>class</u></b> has <b><u>multiple methods with the same name but different formal arguments</u></b>, it is known as <b><u>method overloading</u></b>.</p>
         </details>
     </li>
-    
-    <li><span class="section-title">2. Why do we use method overloading?</span>
+
+    <li><span class="section-title">2. What is method overriding?</span>
         <details>
             <summary>Answer</summary>
-            <p>Method overloading allows multiple methods with the same name but different parameters to <b><u>handle different inputs</u></b>.</p>
+            <p><b><u>Method overriding</u></b> occurs when a <b><u>subclass</u></b> provides a <b><u>specific implementation</u></b> of a method that is already defined in its <b><u>superclass</u></b>. The method in the subclass must have the <b><u>same name</u></b>, <b><u>return type</u></b>, and <b><u>parameters</u></b> as the method in the superclass.</p>
         </details>
     </li>
-    
-    <li><span class="section-title">3. Can you give an example of method overloading?</span>
+
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <!-- MEDIUM QUESTIONS -->
+    <li><span class="section-title">3. Why do we use method overloading?</span>
         <details>
             <summary>Answer</summary>
-            <p>The <code>println</code> method of the PrintStream class is an example of method overloading.</p>
+            <p><b><u>Method overloading</u></b> allows <b><u>multiple methods with the same name but different parameters</u></b> to <b><u>handle different inputs</u></b> efficiently.</p>
         </details>
     </li>
-    
-    <li><span class="section-title">4. Can we have more than one method with the same name and same formal arguments? Can we overload them?</span>
+
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <!-- HARD QUESTIONS -->
+    <li><span class="section-title">4. Can you give an example of method overloading?</span>
         <details>
             <summary>Answer</summary>
-            <p>No, we can't do that because they have the same formal arguments.</p>
+            <p>The <code>println</code> method of the <b><u>PrintStream</u></b> class is an example of <b><u>method overloading</u></b>.</p>
         </details>
     </li>
-    
-    <li><span class="section-title">5. Can the main method be overloaded?</span>
+
+    <li><span class="section-title">5. Can we have more than one method with the same name and same formal arguments? Can we overload them?</span>
         <details>
             <summary>Answer</summary>
+            <p><b><u>No</u></b>, we cannot do that because they have the <b><u>same formal arguments</u></b>, which violates the <b><u>rules of method overloading</u></b>.</p>
+        </details>
+    </li>
+
+    <li><span class="section-title">6. Can the main method be overloaded?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>Yes</u></b>, the <b><u>main method</u></b> can be <b><u>overloaded</u></b> in Java by using a <b><u>different parameter list</u></b>.</p>
             <pre><code>
-        Yes, the main method can be overloaded.
-        
-        public class MainOverload {
-            public static void main(String[] args) {
-                System.out.println("Main method with String[] args");
-                main(10);  // Calls the overloaded main method with an integer argument
-                main(3.14);  // Calls the overloaded main method with a double argument
-            }
-        
-            public static void main(int num) {
-                System.out.println("Overloaded main method with int: " + num);
-            }
-        
-            public static void main(double num) {
-                System.out.println("Overloaded main method with double: " + num);
-            }
-        }
-                </code></pre>
+public class MainOverload {
+    public static void main(String[] args) {
+        System.out.println("Main method with String[] args");
+        main(10);    // Calls the overloaded main method with int
+        main(3.14);  // Calls the overloaded main method with double
+    }
+
+    public static void main(int num) {
+        System.out.println("Overloaded main method with int: " + num);
+    }
+
+    public static void main(double num) {
+        System.out.println("Overloaded main method with double: " + num);
+    }
+}
+            </code></pre>
         </details>
     </li>
-    
-    <li><span class="section-title">6. What is method overriding?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. The method in the subclass should have the same name, return type, and parameters as the method in the superclass.</p>
-        </details>
-    </li>
+
+
     
 
 </ul>
@@ -5548,6 +5436,27 @@ From class A
     });
   }
 
+  ///////////only display whatever we search such as easy , medium, hard ///////
+document.getElementById("searchInput").addEventListener("keyup", function () {
+    let filter = this.value.toLowerCase().trim();
+    let categories = document.getElementsByClassName("question-category");
+
+    for (let i = 0; i < categories.length; i++) {
+        let text = categories[i].textContent.toLowerCase();
+        
+        // If search box is empty, show all
+        if (filter === "") {
+            categories[i].style.display = "";
+        } 
+        // If heading matches search, show it; otherwise hide
+        else if (text.includes(filter)) {
+            categories[i].style.display = "";
+        } else {
+            categories[i].style.display = "none";
+        }
+    }
+}); 
+
 
 
 //////////////////////////////////////////////////////////////////////////////
@@ -5593,6 +5502,8 @@ From class A
             li[j].style.display = 'none'; // Hide non-matching list items
         }
     }
+
+    
 
     // Show a 'No results found' message if no items are visible
     if (noResultsMessage) {
