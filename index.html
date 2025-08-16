@@ -668,6 +668,7 @@ figcaption {
 
             <a href="#final">Final</a>
             <a href="#arrays">Arrays</a>
+            <a href="#arrays">String</a>
 
 
             
@@ -4055,145 +4056,159 @@ class NonStatic {
 
 <h1 id="abstraction">Abstraction</h1>
 <ul>
+
+<h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2> 
+
     <li>
         <span class="section-title">1. What is Abstraction?</span>
         <details>
             <summary>Answer</summary>
             <p>
-                Abstraction is the process of designing a system that provides only the most essential features of a project while hiding its implementation details. This concept is known as abstraction.
+                <b><u>Abstraction</u></b> is the process of designing a system that provides only the <b><u>essential features</u></b> while hiding its <b><u>implementation details</u></b>.  
                 <br><br>
-                Or
-                <br><br>
-                Abstraction in Java hides the complex implementation details and exposes only the essential features of an object to the outside world, simplifying the representation of real-world entities in the software.
+                In Java, <b><u>abstraction</u></b> hides complex details and exposes only the <b><u>necessary behavior</u></b> of objects.
             </p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">2. How to achieve abstraction?</span>
+        <span class="section-title">2. What is an abstract method?</span>
         <details>
             <summary>Answer</summary>
             <p>
-                1. Abstract Classes <br>
-                2. Interfaces
+                An <b><u>abstract method</u></b> is a <b><u>method without implementation</u></b> (no body), <b><u>prefixed with the abstract keyword</u></b>, and ends with a <b><u>semicolon</u></b>.
             </p>
         </details>
     </li>
-<!-- //////////////////////////////////////////////////// -->
 
-<li>
-    <span class="section-title">3. Types of methods?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>
-            1. Abstract method <br>
-            2. Concrete method
-        </p>
-    </details>
-</li>
+    <li>
+        <span class="section-title">3. What is the syntax of an abstract method?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>
+                <b><u>Syntax</u></b>:  
+                <br>
+                <code>access_modifier abstract return_type method_name(formal_arguments);</code>
+            </p>
+        </details>
+    </li>
 
-<li>
-    <span class="section-title">4. What is an abstract method?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>
-            A method without implementation details (Body),  <b><u>prefixed with the abstract modifier</u></b> and  <b><u>ending with a semicolon</u></b>, is called an abstract method.
-        </p>
-    </details>
-</li>
+    <li>
+        <span class="section-title">4. What is a concrete method?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>
+                A <b><u>concrete method</u></b> is a <b><u>method with implementation</u></b> (it contains a body).
+            </p>
+        </details>
+    </li>
 
-<li>
-    <span class="section-title">5. What is the syntax of an abstract method?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>
-            access modifier abstract return type method name (formal arguments);
-        </p>
-    </details>
-</li>
+    <li>
+        <span class="section-title">5. What is an abstract class?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>
+                An <b><u>abstract class</u></b> is a <b><u>class declared with the abstract keyword</u></b> that may contain <b><u>abstract methods</u></b>.
+            </p>
+        </details>
+    </li>
 
-<li>
-    <span class="section-title">6. Can we declare an abstract method like this: access modifier return type abstract method name (formal arguments)?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>No</p>
-    </details>
-</li>
+    <li>
+        <span class="section-title">6. What is a concrete class?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>
+                A <b><u>concrete class</u></b> is a <b><u>normal class</u></b> that provides <b><u>implementation for all methods</u></b>.
+            </p>
+        </details>
+    </li>
 
-<li>
-    <span class="section-title">7. What is a concrete method?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>
-            A method with implementation details is known as a concrete method.
-        </p>
-    </details>
-</li>
 
-<li>
-    <span class="section-title">8. Can we put a body for an abstract method?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>No, we cannot.</p>
-    </details>
-</li>
+<h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
 
-<li>
-    <span class="section-title">9. Why can't we provide a body for an abstract method?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>
-            Abstract methods are meant to be implemented by subclasses, so they can't have a body.
-        </p>
-    </details>
-</li>
+    <li>
+        <span class="section-title">7. How to achieve abstraction?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>
+                Abstraction in Java can be achieved using:  
+                <br>1. <b><u>Abstract Classes</u></b>  
+                <br>2. <b><u>Interfaces</u></b>
+            </p>
+        </details>
+    </li>
 
-<li>
-    <span class="section-title">10. Types of classes?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>
-            1. Abstract class <br>
-            2. Concrete class
-        </p>
-    </details>
-</li>
+    <li>
+        <span class="section-title">8. Why can't we provide a body for an abstract method?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>
+                An <b><u>abstract method</u></b> is meant to be <b><u>implemented by subclasses</u></b>.  
+                Providing a body violates the principle of <b><u>abstraction</u></b>, hence it is not allowed.
+            </p>
+        </details>
+    </li>
 
-<li>
-    <span class="section-title">11. What is an abstract class?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>
-            A class prefixed with the abstract modifier that contains abstract methods is known as an abstract class.
-        </p>
-    </details>
-</li>
+    <li>
+        <span class="section-title">9. Why do we use abstraction?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>
+                We use <b><u>abstraction</u></b> to <b><u>hide implementation details</u></b> and show only <b><u>essential features</u></b>.  
+                It improves <b><u>code readability, maintainability, and security</u></b>.
+            </p>
+        </details>
+    </li>
 
-<li>
-    <span class="section-title">12. What is a concrete class?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>
-            A class not prefixed with the abstract modifier or that doesn't contain abstract methods is known as a concrete class.
-        </p>
-    </details>
-</li>
+<h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
 
-<li>
-    <span class="section-title">13. Why do we use abstraction?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>
-            Abstraction is used to hide implementation details and show only essential features, making code easier to understand and maintain.
-        </p>
-    </details>
-</li>
+    <li>
+        <span class="section-title">10. Can we declare an abstract method like this: access modifier return type abstract method name (formal arguments)?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>
+                <b><u>No</u></b>. The <b><u>abstract keyword</u></b> must appear <b><u>before the return type</u></b>.
+            </p>
+        </details>
+    </li>
 
-<li>
-    <span class="section-title">14. Simple program demonstrating abstraction?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>
+    <li>
+        <span class="section-title">11. Can we put a body for an abstract method?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>
+                <b><u>No</u></b>, abstract methods cannot have a body. They must be <b><u>implemented in the subclass</u></b>.
+            </p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">12. Types of methods?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>
+                1. <b><u>Abstract Methods</u></b>  
+                2. <b><u>Concrete Methods</u></b>
+            </p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">13. Types of classes?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>
+                1. <b><u>Abstract Class</u></b>  
+                2. <b><u>Concrete Class</u></b>
+            </p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">14. Simple program demonstrating abstraction?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>
 <pre><code>
 package module;
 
@@ -4249,18 +4264,16 @@ public class Driver {
     }
 }
 
-output
-
+/* Output:
 30
 -11
 This is from class B
 From class A
-
+*/
 </code></pre>
-        </p>
-    </details>
-</li>
-
+            </p>
+        </details>
+    </li>
 
 
 </ul>
@@ -4268,172 +4281,200 @@ From class A
 <h1 id="objectClass">Object Class</h1>
 <ul>
 
-    <li>
-        <span class="section-title">1. What is the Object class?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                The Object class is the superclass of all classes in Java. Any class directly or indirectly inherits the members of the Object class.
-            </p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">2. Where is the Object class present?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                java.lang package
-            </p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">3. How many methods does the Object class have?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                11
-            </p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">4. What are the methods of the Object class?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                The methods include: equals(), toString(), hashCode(), clone(), getClass(), notify(), notifyAll(), wait(), finalize(), and two overloaded versions of wait().
-            </p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">5. What is the supermost parent class in Java?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                Object class
-            </p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">6. Can we override the toString() method?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                Yes
-            </p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">7. What format does the toString() method return?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                String
-            </p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">8. Can you change the object reference? If yes, how?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                Yes, by overriding the toString() method.
-            </p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">9. When is the toString() method called?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                The toString() method is called automatically when an object reference is printed.
-            </p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">10. What does the toString() method return? What type?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                It returns a String.
-            </p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">11. Can you give an example of overriding the toString() method?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                Yes, when we override the toString() method of the Object class, we customize the object reference format. 
-            </p>
-        </details>
-    </li>
+    <!-- ===================== EASY LEVEL ===================== -->
 
-    <li>
-        <span class="section-title">12. Tell me the syntax of an object reference.</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                &lt;FullyQualifiedClassName@HexadecimalNumber&gt;
-            </p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">13. Can the parent class extend any class, and which one?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                Yes, the Object class.
-            </p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">14. Which method is used for garbage collection?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                finalize().
-            </p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">15. Which method is deprecated?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                finalize().
-            </p>
-        </details>
-    </li>
+<h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>    
+<li>
+    <span class="section-title">1. What is the Object class?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            The <b><u>Object class</u></b> is the <b><u>superclass of all classes</u></b> in Java. Any class directly or indirectly <b><u>inherits</u></b> the members of the Object class.
+        </p>
+    </details>
+</li>
 
-    <li>
-        <span class="section-title">16. Which method is deprecated?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>
-                Thread.stop()<br>
-                Thread.suspend()<br>
-                Thread.resume()<br>
-                System.runFinalizersOnExit(boolean value)<br>
-                Date.parse(String s)<br>
-                Date.getYear(), Date.getMonth(), Date.getDay()<br>
-                Object.finalize()
-            </p>
-        </details>
-    </li>
-    
+<li>
+    <span class="section-title">2. What are the methods of the Object class?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            The methods include: <b><u>equals()</u></b>, <b><u>toString()</u></b>, <b><u>hashCode()</u></b>, <b><u>clone()</u></b>, <b><u>getClass()</u></b>, <b><u>notify()</u></b>, <b><u>notifyAll()</u></b>, <b><u>wait()</u></b>, <b><u>finalize()</u></b>, and two overloaded versions of <b><u>wait()</u></b>.
+        </p>
+    </details>
+</li>
+
+<li>
+    <span class="section-title">3. What is the supermost parent class in Java?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            The <b><u>Object class</u></b> is the <b><u>supermost parent</u></b> class in Java.
+        </p>
+    </details>
+</li>
+
+<li>
+    <span class="section-title">4. What format does the toString() method return?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            The <b><u>toString()</u></b> method returns a <b><u>String</u></b> format.
+        </p>
+    </details>
+</li>
+
+<li>
+    <span class="section-title">5. What does the toString() method return? What type?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            It returns a <b><u>String</u></b> type.
+        </p>
+    </details>
+</li>
+
+<li>
+    <span class="section-title">6. What is the syntax of an object reference?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            The syntax is: <b><u>&lt;FullyQualifiedClassName@HexadecimalNumber&gt;</u></b>
+        </p>
+    </details>
+</li>
+
+<li>
+    <span class="section-title">7. What is the method used for garbage collection?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            The <b><u>finalize()</u></b> method is used for <b><u>garbage collection</u></b>.
+        </p>
+    </details>
+</li>
+
+<li>
+    <span class="section-title">8. What are some deprecated methods in Java?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            <b><u>Thread.stop()</u></b>, <b><u>Thread.suspend()</u></b>, <b><u>Thread.resume()</u></b>, <b><u>System.runFinalizersOnExit(boolean value)</u></b>, <b><u>Date.parse(String s)</u></b>, <b><u>Date.getYear()</u></b>, <b><u>Date.getMonth()</u></b>, <b><u>Date.getDay()</u></b>, <b><u>Object.finalize()</u></b>.
+        </p>
+    </details>
+</li>
+
+<!-- ===================== MEDIUM LEVEL ===================== -->
+
+<h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+<li>
+    <span class="section-title">9. How many methods does the Object class have?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            The <b><u>Object class</u></b> has <b><u>11 methods</u></b>.
+        </p>
+    </details>
+</li>
+
+<li>
+    <span class="section-title">10. How to override the toString() method?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            We can override <b><u>toString()</u></b> in our class to <b><u>customize object reference output</u></b> in a <b><u>String</u></b> format.
+        </p>
+    </details>
+</li>
+
+<li>
+    <span class="section-title">11. Why is the Object class important?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            The <b><u>Object class</u></b> provides <b><u>common methods</u></b> (like equals(), hashCode(), toString()) that all classes can <b><u>inherit</u></b> and override if needed, ensuring <b><u>reusability and consistency</u></b>.
+        </p>
+    </details>
+</li>
+
+<!-- ===================== HARD LEVEL ===================== -->
+
+<h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+<li>
+    <span class="section-title">12. When is the toString() method called?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            The <b><u>toString()</u></b> method is called <b><u>automatically</u></b> when an <b><u>object reference is printed</u></b>.
+        </p>
+    </details>
+</li>
+
+<li>
+    <span class="section-title">13. Can we override the toString() method?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            Yes, we can <b><u>override</u></b> the <b><u>toString()</u></b> method to <b><u>customize</u></b> how an object is represented.
+        </p>
+    </details>
+</li>
+
+<li>
+    <span class="section-title">14. Can you change the object reference? If yes, how?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            Yes, by <b><u>overriding</u></b> the <b><u>toString()</u></b> method, we can <b><u>change</u></b> the object reference representation.
+        </p>
+    </details>
+</li>
+
+<li>
+    <span class="section-title">15. Can you give an example of overriding the toString() method?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+<pre><code>
+class Student {
+    int id;
+    String name;
+
+    Student(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Student[ID=" + id + ", Name=" + name + "]";
+    }
+}
+
+public class Driver {
+    public static void main(String[] args) {
+        Student s1 = new Student(101, "Rahul");
+        System.out.println(s1); // toString() called automatically
+    }
+}
+
+Output:
+Student[ID=101, Name=Rahul]
+</code></pre>
+        </p>
+    </details>
+</li>
+
+<li>
+    <span class="section-title">16. Can the parent class extend any class, and which one?</span>
+    <details>
+        <summary>Answer</summary>
+        <p>
+            Yes, the <b><u>parent class</u></b> extends <b><u>Object class</u></b>, which is the <b><u>root</u></b> of all classes in Java.
+        </p>
+    </details>
+</li>
+
     
     <!-- <li>
         <span class="section-title">17. ?</span>
@@ -4456,409 +4497,410 @@ From class A
 
 <ul>
 
+<h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+    
     <li>
         <span class="section-title">1. What is an interface?</span>
         <details>
             <summary>Answer</summary>
-            <p>Interface is java member ,An interface in Java is used to achieve pure abstraction. Concrete non-static methods are not allowed in an interface.</p>
+            <p>An <b><u>interface</u></b> in Java is used to achieve <b><u>pure abstraction</u></b>. Concrete non-static methods are not allowed in an interface.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">2. Why do we use an interface?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>1. To achieve multiple inheritance.</p>
-            <p>2. To enforce a contract for implementing classes.</p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">3. What can we create inside an interface?</span>
+        <span class="section-title">2. What can we create inside an interface?</span>
         <details>
             <summary>Answer</summary>
             <p>
-                - Public non-static abstract methods.<br>
-                - Public static final variables.<br>
-                - Default methods.<br>
-                - Static methods.<br>
-                - Private methods (since Java 9).<br>
-                - Private static methods (since Java 9).<br>
-                - Nested types (interfaces, classes, enums).<br>
-                - Constant declarations.<br>
-                - Public methods (by default).<br>
-                - Abstract methods (implicitly public).
+                - <b><u>Public non-static abstract methods</u></b><br>
+                - <b><u>Public static final variables</u></b><br>
+                - <b><u>Default methods</u></b><br>
+                - <b><u>Static methods</u></b><br>
+                - <b><u>Private methods</u></b> (since Java 9)<br>
+                - <b><u>Private static methods</u></b> (since Java 9)<br>
+                - <b><u>Nested types</u></b> (interfaces, classes, enums)<br>
+                - <b><u>Constant declarations</u></b><br>
+                - <b><u>Public methods</u></b> (by default)<br>
+                - <b><u>Abstract methods</u></b> (implicitly public)
             </p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">4. List 10 things we cannot create inside an interface?</span> 
+        <span class="section-title">3. What is a marker interface?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>A <b><u>marker interface</u></b> is an interface with <b><u>no methods or fields</u></b>. It signals to the JVM or compiler that the class implementing it should be treated differently (e.g., <b><u>Serializable</u></b>, <b><u>Cloneable</u></b>).</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">4. What is the difference between abstract classes and interfaces?</span>
         <details>
             <summary>Answer</summary>
             <p>
-                - Constructors<br>
-                - Instance fields (non-static fields)<br>
-                - Non-public methods (e.g., protected methods)<br>
-                - Non-final variables<br>
-                - Static blocks<br>
-                - Instance blocks<br>
-                - Private constructors<br>
-                - Non-abstract methods (without default or static keywords)<br>
-                - Multiple inheritance (in terms of classes)<br>
-                - Static initializers
+                1. <b><u>Abstract classes</u></b> can have both abstract and non-abstract methods.<br>
+                2. <b><u>Interfaces</u></b> could only have abstract methods until Java 8 allowed default and static methods.
             </p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">5. Why can we not create a constructor inside an interface?</span>
+        <span class="section-title">5. What is the parent class of an interface?</span>
         <details>
             <summary>Answer</summary>
-            <p>We cannot create a constructor inside an interface because interfaces cannot be instantiated. Constructors are meant for initializing objects, which interfaces do not do. Classes that implement interfaces provide their own constructors.</p>
+            <p>There is <b><u>no parent class</u></b> of an interface. By default, every interface extends <b><u>Object</u></b> indirectly.</p>
         </details>
     </li>
 
-    
+    <!-- ================= MEDIUM QUESTIONS ================= -->
 
-    
-    <ul>
-        <li>
-            <span class="section-title">6. Why can we not create a static block inside an interface?</span>
-            <details>
-                <summary>Answer</summary>
-                <p>
-                    We cannot create a static block in an interface because interfaces do not allow initialization code. 
-                    They are meant to define method signatures, not implement logic.
-                </p>
-            </details>
-        </li>
-    
-        <li>
-            <span class="section-title">7. Can any member inside an interface be private by default?</span>
-            <details>
-                <summary>Answer</summary>
-                <p>No, it can only be public by default.</p>
-            </details>
-        </li>
-    
-        <li>
-            <span class="section-title">8. Why are concrete methods not allowed in an interface?</span>
-            <details>
-                <summary>Answer</summary>
-                <p>Concrete methods are not allowed in interfaces to ensure that classes define their own method implementations.</p>
-            </details>
-        </li>
-    
-        <li>
-            <span class="section-title">9. Are non-static methods by default public and abstract or final in an interface?</span>
-            <details>
-                <summary>Answer</summary>
-                <p>No, they are public and abstract by default, not final.</p>
-            </details>
-        </li>
-    
-        <li>
-            <span class="section-title">10. We want to achieve inheritance between two classes, which keyword can we use?</span>
-            <details>
-                <summary>Answer</summary>
-                <p>
-                    extends
-                </p>
-            </details>
-        </li>
-        
-    
-        <li>
-            <span class="section-title">11. What is a marker interface?</span>
-            <details>
-                <summary>Answer</summary>
-                <p>
-                    A marker interface is an interface with no methods or fields. It is used to signal to the JVM or compiler that the class implementing it should be treated differently (e.g., `Serializable` or `Cloneable`).
-                </p>
-            </details>
-        </li>
-        
-    
-        <li>
-            <span class="section-title">12. What is the difference between abstract classes and interfaces?</span>
-            <details>
-                <summary>Answer</summary>
-                <p>
-                    1. Abstract classes can have both abstract and non-abstract methods.<br>
-                    2. Interfaces could only have abstract methods until Java 8 allowed default and static methods.
-                </p>
-            </details>
-        </li>
-    
-        <li>
-            <span class="section-title">13. Is there a parent class of an interface?</span>
-            <details>
-                <summary>Answer</summary>
-                <p>No.</p>
-            </details>
-        </li>
-    
-        <li>
-            <span class="section-title">14. How can we use multiple interfaces in a class?</span>
-            <details>
-                <summary>Answer</summary>
-                <p>
-                    1. A class can implement multiple interfaces.<br>
-                    2. This allows a class to inherit behavior from multiple sources.
-                </p>
-            </details>
-        </li>
-    
-        <li>
-            <span class="section-title">15. Can an interface inherit a class?</span>
-            <details>
-                <summary>Answer</summary>
-                <p>No.</p>
-            </details>
-        </li>
-    
-        <li>
-            <span class="section-title">16. Can we create an object of an interface?</span>
-            <details>
-                <summary>Answer</summary>
-                <p>No.</p>
-            </details>
-        </li>
-    </ul>
-    
-    
+<h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>    
 
+    <li>
+        <span class="section-title">6. Why do we use an interface?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>1. To achieve <b><u>multiple inheritance</u></b>.<br>
+               2. To enforce a <b><u>contract</u></b> for implementing classes.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">7. Why can we not create a constructor inside an interface?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>We cannot create a <b><u>constructor</u></b> inside an interface because <b><u>interfaces cannot be instantiated</u></b>. Constructors are meant for initializing objects, which interfaces do not do.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">8. Why can we not create a static block inside an interface?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>We cannot create a <b><u>static block</u></b> in an interface because interfaces do not allow <b><u>initialization code</u></b>. They are meant to define <b><u>method signatures</u></b>, not implement logic.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">9. Why are concrete methods not allowed in an interface?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>Concrete methods</u></b> are not allowed in interfaces to ensure that <b><u>implementing classes</u></b> define their own method implementations.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">10. How can we use multiple interfaces in a class?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>A class can <b><u>implement multiple interfaces</u></b>. This allows a class to inherit behavior from <b><u>multiple sources</u></b>.</p>
+        </details>
+    </li>
+
+    <!-- ================= HARD QUESTIONS ================= -->
+    
+<h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+        <span class="section-title">11. Can any member inside an interface be private by default?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>No, members can only be <b><u>public</u></b> by default, not private.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">12. Can non-static methods be final in an interface?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>No, they are always <b><u>public and abstract</u></b> by default, never final.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">13. Can an interface inherit a class?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>No, an <b><u>interface</u></b> cannot inherit a class. It can only <b><u>extend other interfaces</u></b>.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">14. Can we create an object of an interface?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>No, we cannot <b><u>instantiate</u></b> an interface directly. We must use a <b><u>class</u></b> that implements it.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">15. We want to achieve inheritance between two classes, which keyword can we use?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>We use the <b><u>extends</u></b> keyword to achieve inheritance between two classes.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">16. List 10 things we cannot create inside an interface?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>
+                - <b><u>Constructors</u></b><br>
+                - <b><u>Instance fields</u></b> (non-static fields)<br>
+                - <b><u>Non-public methods</u></b> (e.g., protected methods)<br>
+                - <b><u>Non-final variables</u></b><br>
+                - <b><u>Static blocks</u></b><br>
+                - <b><u>Instance blocks</u></b><br>
+                - <b><u>Private constructors</u></b><br>
+                - <b><u>Non-abstract methods</u></b> (without default or static keywords)<br>
+                - <b><u>Multiple inheritance</u></b> (in terms of classes)<br>
+                - <b><u>Static initializers</u></b>
+            </p>
+        </details>
+    </li>
 </ul>
 
 
 <h1 id="exception">Exception And Exception Handling</h1>
 <ul>
+    <!-- ================= EASY LEVEL ================= -->
+<h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
     <li>
         <span class="section-title">1. What is an exception?</span>
         <details>
             <summary>Answer</summary>
-            <p>An exception is a problem that occurs during the execution of software due to an abnormal situation.</p>
+            <p>An <b><u>exception</u></b> is a problem that occurs during the execution of software due to an <b><u>abnormal situation</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">2. Types of exceptions</span>
+        <span class="section-title">2. What is a checked exception?</span>
         <details>
             <summary>Answer</summary>
-            <p>1. Checked exception<br>2. Unchecked exception</p>
+            <p><b><u>Checked exceptions</u></b> are those that the <b><u>compiler</u></b> checks during <b><u>compilation</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">3. What is a checked exception?</span>
+        <span class="section-title">3. What is an unchecked exception?</span>
         <details>
             <summary>Answer</summary>
-            <p>Exceptions that the compiler checks during compilation are called checked exceptions.</p>
+            <p><b><u>Unchecked exceptions</u></b> are those that the <b><u>compiler</u></b> does not check during <b><u>compilation</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">4. What is an unchecked exception?</span>
+        <span class="section-title">4. What is the difference between exception and error?</span>
         <details>
             <summary>Answer</summary>
-            <p>Exceptions that the compiler does not check during compilation are called unchecked exceptions.</p>
+            <p><b><u>Exceptions</u></b> are <b><u>recoverable</u></b> issues, while <b><u>errors</u></b> are generally <b><u>unrecoverable</u></b> issues related to <b><u>system resources</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">5. Types of exceptions in Java</span>
+        <span class="section-title">5. What is exception handling?</span>
         <details>
             <summary>Answer</summary>
-            <p>1. ArithmeticException<br>2. ClassCastException<br>3. NullPointerException<br>4. ArrayIndexOutOfBoundsException<br>5. IllegalArgumentException<br>6. NumberFormatException<br>7. IOException</p>
+            <p><b><u>Exception handling</u></b> is a mechanism used to <b><u>continue execution flow</u></b> when exceptions occur. It is done using a <b><u>try-catch block</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">6. What is the difference between exception and error?</span>
+        <span class="section-title">6. What is the parent class of Throwable?</span>
         <details>
             <summary>Answer</summary>
-            <p>Exceptions are recoverable issues, while errors are generally unrecoverable issues related to system resources.</p>
+            <p>The <b><u>Object</u></b> class is the parent class of <b><u>Throwable</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">7. Which classes belong to exceptions?</span>
+        <span class="section-title">7. What is the order of declaring exceptions in multiple catch blocks?</span>
         <details>
             <summary>Answer</summary>
-            <p>All exceptions are subclasses of the Throwable class.</p>
+            <p>The order should be from the <b><u>most specific</u></b> exception type to the <b><u>most general</u></b>. This ensures that specific exceptions are handled first, preventing <b><u>unreachable code</u></b> issues.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">8. What is the parent class of Throwable?</span>
+        <span class="section-title">8. What is exception object propagation?</span>
         <details>
             <summary>Answer</summary>
-            <p>The Object class is the parent class of Throwable.</p>
+            <p>Exception object propagation is the process of <b><u>moving</u></b> an exception from the <b><u>called method</u></b> to the <b><u>calling method</u></b> when it is not handled. This allows it to be caught at <b><u>higher levels</u></b> in the call stack.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">9. What exceptions are caught by Throwable?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>Throwable</u></b> is the superclass of all <b><u>errors</u></b> and <b><u>exceptions</u></b> in Java. It can catch both <b><u>checked</u></b> and <b><u>unchecked</u></b> exceptions, as well as errors.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">10. What is the difference between Throwable and Exception classes?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>Throwable</u></b> is the <b><u>superclass</u></b> of all exceptions and errors, while <b><u>Exception</u></b> is a subclass of Throwable representing <b><u>recoverable issues</u></b>. Errors usually represent <b><u>unrecoverable issues</u></b>.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">11. What is a pattern class of exception?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>A pattern class of an exception refers to <b><u>design patterns</u></b> used in handling exceptions, such as <b><u>Singleton</u></b> for custom exceptions.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">12. What is 'throws'?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>The <b><u>'throws'</u></b> keyword is used in <b><u>method declarations</u></b> to specify that a method can throw certain <b><u>checked exceptions</u></b>. These must be handled by the <b><u>caller</u></b>.</p>
         </details>
     </li>
 
 
-<!-- //////////////////////////////////////////////////////////////////// -->
 
-<li>
-    <span class="section-title">9. What is exception handling?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>Exception handling is a mechanism used to continue the flow of execution when exceptions occur in Java. We can handle exceptions with the help of a try-catch block.</p>
-    </details>
-</li>
+<!-- ================= MEDIUM LEVEL ================= -->
+<h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
 
-<li>
-    <span class="section-title">10. When does the catch block execute?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>The catch block executes when an exception is thrown within the try block.</p>
-    </details>
-</li>
+    <li>
+        <span class="section-title">13. How many catch blocks can we create?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>We can create <b><u>multiple catch blocks</u></b> for handling <b><u>different exceptions</u></b>.</p>
+        </details>
+    </li>
 
-<li>
-    <span class="section-title">11. How many catch blocks can we create?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>We can create multiple catch blocks for handling different exceptions.</p>
-    </details>
-</li>
+    <li>
+        <span class="section-title">14. How can you handle multiple exceptions?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>We can handle <b><u>multiple exceptions</u></b> using a <b><u>try block</u></b> with <b><u>multiple catch blocks</u></b>.</p>
+        </details>
+    </li>
 
-<li>
-    <span class="section-title">12. Can we create a catch block without a try block?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>No, a catch block must always be associated with a try block.</p>
-    </details>
-</li>
+    <li>
+        <span class="section-title">15. How many catch blocks can execute at a time?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Only <b><u>one catch block</u></b> executes for a given <b><u>exception</u></b>.</p>
+        </details>
+    </li>
 
-<li>
-    <span class="section-title">13. How can you handle multiple exceptions?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>We can handle multiple exceptions using a try block with multiple catch blocks.</p>
-    </details>
-</li>
+     <li>
+        <span class="section-title">16. How can we declare an exception?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>We declare an exception using the <b><u>'throws'</u></b> keyword in a <b><u>method signature</u></b> to indicate that the method may throw specific exceptions that must be handled by the caller.</p>
+        </details>
+    </li>
 
-<li>
-    <span class="section-title">14. Is the same package used for all exceptions?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>No, different exceptions belong to different packages.</p>
-    </details>
-</li>
-
-<li>
-    <span class="section-title">15. How many catch blocks can execute at a time?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>Only one catch block can execute per exception.</p>
-    </details>
-</li>
-
-<li>
-    <span class="section-title">16. When do we use a finally block?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>The finally block is executed after the try block, regardless of whether an exception is caught. It is often used for cleanup operations.</p>
-    </details>
-</li>
-
-<li>
-    <span class="section-title">17. Can we use a finally block without a try-catch block?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>No, we cannot use a finally block without a try-catch block.</p>
-    </details>
-</li>
-
-<li>
-    <span class="section-title">18. Can we use a finally block without a try block?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>No, a finally block must be associated with a try block.</p>
-    </details>
-</li>
-
-<li>
-    <span class="section-title">19. When does the finally block not execute?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>The finally block does not execute if the program exits before reaching it, for example, due to a System.exit() call or an exception occurring outside the try block.</p>
-    </details>
-</li>
-
-<li>
-    <span class="section-title">20. Give me a real-life example of using a try-catch block and finally.</span>
-    <details>
-        <summary>Answer</summary>
-        <p>Example: Handling a database connection error and ensuring resources are closed in the finally block.</p>
-    </details>
-</li>
-
-
-<!-- ///////////////////////////////////////////////////////////// -->
-
-<li>
-    <span class="section-title">21. What is the order of declaring exceptions in multiple catch blocks?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>The order should be from the most specific exception type to the most general. This ensures that specific exceptions are handled before broader ones, preventing unreachable code issues.</p>
-    </details>
-</li>
-
-<li>
-    <span class="section-title">22. What is exception object propagation?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>Exception object propagation is the process of moving an exception object from the called method to the calling method when the exception is not handled. This allows the exception to be caught at higher levels in the call stack.</p>
-    </details>
-</li>
-
-<li>
-    <span class="section-title">23. Which exceptions are caught by Throwable?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>Throwable is the superclass of all errors and exceptions in Java. It can catch both checked and unchecked exceptions, as well as errors, though it's typically used to catch exceptions.</p>
-    </details>
-</li>
-
-<li>
-    <span class="section-title">24. What is the difference between Throwable and Exception classes?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>Throwable is the superclass of all exceptions and errors, while Exception is a subclass of Throwable that represents recoverable issues. Errors, also under Throwable, typically represent unrecoverable issues.</p>
-    </details>
-</li>
-
-<li>
-    <span class="section-title">25. What is a pattern class of exception?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>The pattern class of an exception refers to specific design patterns used for handling exceptions, such as the Singleton pattern for creating custom exception instances.</p>
-    </details>
-</li>
-
-<li>
-    <span class="section-title">26. What is 'throws'?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>The 'throws' keyword is used in method declarations to specify that the method can throw particular checked exceptions, allowing them to be handled by the calling method or propagated up the call stack.</p>
-    </details>
-</li>
-
-<li>
-    <span class="section-title">27. How can we declare an exception?</span>
-    <details>
-        <summary>Answer</summary>
-        <p>We declare an exception using the 'throws' keyword in a method signature to indicate that the method may throw specific exceptions that should be handled by the caller.</p>
-    </details>
-</li>
+    <li>
+        <span class="section-title">17. Give me a real-life example of using a try-catch block and finally.</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Example: Handling a <b><u>database connection error</u></b> inside a <b><u>try-catch</u></b> block and ensuring resources are closed in the <b><u>finally</u></b> block.</p>
+        </details>
+    </li>
 
 
 
+<!-- ================= HARD LEVEL ================= -->
+<h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
 
+    <li>
+        <span class="section-title">18. When does the catch block execute?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>The <b><u>catch block</u></b> executes when an <b><u>exception</u></b> is <b><u>thrown</u></b> inside the <b><u>try block</u></b>.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">19. Can we create a catch block without a try block?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>No, a <b><u>catch block</u></b> must always be associated with a <b><u>try block</u></b>.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">20. Types of exceptions</span>
+        <details>
+            <summary>Answer</summary>
+            <p>1. <b><u>Checked exception</u></b><br>2. <b><u>Unchecked exception</u></b></p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">21. Types of exceptions in Java</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Examples:<br>
+               1. <b><u>ArithmeticException</u></b><br>
+               2. <b><u>ClassCastException</u></b><br>
+               3. <b><u>NullPointerException</u></b><br>
+               4. <b><u>ArrayIndexOutOfBoundsException</u></b><br>
+               5. <b><u>IllegalArgumentException</u></b><br>
+               6. <b><u>NumberFormatException</u></b><br>
+               7. <b><u>IOException</u></b>
+            </p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">22. Which classes belong to exceptions?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>All <b><u>exceptions</u></b> are subclasses of the <b><u>Throwable</u></b> class.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">23. Is the same package used for all exceptions?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>No, <b><u>different exceptions</u></b> belong to <b><u>different packages</u></b>.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">24. When do we use a finally block?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>The <b><u>finally block</u></b> executes after the <b><u>try block</u></b>, regardless of whether an exception occurs. It is used for <b><u>cleanup operations</u></b>.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">25. Can we use a finally block without a try-catch block?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>No</u></b>, a <b><u>finally block</u></b> cannot exist without a <b><u>try-catch</u></b> block.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">26. Can we use a finally block without a try block?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>No</u></b>, a <b><u>finally block</u></b> must be associated with a <b><u>try block</u></b>.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">27. When does the finally block not execute?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>The <b><u>finally block</u></b> does not execute if the program <b><u>exits</u></b> early using <b><u>System.exit()</u></b> or if an <b><u>exception</u></b> occurs outside the try block.</p>
+        </details>
+    </li>
 
 </ul>
 
@@ -4869,103 +4911,114 @@ From class A
 <ul>
 
 
+    <!-- ================== EASY LEVEL ================== -->
+<h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
     <li>
         <span class="section-title">1. What is a wrapper class?</span>
         <details>
             <summary>Answer</summary>
-            <p>Wrapper classes in Java, found in the <code>java.lang</code> package, are used to convert primitive data types into their respective non-primitive types (objects).</p>
+            <p><b><u>Wrapper classes</u></b> in Java (in <b><u>java.lang</u></b> package) are used to <b><u>convert primitive data types</u></b> into their respective <b><u>object types</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">2. Why do we use wrapper classes?</span>
+        <span class="section-title">2. What is boxing?</span>
         <details>
             <summary>Answer</summary>
-            <p>Wrapper classes allow us to use primitive data types as objects, enabling compatibility with Java’s collections framework and supporting features like autoboxing.</p>
+            <p><b><u>Boxing</u></b> is the process of converting a <b><u>primitive data type</u></b> into its corresponding <b><u>wrapper class object</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">3. What is boxing?</span>
+        <span class="section-title">3. What is unboxing?</span>
         <details>
             <summary>Answer</summary>
-            <p>Boxing is the process of converting a primitive data type into its corresponding wrapper class type (object).</p>
+            <p><b><u>Unboxing</u></b> is the process of converting a <b><u>wrapper class object</u></b> back into its corresponding <b><u>primitive type</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">4. What is unboxing?</span>
+        <span class="section-title">4. What is autoboxing?</span>
         <details>
             <summary>Answer</summary>
-            <p>Unboxing is the process of converting a wrapper class object back to its corresponding primitive type.</p>
+            <p><b><u>Autoboxing</u></b>, introduced in <b><u>JDK 1.5</u></b>, automatically converts <b><u>primitive types</u></b> into their <b><u>wrapper objects</u></b> without explicit coding.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">5. Which methods are overridden by wrapper classes?</span>
+        <span class="section-title">5. What is parsing?</span>
         <details>
             <summary>Answer</summary>
-            <p>The <code>toString</code>, <code>equals</code>, and <code>hashCode</code> methods of the Object class are overridden by wrapper classes.</p>
+            <p><b><u>Parsing</u></b> is the process of converting a <b><u>string</u></b> into its corresponding <b><u>primitive type</u></b>, e.g., <code>Integer.parseInt("10")</code>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">6. Which interfaces do wrapper classes implement?</span>
+        <span class="section-title">6. What is a NumberFormatException?</span>
         <details>
             <summary>Answer</summary>
-            <p>Wrapper classes implement the <code>Serializable</code> and <code>Comparable</code> interfaces.</p>
+            <p><b><u>NumberFormatException</u></b> occurs when a <b><u>string</u></b> that is not properly formatted as a <b><u>number</u></b> is converted, e.g., <code>Integer.parseInt("abc")</code>.</p>
         </details>
     </li>
-    
+
+
+<!-- ================== MEDIUM LEVEL ================== -->
+<h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
     <li>
-        <span class="section-title">7. What is autoboxing?</span>
+        <span class="section-title">7. Why do we use wrapper classes?</span>
         <details>
             <summary>Answer</summary>
-            <p>Introduced in JDK 1.5, autoboxing automatically converts primitives to their respective wrapper types without explicit boxing.</p>
+            <p><b><u>Wrapper classes</u></b> allow <b><u>primitive types</u></b> to be used as <b><u>objects</u></b>, enabling compatibility with <b><u>Collections framework</u></b> and supporting <b><u>autoboxing</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
         <span class="section-title">8. How do we convert primitive data to a string?</span>
         <details>
             <summary>Answer</summary>
-            <p>We can use the <code>valueOf</code> method to convert primitive data to a string.</p>
+            <p>We use <b><u>valueOf()</u></b> method to convert a <b><u>primitive</u></b> into a <b><u>string</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">9. What is parsing?</span>
+        <span class="section-title">9. How can we convert a string back to a primitive type?</span>
         <details>
             <summary>Answer</summary>
-            <p>Parsing is the process of converting a string to its corresponding primitive type, such as using <code>Integer.parseInt()</code> to convert a string to an int.</p>
+            <p>We use <b><u>parsing methods</u></b> such as <code>Integer.parseInt()</code> or <code>Double.parseDouble()</code> to convert a <b><u>string</u></b> back to a <b><u>primitive type</u></b>.</p>
         </details>
     </li>
-    
+</ol>
+
+<!-- ================== HARD LEVEL ================== -->
+<h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
     <li>
-        <span class="section-title">10. How can we convert a string back to a primitive type?</span>
+        <span class="section-title">10. Which methods are overridden by wrapper classes?</span>
         <details>
             <summary>Answer</summary>
-            <p>We use parsing methods, such as <code>Integer.parseInt()</code> for int and <code>Double.parseDouble()</code> for double.</p>
+            <p><b><u>Wrapper classes</u></b> override methods from <b><u>Object class</u></b> such as <b><u>toString()</u></b>, <b><u>equals()</u></b>, and <b><u>hashCode()</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">11. Give an example of parsing to byte and char.</span>
+        <span class="section-title">11. Which interfaces do wrapper classes implement?</span>
         <details>
             <summary>Answer</summary>
-            <p>For byte: <code>Byte.parseByte("10")</code>; for char: parsing to char is indirect, by getting the char at an index in a string, e.g., <code>"A".charAt(0)</code>.</p>
+            <p><b><u>Wrapper classes</u></b> implement <b><u>Serializable</u></b> and <b><u>Comparable</u></b> interfaces.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">12. What is a NumberFormatException?</span>
+        <span class="section-title">12. Give an example of parsing to byte and char.</span>
         <details>
             <summary>Answer</summary>
-            <p>A <code>NumberFormatException</code> occurs when an attempt is made to convert a string that is not properly formatted as a number, such as trying to parse "abc" as an integer.</p>
+            <p>For <b><u>byte</u></b>: <code>Byte.parseByte("10")</code>.  
+               For <b><u>char</u></b>: indirectly using <code>"A".charAt(0)</code>.</p>
         </details>
     </li>
-    
-    
+
 
 </ul>
 
@@ -4974,154 +5027,169 @@ From class A
 <h1 id="modifiers">Modifiers</h1>
 <ul>
 
+    
+
+    <!-- ================= EASY LEVEL ================= -->
+
+<h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
     <li>
         <span class="section-title">1. What is a modifier?</span>
         <details>
             <summary>Answer</summary>
-            <p>A modifier is a keyword used to alter the behavior or accessibility of Java members, such as variables, methods, and classes.</p>
+            <p>A <b><u>modifier</u></b> is a <b><u>keyword</u></b> used to <b><u>alter the behavior</u></b> or <b><u>accessibility</u></b> of Java members, such as variables, methods, and classes.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">2. Types of modifiers</span>
+        <span class="section-title">2. What is an access modifier?</span>
         <details>
             <summary>Answer</summary>
-            <p>1. Access Modifiers <br>
-               2. Non-Access Modifiers</p>
+            <p>An <b><u>access modifier</u></b> is a <b><u>keyword</u></b> that <b><u>controls visibility</u></b> of Java members based on their scope.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">3. What is an access modifier?</span>
+        <span class="section-title">3. What is a private member?</span>
         <details>
             <summary>Answer</summary>
-            <p>An access modifier is a keyword that controls the visibility of Java members based on their scope.</p>
+            <p>A <b><u>private member</u></b> is a class member declared with the <code>private</code> modifier, making it <b><u>accessible only within the same class</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">4. Types of access modifiers</span>
+        <span class="section-title">4. What is a default member?</span>
         <details>
             <summary>Answer</summary>
-            <p>1. Public<br>
-               2. Private<br>
-               3. Protected<br>
-               4. Default</p>
+            <p>A <b><u>default member</u></b> is one without an explicit access modifier, making it <b><u>accessible only within the same package</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">5. What is a private member?</span>
+        <span class="section-title">5. What is the visibility of a default member?</span>
         <details>
             <summary>Answer</summary>
-            <p>A private member is a class member prefixed with the <code>private</code> access modifier, limiting its visibility to within the same class.</p>
+            <p>A <b><u>default member</u></b> is <b><u>accessible within the same package only</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">6. What can be made private?</span>
+        <span class="section-title">6. What is protected in Java?</span>
         <details>
             <summary>Answer</summary>
-            <p>Variables, methods, and constructors can be made private.</p>
+            <p><b><u>Protected</u></b> is an access modifier that allows <b><u>visibility within the same package</u></b> and <b><u>subclasses in other packages</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">7. Can a private member be accessed outside the class?</span>
+        <span class="section-title">7. What is public in Java?</span>
         <details>
             <summary>Answer</summary>
-            <p>No, a private member cannot be accessed in a different class or subclass within the same package.</p>
+            <p><b><u>Public</u></b> is an access modifier that makes a member <b><u>accessible from any class</u></b> in <b><u>any package</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">8. Can a private member be accessed in a different class or subclass of the same package?</span>
+        <span class="section-title">8. What modifiers can a class have?</span>
         <details>
             <summary>Answer</summary>
-            <p>No.</p>
+            <p>A class can be declared as <b><u>public</u></b>, <b><u>final</u></b>, or <b><u>abstract</u></b>.</p>
         </details>
     </li>
+
+    <!-- ================= MEDIUM LEVEL ================= -->
     
+<h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
     <li>
-        <span class="section-title">9. Can a private member be used outside the package?</span>
+        <span class="section-title">9. Types of modifiers</span>
         <details>
             <summary>Answer</summary>
-            <p>No, it cannot be used outside the package.</p>
+            <p>There are two types of modifiers in Java: <br>
+            1. <b><u>Access Modifiers</u></b> <br>
+            2. <b><u>Non-Access Modifiers</u></b></p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">10. What is a default member?</span>
+        <span class="section-title">10. Types of access modifiers</span>
         <details>
             <summary>Answer</summary>
-            <p>A default member is one without an explicit access modifier, making it accessible within the same package only.</p>
+            <p>There are four types of access modifiers: <br>
+            1. <b><u>Public</u></b> <br>
+            2. <b><u>Private</u></b> <br>
+            3. <b><u>Protected</u></b> <br>
+            4. <b><u>Default</u></b></p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">11. What is the visibility of a default member?</span>
+        <span class="section-title">11. What can be made private?</span>
         <details>
             <summary>Answer</summary>
-            <p>It is accessible within the same package only.</p>
+            <p><b><u>Variables</u></b>, <b><u>methods</u></b>, and <b><u>constructors</u></b> can be made <code>private</code>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">12. What is protected in Java?</span>
+        <span class="section-title">12. Accessibility of a protected member</span>
         <details>
             <summary>Answer</summary>
-            <p><code>Protected</code> is an access modifier that allows visibility within the same package and subclasses in other packages.</p>
+            <p>A <b><u>protected member</u></b> is accessible <b><u>within the same package directly</u></b> and <b><u>through inheritance in different packages</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">13. How can we import protected members?</span>
+        <span class="section-title">13. Accessibility of a public member</span>
         <details>
             <summary>Answer</summary>
-            <p>Use <code>import packageName.className</code>.</p>
+            <p>A <b><u>public member</u></b> is <b><u>accessible from anywhere in the program</u></b>.</p>
         </details>
     </li>
-    
+
+    <!-- ================= HARD LEVEL ================= -->
+
+<h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
     <li>
-        <span class="section-title">14. Accessibility of a protected member</span>
+        <span class="section-title">14. Can a private member be accessed outside the class?</span>
         <details>
             <summary>Answer</summary>
-            <p>A protected member can be accessed within the same package directly, and in a different package only through inheritance in a subclass.</p>
+            <p><b><u>No</u></b>, a <b><u>private member</u></b> cannot be accessed outside its class, even in subclasses of the same package.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">15. What is public in Java?</span>
+        <span class="section-title">15. Can a private member be accessed in a different class or subclass of the same package?</span>
         <details>
             <summary>Answer</summary>
-            <p><code>Public</code> is an access modifier that allows a member to be accessible from any other class in any package.</p>
+            <p><b><u>No</u></b>, a <b><u>private member</u></b> cannot be accessed in a different class or subclass.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">16. Accessibility of a public member</span>
+        <span class="section-title">16. Can a private member be used outside the package?</span>
         <details>
             <summary>Answer</summary>
-            <p>A public member can be accessed from anywhere in the program.</p>
+            <p><b><u>No</u></b>, a <b><u>private member</u></b> cannot be accessed outside its package.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">17. Can we make a class private?</span>
+        <span class="section-title">17. How can we import protected members?</span>
         <details>
             <summary>Answer</summary>
-            <p>No, a top-level class cannot be private.</p>
+            <p>We import a class using <code>import packageName.className</code>. Then, <b><u>protected members</u></b> are accessible <b><u>only through inheritance</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">18. What modifiers can a class have?</span>
+        <span class="section-title">18. Can we make a class private?</span>
         <details>
             <summary>Answer</summary>
-            <p>A class can be <code>public</code>, <code>final</code>, or <code>abstract</code>.</p>
+            <p><b><u>No</u></b>, a <b><u>top-level class</u></b> cannot be <code>private</code>. Only <b><u>inner classes</u></b> can be private.</p>
         </details>
     </li>
-    
     
 
 </ul>
@@ -5131,288 +5199,307 @@ From class A
 
 <h1 id="final">Final </h1>
 <ul>
+
+    <!-- ================= EASY LEVEL ================= -->
+<h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
     <li>
         <span class="section-title">1. What is final?</span>
         <details>
             <summary>Answer</summary>
-            <p>Finally, the keyword and modified member, which is prefixed with the final modifier, is known as the final member.</p>
+            <p><b><u>Final</u></b> is a keyword. A member prefixed with the <b><u>final modifier</u></b> is known as a final member.</p>
         </details>
     </li>
-    
+
     <li>
         <span class="section-title">2. What is a final variable?</span>
         <details>
             <summary>Answer</summary>
-            <p>A variable prefixed with the final modifier is called a final variable.</p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">3. Can a local variable be made final?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>Yes.</p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">4. What is a static final variable?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>A static final variable is a constant variable that belongs to the class rather than instances of the class. It cannot be changed after initialization.</p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">5. What is a non-static final variable?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>A non-static final variable is a constant variable that is associated with an instance of the class. It cannot be changed after initialization, but unlike static final variables, each instance can have a different value.</p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">6. What is a final method?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>If a method is prefixed with the final modifier, it is called a final method.</p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">7. Can a final method be overridden?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>No, a final method cannot be overridden.</p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">8. Can a final method be inherited?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>Yes, a final method can be inherited, but it cannot be overridden.</p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">9. What is a final class?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>A class prefixed with the final modifier is called a final class.</p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">10. If a class is made final, can we create a subclass of a final class?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>No, you cannot create a subclass of a final class.</p>
-        </details>
-    </li>
-    
-    <li>
-        <span class="section-title">11. Example of a final class?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>The Scanner class is an example of a final class.</p>
+            <p>A <b><u>variable</u></b> prefixed with the <b><u>final modifier</u></b> is called a <b><u>final variable</u></b>.</p>
         </details>
     </li>
 
     <li>
-        <span class="section-title">12. Can a final variable be changed after initialization?</span>
+        <span class="section-title">3. What is a static final variable?</span>
         <details>
             <summary>Answer</summary>
-            <p>No, a final variable cannot be changed after it has been initialized.</p>
+            <p>A <b><u>static final variable</u></b> is a <b><u>constant</u></b> that belongs to the <b><u>class</u></b> and cannot be changed after initialization.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">13. What happens if we try to override a final method?</span>
+        <span class="section-title">4. What is a non-static final variable?</span>
         <details>
             <summary>Answer</summary>
-            <p>If you try to override a final method, the compiler will throw an error because final methods cannot be overridden.</p>
+            <p>A <b><u>non-static final variable</u></b> is a constant tied to an <b><u>instance</u></b>. Each object can have a different value, but it cannot change once assigned.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">14. Can we assign a value to a final variable more than once?</span>
+        <span class="section-title">5. What is a final method?</span>
         <details>
             <summary>Answer</summary>
-            <p>No, a final variable can only be assigned a value once, either during declaration or in the constructor if it's an instance variable.</p>
+            <p>If a <b><u>method</u></b> is prefixed with the <b><u>final modifier</u></b>, it is called a <b><u>final method</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">15. What is the difference between a final method and a static method?</span>
+        <span class="section-title">6. What is a final class?</span>
         <details>
             <summary>Answer</summary>
-            <p>A final method cannot be overridden by subclasses, while a static method is tied to the class itself and not to any instance. Static methods can be called without creating an object of the class.</p>
+            <p>A <b><u>class</u></b> prefixed with the <b><u>final modifier</u></b> is known as a <b><u>final class</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">16. Can a constructor be final?</span>
+        <span class="section-title">7. What happens if we try to override a final method?</span>
         <details>
             <summary>Answer</summary>
-            <p>No, a constructor cannot be declared as final because constructors are not inherited, and the final keyword is used to prevent inheritance.</p>
+            <p>The <b><u>compiler</u></b> throws an <b><u>error</u></b> because <b><u>final methods</u></b> cannot be overridden.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">17. Can a final class implement interfaces?</span>
+        <span class="section-title">8. What is the difference between a final method and a static method?</span>
         <details>
             <summary>Answer</summary>
-            <p>Yes, a final class can implement interfaces, but it cannot be subclassed.</p>
+            <p>A <b><u>final method</u></b> cannot be <b><u>overridden</u></b>. A <b><u>static method</u></b> belongs to the <b><u>class</u></b> and can be called without creating an object.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">18. Can a final class have a constructor?</span>
+        <span class="section-title">9. What is the impact of using the final keyword in performance?</span>
         <details>
             <summary>Answer</summary>
-            <p>Yes, a final class can have a constructor, but it cannot be subclassed to call this constructor.</p>
+            <p>The <b><u>final keyword</u></b> can improve <b><u>performance</u></b> slightly since the JVM can make <b><u>optimizations</u></b>.</p>
         </details>
     </li>
-    
+
+    <!-- ================= MEDIUM LEVEL ================= -->
+
+<h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <!-- No direct "How/Why" questions in your list, so I analyzed and placed concept-explaining questions here -->
     <li>
-        <span class="section-title">19. Can a final variable be initialized at runtime?</span>
+        <span class="section-title">10. Example of a final class?</span>
         <details>
             <summary>Answer</summary>
-            <p>Yes, a final variable can be initialized at runtime, but it can only be assigned once, either at the time of declaration or in the constructor.</p>
+            <p>The <b><u>Scanner class</u></b> is an example of a <b><u>final class</u></b>.</p>
         </details>
     </li>
-    
-    <li>
-        <span class="section-title">20. What is the impact of using the final keyword in performance?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>The final keyword can slightly improve performance because the JVM can optimize method calls or variable access knowing that they will not change.</p>
-        </details>
-    </li>
-    
-   
 
 
+    <!-- ================= HARD LEVEL ================= -->
+<h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+        <span class="section-title">11. Can a local variable be made final?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>Yes</u></b>, a <b><u>local variable</u></b> can be made <b><u>final</u></b>.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">12. Can a final method be overridden?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>No</u></b>, a <b><u>final method</u></b> cannot be overridden.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">13. Can a final method be inherited?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>Yes</u></b>, a <b><u>final method</u></b> can be inherited but not <b><u>overridden</u></b>.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">14. Can we create a subclass of a final class?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>No</u></b>, a <b><u>final class</u></b> cannot be subclassed.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">15. Can a final variable be changed after initialization?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>No</u></b>, a <b><u>final variable</u></b> cannot be changed after initialization.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">16. Can we assign a value to a final variable more than once?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>No</u></b>, a <b><u>final variable</u></b> can only be assigned once (at declaration or in the constructor).</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">17. Can a constructor be final?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>No</u></b>, a <b><u>constructor</u></b> cannot be declared final because constructors are not inherited.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">18. Can a final class implement interfaces?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>Yes</u></b>, a <b><u>final class</u></b> can <b><u>implement interfaces</u></b>, but it cannot be subclassed.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">19. Can a final class have a constructor?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>Yes</u></b>, a <b><u>final class</u></b> can have a <b><u>constructor</u></b>, but it cannot be subclassed.</p>
+        </details>
+    </li>
+
+    <li>
+        <span class="section-title">20. Can a final variable be initialized at runtime?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>Yes</u></b>, a <b><u>final variable</u></b> can be initialized at <b><u>runtime</u></b>, but only once.</p>
+        </details>
+    </li>
 
 
 </ul>
 
 <h1 id="arrays">Arrays</h1>
 <ul>
+    <!-- ================= EASY LEVEL ================= -->
+<h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>    
+
     <li>
         <span class="section-title">1. What is an array?</span>
         <details>
             <summary>Answer</summary>
-            <p>An array is a contiguous block of memory used to store multiple values of the same type.</p>
+            <p>An <b><u>array</u></b> is a contiguous block of <b><u>memory</u></b> used to store multiple <b><u>values</u></b> of the same <b><u>type</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
         <span class="section-title">2. Where does an array index start?</span>
         <details>
             <summary>Answer</summary>
-            <p>Array indexing starts from zero and goes up to array size - 1.</p>
+            <p>Array <b><u>indexing</u></b> starts from <b><u>0</u></b> and goes up to <b><u>array size - 1</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
         <span class="section-title">3. Is an array a primitive or non-primitive data type?</span>
         <details>
             <summary>Answer</summary>
-            <p>It is a non-primitive data type.</p>
+            <p>An <b><u>array</u></b> is a <b><u>non-primitive data type</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
         <span class="section-title">4. Does an array store homogeneous or heterogeneous data?</span>
         <details>
             <summary>Answer</summary>
-            <p>An array stores homogeneous data.</p>
+            <p>An <b><u>array</u></b> stores <b><u>homogeneous data</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">5. Can an array size be predefined or fixed?</span>
+        <span class="section-title">5. What is the maximum size of an array?</span>
         <details>
             <summary>Answer</summary>
-            <p>Yes, an array size is fixed at the time of creation.</p>
+            <p>The <b><u>maximum size</u></b> of an array depends on the <b><u>JVM</u></b> and <b><u>system memory</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">6. How is an array represented?</span>
+        <span class="section-title">6. What is an array reference variable?</span>
         <details>
             <summary>Answer</summary>
-            <p>It is represented by square brackets, <code>[]</code>.</p>
+            <p>An <b><u>array reference variable</u></b> is a variable that stores the <b><u>reference</u></b> to an array.</p>
         </details>
     </li>
-    
+
+    <!-- ================= MEDIUM LEVEL ================= -->
+
+<h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
     <li>
-        <span class="section-title">7. Where is an array object created in memory?</span>
+        <span class="section-title">7. How is an array represented?</span>
         <details>
             <summary>Answer</summary>
-            <p>An array object is created in the heap memory area.</p>
+            <p>An <b><u>array</u></b> is represented by <b><u>square brackets []</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
         <span class="section-title">8. How can we print an array without a loop?</span>
         <details>
             <summary>Answer</summary>
-            <p>By using <code>Arrays.toString()</code> method.</p>
+            <p>We can use <b><u>Arrays.toString()</u></b> method to print a <b><u>1D array</u></b> without a loop.</p>
         </details>
     </li>
-    
+
     <li>
         <span class="section-title">9. How can we print a 2D array without a loop?</span>
         <details>
             <summary>Answer</summary>
-            <p>By using <code>Arrays.deepToString()</code> method.</p>
+            <p>We can use <b><u>Arrays.deepToString()</u></b> method to print a <b><u>2D array</u></b> without a loop.</p>
         </details>
     </li>
+
+    <!-- ================= HARD LEVEL ================= -->
+<h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
     
+
     <li>
-        <span class="section-title">10. What is the maximum size of an array?</span>
+        <span class="section-title">10. Can an array size be predefined or fixed?</span>
         <details>
             <summary>Answer</summary>
-            <p>The maximum size depends on the JVM and system memory.</p>
+            <p><b><u>Yes</u></b>, the <b><u>array size</u></b> is fixed at the time of <b><u>creation</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">11. When do we get an ArrayIndexOutOfBoundsException?</span>
+        <span class="section-title">11. Where is an array object created in memory?</span>
         <details>
             <summary>Answer</summary>
-            <p>This exception occurs when accessing an array element with an index that is either greater than or less than the valid range (0 to array length - 1).</p>
+            <p>An <b><u>array object</u></b> is created in the <b><u>heap memory</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">12. Is ArrayIndexOutOfBoundsException a checked or unchecked exception?</span>
+        <span class="section-title">12. When do we get an ArrayIndexOutOfBoundsException?</span>
         <details>
             <summary>Answer</summary>
-            <p>It is an unchecked exception.</p>
+            <p>This <b><u>exception</u></b> occurs when accessing an array element with an <b><u>index</u></b> outside the valid range <b><u>0 to array length - 1</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">13. Are arrays created at runtime or compile time?</span>
+        <span class="section-title">13. Is ArrayIndexOutOfBoundsException a checked or unchecked exception?</span>
         <details>
             <summary>Answer</summary>
-            <p>Arrays are created at runtime. ArrayIndexOutOfBoundsException can occur at runtime.</p>
+            <p>It is an <b><u>unchecked exception</u></b>.</p>
         </details>
     </li>
-    
+
     <li>
-        <span class="section-title">14. What is an array reference variable?</span>
+        <span class="section-title">14. Are arrays created at runtime or compile time?</span>
         <details>
             <summary>Answer</summary>
-            <p>An array reference variable is a variable that stores the reference to an array.</p>
+            <p>Arrays are created at <b><u>runtime</u></b>. The <b><u>ArrayIndexOutOfBoundsException</u></b> can also occur at <b><u>runtime</u></b>.</p>
         </details>
     </li>
-    
-    
 
 
 </ul>
@@ -5420,9 +5507,168 @@ From class A
 <h1 id="string">String</h1>
 
 <ul>
+
+ <!-- ================= EASY LEVEL ================= -->
+<h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>    
+
+
     <li>
-        
+        <span class="section-title">1. What is a String in Java?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>A <b><u>String</u></b> is a sequence of <b><u>characters</u></b> enclosed in double quotes (<b><u>" "</u></b>).</p>
+        </details>
     </li>
+    <li>
+        <span class="section-title">2. What is the difference between String and StringBuffer?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>String</u></b> is <b><u>immutable</u></b>, whereas <b><u>StringBuffer</u></b> is <b><u>mutable</u></b> and can be modified.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">3. What is a String literal?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>A <b><u>String literal</u></b> is a string created and stored in the <b><u>String pool</u></b>.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">4. What is a String object?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>A <b><u>String object</u></b> is a string created using the <b><u>new</u></b> keyword and stored in the <b><u>heap memory</u></b>.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">5. What is the difference between StringBuilder and StringBuffer?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>StringBuilder</u></b> is <b><u>faster</u></b> but <b><u>not synchronized</u></b>, while <b><u>StringBuffer</u></b> is <b><u>synchronized</u></b> and <b><u>thread-safe</u></b>.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">6. What is the String pool?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>The <b><u>String pool</u></b> is a special memory area in <b><u>heap</u></b> where <b><u>string literals</u></b> are stored to avoid duplication.</p>
+        </details>
+    </li>
+
+
+
+ <!-- ================= MEDIUM LEVEL ================= -->
+
+<h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+        <span class="section-title">7. How can we compare two strings?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Use <b><u>equals()</u></b> method to compare <b><u>content</u></b> and <b><u>==</u></b> operator to compare <b><u>references</u></b>.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">8. How can we find the length of a string?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Use <b><u>length()</u></b> method to get the number of <b><u>characters</u></b> in a string.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">9. How can we convert a string to uppercase or lowercase?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Use <b><u>toUpperCase()</u></b> or <b><u>toLowerCase()</u></b> methods.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">10. How can we extract a substring from a string?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Use <b><u>substring(startIndex, endIndex)</u></b> method to extract a part of a string.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">11. How can we get a character at a specific index?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Use <b><u>charAt(index)</u></b> method to get a <b><u>character</u></b> at a particular <b><u>index</u></b>.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">12. How can we replace characters in a string?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Use <b><u>replace(oldChar, newChar)</u></b> or <b><u>replaceAll()</u></b> methods.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">13. How can we split a string?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Use <b><u>split(delimiter)</u></b> method to split a string into <b><u>substrings</u></b> based on a delimiter.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">14. How can we remove leading and trailing spaces from a string?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Use <b><u>trim()</u></b> method to remove <b><u>leading and trailing spaces</u></b>.</p>
+        </details>
+    </li>
+
+
+
+
+  <!-- ================= HARD LEVEL ================= -->
+<h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+
+    <li>
+        <span class="section-title">15. Can a string be changed after creation?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>No, a <b><u>String</u></b> is <b><u>immutable</u></b> and cannot be changed after creation.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">16. Can a String object be compared using == operator?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>You can use <b><u>==</u></b> to compare <b><u>references</u></b>, but it does not compare the <b><u>content</u></b>.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">17. When do we use StringBuilder or StringBuffer?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Use <b><u>StringBuilder</u></b> or <b><u>StringBuffer</u></b> when you need a <b><u>mutable string</u></b> for better <b><u>performance</u></b>.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">18. Can we convert a string to a char array?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Yes, use <b><u>toCharArray()</u></b> method to convert a string to a <b><u>char array</u></b>.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">19. Can we check if a string contains a substring?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Yes, use <b><u>contains(substring)</u></b> method to check if a string contains a particular <b><u>substring</u></b>.</p>
+        </details>
+    </li>
+    <li>
+        <span class="section-title">20. Can we reverse a string using StringBuilder?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>Yes, use <b><u>StringBuilder.reverse()</u></b> method to reverse the <b><u>string</u></b>.</p>
+        </details>
+    </li>
+
+
 </ul>
 
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -7470,9 +7716,71 @@ From class A
     {
         "question": "What is an array reference variable?",
         "answer": "An array reference variable is a variable that stores the reference to an array."
+    },
+
+
+    /////////////////////////////////////////////////////////////////    String        ////////////////////////////////////////////////////////////////////////////////
+
+    {   "question": "What is a String in Java?", 
+        "answer": "A String is a sequence of characters enclosed in double quotes (\" \")."
+    },
+    {   "question": "What is the difference between String and StringBuffer?", 
+        "answer": "String is immutable, whereas StringBuffer is mutable and can be modified."
+    },
+    {   "question": "What is a String literal?",
+        "answer": "A String literal is a string created and stored in the String pool." 
+    },
+    {   "question": "What is a String object?",
+        "answer": "A String object is a string created using the new keyword and stored in the heap memory." 
+    },
+    {   "question": "What is the difference between StringBuilder and StringBuffer?", 
+        "answer": "StringBuilder is faster but not synchronized, while StringBuffer is synchronized and thread-safe." 
+    },
+    {   "question": "What is the String pool?", 
+        "answer": "The String pool is a special memory area in heap where string literals are stored to avoid duplication." 
+    },
+    {   "question": "How can we compare two strings?", 
+        "answer": "Use equals() method to compare content and == operator to compare references." 
+    },
+    {   "question": "How can we find the length of a string?", 
+        "answer": "Use length() method to get the number of characters in a string." 
+    },
+    {   "question": "How can we convert a string to uppercase or lowercase?", 
+        "answer": "Use toUpperCase() or toLowerCase() methods." 
+    },
+    {   "question": "How can we extract a substring from a string?", 
+        "answer": "Use substring(startIndex, endIndex) method to extract a part of a string." 
+    },
+    {   "question": "How can we get a character at a specific index?", 
+        "answer": "Use charAt(index) method to get a character at a particular index." 
+    },
+    {    "question": "How can we replace characters in a string?", 
+        "answer": "Use replace(oldChar, newChar) or replaceAll() methods." 
+    },
+    {   "question": "How can we split a string?", 
+        "answer": "Use split(delimiter) method to split a string into substrings based on a delimiter." 
+    },
+    {   "question": "How can we remove leading and trailing spaces from a string?", 
+        "answer": "Use trim() method to remove leading and trailing spaces." 
+    },
+    {   "question": "Can a string be changed after creation?", 
+        "answer": "No, a String is immutable and cannot be changed after creation." 
+    },
+    {   "question": "Can a String object be compared using == operator?", 
+        "answer": "You can use == to compare references, but it does not compare the content." 
+    },
+    {   "question": "When do we use StringBuilder or StringBuffer?", 
+        "answer": "Use StringBuilder or StringBuffer when you need a mutable string for better performance." 
+    },
+    {   "question": "Can we convert a string to a char array?", 
+        "answer": "Yes, use toCharArray() method to convert a string to a char array." 
+    },
+    {   "question": "Can we check if a string contains a substring?", 
+        "answer": "Yes, use contains(substring) method to check if a string contains a particular substring." 
+    },
+    {   "question": "Can we reverse a string using StringBuilder?", 
+        "answer": "Yes, use StringBuilder.reverse() method to reverse the string." 
     }
-
-
 
 ];
 
