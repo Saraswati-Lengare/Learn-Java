@@ -548,6 +548,7 @@ figcaption {
 
 
      <div class="dropdown">
+        
          <button class="dropdown-button" onclick="toggleDropdown()">
             <i class="fas fa-ellipsis-h"></i>
          </button>
@@ -669,7 +670,7 @@ figcaption {
 
             <a href="#final">Final</a>
             <a href="#arrays">Arrays</a>
-            <a href="#arrays">String</a>
+            <a href="#string">String</a>
 
 
             
@@ -698,7 +699,7 @@ figcaption {
     <!-- ////// for searching the data when no data found -->
     <p id="noResultsMessage" style="display:none;">No results found.</p> 
 
-    <h1 id="section1" style="color: rgb(147, 112, 219);" >Basic Concepts_PS</h1>
+    <h1 id="section1">Basic Concepts_PS</h1>
     <ul>
 
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -1004,7 +1005,7 @@ figcaption {
     </ul>
     
 
-    <h1 id="Operator" style="color: rgb(147, 112, 219); font-size: 40px;">OPERATOR</h1>
+    <h1 id="Operator">OPERATOR</h1>
 
     <h1 id="increment-decrement-operator">Increment and Decrement Operator</h1>
     
@@ -1184,7 +1185,7 @@ figcaption {
 
   <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-  <h1 id="section3" style="color: rgb(147, 112, 219);">Control Flow Statements</h1>
+  <h1 id="section3">Control Flow Statements</h1>
   <ul>
 
     <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
@@ -1421,7 +1422,7 @@ if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
 
 
 <!-- ///////////////////////////////////////////////////////////// -->
-<h1 id="section4" style="color: rgb(147, 112, 219);">Dynamic Reading</h1>
+<h1 id="section4">Dynamic Reading</h1>
 <ul>
     
     <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
@@ -1551,7 +1552,7 @@ if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
  -->
 
- <h1 id="methods" style="color: rgb(147, 112, 219);">Methods</h1>
+ <h1 id="methods">Methods</h1>
 
  <ul>
 
@@ -1753,9 +1754,305 @@ if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
     </li>
 
 
- </ul>
+</ul>
 
- <h1 id="overloaded-method" style="color: rgb(147, 112, 219);">Overloaded method</h1>
+<h1 id="abstract-method">Abstract Method</h1>
+
+<ul>
+
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+     <li>
+      <span class="section-title">1. What is an Abstract Method in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>An <strong><u>abstract method</u></strong> is a method declared without implementation (no body). It only has a <strong><u>method signature</u></strong> and ends with a semicolon.</p>
+        <pre><code>abstract class Animal {
+    abstract void sound(); // abstract method
+}</code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. What is the difference between Abstract and Concrete Methods?</span>
+      <details>
+        <summary>Answer</summary>
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Abstract Method</th>
+              <th>Concrete Method</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Definition</td>
+              <td><strong><u>No body</u></strong>, only signature</td>
+              <td><strong><u>Has body</u></strong> with implementation</td>
+            </tr>
+            <tr>
+              <td>Implementation</td>
+              <td>Must be <strong><u>implemented in subclass</u></strong></td>
+              <td>Already <strong><u>defined</u></strong></td>
+            </tr>
+            <tr>
+              <td>Example</td>
+              <td><code>abstract void draw();</code></td>
+              <td><code>void draw() { ... }</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. What happens if a subclass does not implement all abstract methods?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>If a subclass does not implement all <strong><u>abstract methods</u></strong>, then that subclass must also be declared as <strong><u>abstract</u></strong>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">4. What is the rule about abstract methods inside a class?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>An <strong><u>abstract method</u></strong> must be inside an <strong><u>abstract class</u></strong> or an <strong><u>interface</u></strong>. Declaring it inside a normal class will cause a <strong><u>compile-time error</u></strong>.</p>
+      </details>
+    </li>
+  </ol>
+
+  <!-- Medium Level -->
+  
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+    <li>
+      <span class="section-title">5. How can we create an object related to an abstract class?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>We cannot create an object of an <strong><u>abstract class</u></strong> directly. But we can create objects of its <strong><u>concrete subclasses</u></strong> that implement the abstract methods.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. How can abstract methods be implemented in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Abstract methods are implemented by <strong><u>overriding them in subclasses</u></strong>. Each subclass provides its own definition.</p>
+        <pre><code>abstract class Animal {
+    abstract void sound();
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Cat extends Animal {
+    void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal a1 = new Dog();
+        Animal a2 = new Cat();
+        a1.sound();
+        a2.sound();
+    }
+}</code></pre>
+        <p><strong>Output:</strong></p>
+        <pre><code>Dog barks
+Cat meows</code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">7. How are abstract classes allowed to have non-abstract methods?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>An <strong><u>abstract class</u></strong> can have both <strong><u>abstract</u></strong> and <strong><u>non-abstract methods</u></strong>. The non-abstract methods can provide common functionality.</p>
+        <pre><code>abstract class Vehicle {
+    abstract void start();
+    void fuelType() {
+        System.out.println("Most vehicles use fuel.");
+    }
+}</code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. How does a constructor work in an abstract class?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>An <strong><u>abstract class</u></strong> can have a <strong><u>constructor</u></strong>. It is executed when an object of a <strong><u>concrete subclass</u></strong> is created to initialize data members.</p>
+      </details>
+    </li>
+  
+
+  <!-- Hard Level -->
+  
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+    <li>
+      <span class="section-title">9. Why can’t abstract methods be declared as static or final?</span>
+      <details>
+        <summary>Answer</summary>
+        <ul>
+          <li><strong><u>Static</u></strong> methods belong to the class and cannot be <strong><u>overridden</u></strong>, so they cannot be abstract.</li>
+          <li><strong><u>Final</u></strong> methods cannot be <strong><u>overridden</u></strong>, while abstract methods must be overridden.</li>
+        </ul>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. Why can abstract methods not have a body?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>An <strong><u>abstract method</u></strong> represents only the <strong><u>method definition</u></strong> without implementation. If a body is given, it violates the rule of abstraction and causes a <strong><u>compile-time error</u></strong>.</p>
+      </details>
+    </li>
+</ul>
+
+
+
+
+<h1 id="instance-method">Instance method</h1>
+<ul>
+
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+    <li>
+      <span class="section-title">1. What is an Instance Method in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>An <strong><u>instance method</u></strong> is a method that belongs to an <strong><u>object</u></strong> of a class. It requires an <strong><u>object reference</u></strong> to be invoked and can access <strong><u>instance variables</u></strong> of the class.</p>
+        <pre><code>class Student {
+    String name;
+    void display() {
+        System.out.println("Name: " + name);
+    }
+}</code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. What is the difference between Instance Methods and Static Methods?</span>
+      <details>
+        <summary>Answer</summary>
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Instance Method</th>
+              <th>Static Method</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Belongs To</td>
+              <td><strong><u>Object</u></strong> of a class</td>
+              <td><strong><u>Class itself</u></strong></td>
+            </tr>
+            <tr>
+              <td>Access</td>
+              <td>Can access <strong><u>instance & static members</u></strong></td>
+              <td>Can only access <strong><u>static members</u></strong></td>
+            </tr>
+            <tr>
+              <td>Invocation</td>
+              <td>Called using <strong><u>object reference</u></strong></td>
+              <td>Called using <strong><u>class name</u></strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. What happens if you try to call an instance method without creating an object?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>If you try to call an <strong><u>instance method</u></strong> without creating an <strong><u>object</u></strong>, the compiler will give a <strong><u>compile-time error</u></strong> because instance methods require an object.</p>
+      </details>
+    </li>
+  
+
+  <!-- Medium Level -->
+
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+ 
+    <li>
+      <span class="section-title">4. How do we call an instance method in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>An <strong><u>instance method</u></strong> is called using an <strong><u>object reference</u></strong> of the class.</p>
+        <pre><code>class Student {
+    void study() {
+        System.out.println("Studying...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s = new Student();  // create object
+        s.study();                  // calling instance method
+    }
+}</code></pre>
+        <p><strong>Output:</strong></p>
+        <pre><code>Studying...</code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. How can instance methods access class variables?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>An <strong><u>instance method</u></strong> can access both <strong><u>instance variables</u></strong> and <strong><u>static variables</u></strong> directly because it is associated with an <strong><u>object</u></strong> of the class.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. How do instance methods support encapsulation?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><strong><u>Encapsulation</u></strong> is achieved by keeping <strong><u>instance variables private</u></strong> and providing <strong><u>getter/setter instance methods</u></strong> to control access.</p>
+        <pre><code>class Employee {
+    private int salary;
+    
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+    
+    public int getSalary() {
+        return salary;
+    }
+}</code></pre>
+      </details>
+    </li>
+  
+
+  <!-- Hard Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+  
+    <li>
+      <span class="section-title">7. Why do we use instance methods instead of static methods in some cases?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>We use <strong><u>instance methods</u></strong> when the method depends on the <strong><u>object's state (instance variables)</u></strong>. Unlike <strong><u>static methods</u></strong>, which work at the class level, instance methods provide <strong><u>object-specific behavior</u></strong>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. Why can instance methods be overridden but static methods cannot?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><strong><u>Instance methods</u></strong> belong to the <strong><u>object</u></strong> and support <strong><u>runtime polymorphism</u></strong>, so they can be <strong><u>overridden</u></strong>. However, <strong><u>static methods</u></strong> belong to the <strong><u>class</u></strong> and are resolved at <strong><u>compile-time</u></strong>, so they cannot be overridden (only hidden).</p>
+      </details>
+    </li>
+</ul>
+
+
+<h1 id="overloaded-method">Overloaded method</h1>
 <ul>
     
     <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
@@ -1824,13 +2121,9 @@ public class MainOverload {
             </code></pre>
         </details>
     </li>
-
-
-    
-
 </ul>
 
-<h1 id="method-binding" style="color: rgb(147, 112, 219);">Method Binding</h1>
+<h1 id="method-binding">Method Binding</h1>
 <ul>
     <li><span class="section-title">1. What is method binding?</span>
         <details>
@@ -1856,7 +2149,7 @@ public class MainOverload {
 
 </ul>
 
-<h1 id="method-recursion" style="color: rgb(147, 112, 219);">Method Recursion</h1>
+<h1 id="method-recursion">Method Recursion</h1>
 <ul>
 <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
 
@@ -1940,7 +2233,7 @@ public class MainOverload {
     
 </ul>
 
-<h1 id="return-method" style="color: rgb(147, 112, 219);"> Return in method</h1>
+<h1 id="return-method"> Return in method</h1>
 <ul>
 
 <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>    
@@ -2080,7 +2373,7 @@ public int findMax(int a, int b) {
 </ul>
 
 
-<h1 id="static_initializer" style="color: rgb(147, 112, 219);">Static Initializer</h1>
+<h1 id="static_initializer">Static Initializer</h1>
 
 <ul>
 
@@ -2188,7 +2481,7 @@ public int findMax(int a, int b) {
 
 
 
-<h1 id="oops" style="color: rgb(147, 112, 219);">OOPS</h1> 
+<h1 id="oops">OOPS</h1> 
 <ul>
 
     <!-- EASY QUESTIONS -->
@@ -2688,7 +2981,7 @@ class NonStatic {
 
 
 
-<h1 id="packages" style="color: rgb(147, 112, 219);">PACKAGES</h1> 
+<h1 id="packages">PACKAGES</h1> 
 <ul>
 
     <!-- EASY QUESTIONS -->
@@ -2788,7 +3081,7 @@ class NonStatic {
 
 </ul>
 
-<h1 id="pricipleofoops" style="color: rgb(147, 112, 219);">PRINCIPLE OF OOPS</h1> 
+<h1 id="pricipleofoops">PRINCIPLE OF OOPS</h1> 
 <ul>
     <li>
         <span class="section-title">1. What is the principle of OOP?</span>
@@ -2813,7 +3106,7 @@ class NonStatic {
       
 
 </ul>
-<h1 id="encapsulation" style="color: rgb(147, 112, 219);">ENCAPSULATION</h1> 
+<h1 id="encapsulation">ENCAPSULATION</h1> 
 
 <ul>
     <!-- EASY QUESTIONS -->
@@ -2890,7 +3183,7 @@ class NonStatic {
 
 </ul>
 
-<h1 id="relationship" style="color: rgb(147, 112, 219);">RELATIONSHIP</h1>
+<h1 id="relationship">RELATIONSHIP</h1>
 <ul>
 
     
@@ -3105,7 +3398,7 @@ class NonStatic {
 
 </ul> 
 
-<h1 id="inheritance" style="color: rgb(147, 112, 219);">INHERITANCE</h1>
+<h1 id="inheritance">INHERITANCE</h1>
 <ul>
 
     <!-- ================= EASY ================= -->
@@ -3240,7 +3533,7 @@ class NonStatic {
 
 
 
-<h1 id="multilevelInheritance" style="color: rgb(147, 112, 219);">Multi-level Inheritance</h1>
+<h1 id="multilevelInheritance">Multi-level Inheritance</h1>
 <ul>
     <li>
         <span class="section-title">1. What is Multilevel Inheritance?</span>
@@ -3364,7 +3657,7 @@ class NonStatic {
 </ul>
 
 <!-- /////////////////////////////////////////////// -->
-<h1 id="Hierarchical inheritance" style="color: rgb(147, 112, 219);">Hierarchical inheritance</h1>
+<h1 id="Hierarchical inheritance">Hierarchical inheritance</h1>
 
 <ul>
 
@@ -3460,7 +3753,7 @@ class NonStatic {
 
 </ul>
 
-<h1 id="multipleinheritance" style="color: rgb(147, 112, 219);">Multiple inheritance </h1>
+<h1 id="multipleinheritance">Multiple inheritance </h1>
 <ul>
     <li>
         <span class="section-title">1. What is multiple inheritance?</span>
@@ -3517,7 +3810,7 @@ class NonStatic {
 
 </ul>
 
-<h1 id="hybridInheritance" style="color: rgb(147, 112, 219);">Hybrid Inheritance</h1>
+<h1 id="hybridInheritance">Hybrid Inheritance</h1>
 <ul>
 
 
@@ -3554,7 +3847,7 @@ class NonStatic {
 
 <!-- //////////////////////////////////////////////////// -->
 
-<h1 id="superKeyword" style="color: rgb(147, 112, 219);">Super Keyword</h1>
+<h1 id="superKeyword">Super Keyword</h1>
 
 <ul>
     <li>
@@ -3605,7 +3898,7 @@ class NonStatic {
     
 </ul>
 
-<h1 id="instance of operator" style="color: rgb(147, 112, 219);">Instance Of Operator</h1>
+<h1 id="instance of operator">Instance Of Operator</h1>
 <ul>
     <li>
         <span class="section-title">1. What type of operator is the instanceof operator?</span>
@@ -3652,7 +3945,7 @@ class NonStatic {
 
 </ul>
 
-<h1 id="superCallStattement" style="color: rgb(147, 112, 219);">Super Call Statement</h1>
+<h1 id="superCallStattement">Super Call Statement</h1>
 
 <ul>
 
@@ -3762,7 +4055,7 @@ class NonStatic {
 </ul>
 
 
-<h1 id="non-primitivedatatype" style="color: rgb(147, 112, 219);">Non primitive type casting</h1>
+<h1 id="non-primitivedatatype">Non primitive type casting</h1>
 
 
 <ul>
@@ -3930,7 +4223,7 @@ class NonStatic {
 
 </ul>
 
-<h1 id="classCastException" style="color: rgb(147, 112, 219);">Class cast exception</h1>
+<h1 id="classCastException">Class cast exception</h1>
 
 
 <ul>
@@ -3949,7 +4242,7 @@ class NonStatic {
     
 </ul>
 
-<h1 id="polymorphism" style="color: rgb(147, 112, 219);">Polymorphism</h1>
+<h1 id="polymorphism">Polymorphism</h1>
 
 <ul>
 <!-- ================== EASY QUESTIONS ================== -->
@@ -4179,7 +4472,7 @@ class NonStatic {
 </ul>
 
 
-<h1 id="abstraction" style="color: rgb(147, 112, 219);">Abstraction</h1>
+<h1 id="abstraction">Abstraction</h1>
 <ul>
 
 <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2> 
@@ -4403,7 +4696,7 @@ From class A
 
 </ul>
 
-<h1 id="objectClass" style="color: rgb(147, 112, 219);">Object Class</h1>
+<h1 id="objectClass">Object Class</h1>
 <ul>
 
     <!-- ===================== EASY LEVEL ===================== -->
@@ -4618,7 +4911,7 @@ Student[ID=101, Name=Rahul]
 </ul>
 
 
-<h1 id="interface" style="color: rgb(147, 112, 219);">Interface</h1>
+<h1 id="interface">Interface</h1>
 
 <ul>
 
@@ -4788,7 +5081,7 @@ Student[ID=101, Name=Rahul]
 </ul>
 
 
-<h1 id="exception" style="color: rgb(147, 112, 219);">Exception And Exception Handling</h1>
+<h1 id="exception">Exception And Exception Handling</h1>
 <ul>
     <!-- ================= EASY LEVEL ================= -->
 <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
@@ -5031,7 +5324,7 @@ Student[ID=101, Name=Rahul]
 
 
 <!-- //////////////////////////////////////////////////////////////////// -->
-<h1 id="wrapperclass" style="color: rgb(147, 112, 219);">Wrapper Class</h1>
+<h1 id="wrapperclass">Wrapper Class</h1>
 
 <ul>
 
@@ -5149,7 +5442,7 @@ Student[ID=101, Name=Rahul]
 
 
 
-<h1 id="modifiers" style="color: rgb(147, 112, 219);">Modifiers</h1>
+<h1 id="modifiers">Modifiers</h1>
 <ul>
 
     
@@ -5322,7 +5615,7 @@ Student[ID=101, Name=Rahul]
 
 
 
-<h1 id="final" style="color: rgb(147, 112, 219);">Final </h1>
+<h1 id="final">Final </h1>
 <ul>
 
     <!-- ================= EASY LEVEL ================= -->
@@ -5500,7 +5793,7 @@ Student[ID=101, Name=Rahul]
 
 </ul>
 
-<h1 id="arrays" style="color: rgb(147, 112, 219);">Arrays</h1>
+<h1 id="arrays">Arrays</h1>
 <ul>
     <!-- ================= EASY LEVEL ================= -->
 <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>    
@@ -5629,7 +5922,7 @@ Student[ID=101, Name=Rahul]
 
 </ul>
 
-<h1 id="string" style="color: rgb(147, 112, 219);">String</h1>
+<h1 id="string">String</h1>
 
 <ul>
 
@@ -6293,6 +6586,86 @@ const questions = [
         "question": "When do we use a no-argument method?",
         "answer": "A no-argument method is used when you need a method to perform an action that does not require any input data. It simplifies calling the method since no arguments need to be provided."
     },
+
+
+    ////////////////////////////////  Abstract Method /////////////////////////////////////////////////
+
+
+    {
+    "question": "What is an Abstract Method in Java?",
+    "answer": "An abstract method is a method declared without implementation (no body). It only has a method signature and ends with a semicolon."
+  },
+  {
+    "question": "What is the difference between Abstract and Concrete Methods?",
+    "answer": "Abstract methods have no body and only a signature, and they must be implemented in a subclass. Concrete methods have a body with implementation and are already defined."
+  },
+  {
+    "question": "What happens if a subclass does not implement all abstract methods?",
+    "answer": "If a subclass does not implement all abstract methods, then that subclass must also be declared as abstract."
+  },
+  {
+    "question": "What is the rule about abstract methods inside a class?",
+    "answer": "An abstract method must be inside an abstract class or an interface. Declaring it inside a normal class will cause a compile-time error."
+  },
+  {
+    "question": "How can we create an object related to an abstract class?",
+    "answer": "We cannot create an object of an abstract class directly. But we can create objects of its concrete subclasses that implement the abstract methods."
+  },
+  {
+    "question": "How can abstract methods be implemented in Java?",
+    "answer": "Abstract methods are implemented by overriding them in subclasses. Each subclass provides its own definition."
+  },
+  {
+    "question": "How are abstract classes allowed to have non-abstract methods?",
+    "answer": "An abstract class can have both abstract and non-abstract methods. The non-abstract methods can provide common functionality."
+  },
+  {
+    "question": "How does a constructor work in an abstract class?",
+    "answer": "An abstract class can have a constructor. It is executed when an object of a concrete subclass is created to initialize data members."
+  },
+  {
+    "question": "Why can’t abstract methods be declared as static or final?",
+    "answer": "Static methods belong to the class and cannot be overridden, so they cannot be abstract. Final methods cannot be overridden, while abstract methods must be overridden."
+  },
+  {
+    "question": "Why can abstract methods not have a body?",
+    "answer": "An abstract method represents only the method definition without implementation. If a body is given, it violates the rule of abstraction and causes a compile-time error."
+  }
+
+  //////////////////////////////// Instance Method /////////////////////////////////////////////////
+
+  {
+    "question": "What is an Instance Method in Java?",
+    "answer": "An instance method is a method that belongs to an object of a class. It requires an object reference to be invoked and can access instance variables of the class."
+  },
+  {
+    "question": "What is the difference between Instance Methods and Static Methods?",
+    "answer": "Instance methods belong to objects of a class and can access both instance and static members. Static methods belong to the class itself and can only access static members."
+  },
+  {
+    "question": "What happens if you try to call an instance method without creating an object?",
+    "answer": "If you try to call an instance method without creating an object, the compiler will give a compile-time error because instance methods require an object."
+  },
+  {
+    "question": "How do we call an instance method in Java?",
+    "answer": "We call an instance method using an object reference of the class. For example: Student s = new Student(); s.study();"
+  },
+  {
+    "question": "How can instance methods access class variables?",
+    "answer": "An instance method can access both instance variables and static variables directly because it is associated with an object of the class."
+  },
+  {
+    "question": "How do instance methods support encapsulation?",
+    "answer": "Encapsulation is achieved by keeping instance variables private and providing getter/setter instance methods to control access."
+  },
+  {
+    "question": "Why do we use instance methods instead of static methods in some cases?",
+    "answer": "We use instance methods when the method depends on the object's state (instance variables). Unlike static methods, instance methods provide object-specific behavior."
+  },
+  {
+    "question": "Why can instance methods be overridden but static methods cannot?",
+    "answer": "Instance methods belong to the object and support runtime polymorphism, so they can be overridden. Static methods belong to the class and are resolved at compile-time, so they cannot be overridden (only hidden)."
+  }
 //////////////////////////////// Method Overloding/////////////////////////////////////////////////
 
 
