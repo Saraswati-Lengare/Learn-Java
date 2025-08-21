@@ -548,7 +548,7 @@ figcaption {
 
 
      <div class="dropdown">
-        
+
          <button class="dropdown-button" onclick="toggleDropdown()">
             <i class="fas fa-ellipsis-h"></i>
          </button>
@@ -998,16 +998,281 @@ figcaption {
     <summary>Answer</summary>
     <p><b><u>High-Level Languages</u></b> (such as <b><u>Python</u></b>, <b><u>Java</u></b>, <b><u>C++</u></b>, and <b><u>JavaScript</u></b>) are most commonly used because they are <b><u>easy to learn</u></b>, <b><u>portable</u></b>, and <b><u>efficient</u></b> for software development.</p>
   </details>
-</li>
+</li>      
 
-        
+</ul>
 
-    </ul>
+
+<ul>
+<h1 id="keyword">Keywords</h1>
+
+    <!-- Easy Level -->
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What are keywords in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Keywords in Java are <b><u>reserved words</u></b> that have a <b><u>predefined meaning</u></b> in the language. They <b><u>cannot be used as identifiers</u></b> (like variable names, class names, etc.).</p>
+        <p>Examples: <code>class</code>, <code>public</code>, <code>static</code>, <code>void</code>, etc.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. How many keywords are there in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>There are <b><u>50+ reserved keywords</u></b> in Java (exact number depends on <b><u>Java version</u></b>). Common ones include <code>if</code>, <code>else</code>, <code>for</code>, <code>while</code>, <code>switch</code>, etc.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. Can keywords be written in uppercase in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Java keywords are <b><u>case-sensitive</u></b> and must always be written in <b><u>lowercase</u></b>. For example, <code>class</code> is valid but <code>Class</code> is not.</p>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">4. What is the difference between 'final', 'finally', and 'finalize' in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <table>
+          <thead>
+            <tr>
+              <th>Keyword</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>final</code></td>
+              <td>Used to <b><u>declare constants</u></b>, <b><u>prevent inheritance</u></b>, and <b><u>stop method overriding</u></b>.</td>
+            </tr>
+            <tr>
+              <td><code>finally</code></td>
+              <td>A block used in <b><u>exception handling</u></b> to execute <b><u>important code</u></b> (<b><u>always runs</u></b>).</td>
+            </tr>
+            <tr>
+              <td><code>finalize</code></td>
+              <td>A <b><u>method</u></b> used by the <b><u>Garbage Collector</u></b> before <b><u>destroying an object</u></b>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. What is the difference between 'this' and 'super' keywords?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><code>this</code> refers to the <b><u>current object</u></b> of the class, while <code>super</code> refers to the <b><u>immediate parent class object</u></b>.</p>
+        <pre><code>class Parent {
+    void show() { System.out.println("Parent"); }
+}
+
+class Child extends Parent {
+    void show() {
+        super.show(); // calls Parent method
+        System.out.println("Child");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Child c = new Child();
+        c.show();
+    }
+}</code></pre>
+        <p><b><u>Output:</u></b></p>
+        <pre><code>Parent
+Child</code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. What is the difference between 'break' and 'continue' keywords?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><code>break</code> is used to <b><u>terminate</u></b> a loop or switch, while <code>continue</code> <b><u>skips the current iteration</u></b> and proceeds with the <b><u>next one</u></b>.</p>
+        <pre><code>for(int i=1; i<=5; i++) {
+    if(i == 3) continue; 
+    System.out.println(i);
+}</code></pre>
+        <p><b><u>Output:</u></b></p>
+        <pre><code>1
+2
+4
+5</code></pre>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">7. Can we use keywords as identifiers in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>No</u></b>, keywords are <b><u>reserved</u></b> and <b><u>cannot be used as identifiers</u></b> (variable names, class names, etc.). For example, <code>int class = 10;</code> will cause a <b><u>compilation error</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. What is the role of the 'volatile' keyword in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <code>volatile</code> keyword ensures that a <b><u>variable</u></b> is always <b><u>read from</u></b> and <b><u>written to main memory</u></b>, not from the <b><u>thread's cache</u></b>. It is used in <b><u>multithreading</u></b> to maintain <b><u>data consistency</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. What is the role of the 'synchronized' keyword in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <code>synchronized</code> keyword is used to <b><u>control access</u></b> to <b><u>critical sections</u></b> of code by <b><u>multiple threads</u></b>, ensuring only <b><u>one thread executes</u></b> the block at a time.</p>
+        <pre><code>class Counter {
+    private int count = 0;
+    synchronized void increment() {
+        count++;
+    }
+}</code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. What happens if we use 'goto' keyword in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <code>goto</code> keyword is <b><u>reserved but not used</u></b> in Java. It is kept for <b><u>future use</u></b> but has <b><u>no functionality</u></b>. Using it will cause a <b><u>compilation error</u></b>.</p>
+      </details>
+    </li>
+</ul>
+
+
+<ul>
+<h1 id="identifiers">Identifiers</h1>
+
+    <!-- Easy Level -->
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What are identifiers in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Identifiers in Java are <b><u>names</u></b> given to variables, methods, classes, packages, and interfaces. They are used to <b><u>identify</u></b> different elements of a program.</p>
+        <p>Examples: <code>Student</code>, <code>age</code>, <code>calculateSum()</code></p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. What are the rules for defining identifiers in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <ul>
+          <li>Must begin with a <b><u>letter</u></b>, <b><u>underscore (_)</u></b>, or <b><u>dollar sign ($)</u></b>.</li>
+          <li>Can contain <b><u>letters</u></b>, <b><u>digits</u></b>, <b><u>_</u></b>, and <b><u>$</u></b>.</li>
+          <li><b><u>Cannot</u></b> be a keyword.</li>
+          <li>Java identifiers are <b><u>case-sensitive</u></b>.</li>
+        </ul>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. Can identifiers in Java start with a digit?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>No</u></b>, identifiers cannot start with a digit. For example, <code>123name</code> is invalid, but <code>name123</code> is valid.</p>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">4. What is the difference between valid and invalid identifiers in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Valid identifiers follow naming rules, while invalid ones break them.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Valid Identifiers</th>
+              <th>Invalid Identifiers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>name</code>, <code>_value</code>, <code>$price</code>, <code>sum1</code></td>
+              <td><code>123abc</code>, <code>class</code>, <code>a-b</code>, <code>my name</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. Are identifiers and variables the same in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>No</u></b>, identifiers are general <b><u>names</u></b> given to entities (class, method, variable, etc.), while variables are just one type of identifier used to <b><u>store data</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. Are Java identifiers case-sensitive?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Yes</u></b>, Java identifiers are case-sensitive. For example, <code>student</code> and <code>Student</code> are treated as <b><u>different identifiers</u></b>.</p>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">7. Can we use Java keywords as identifiers if we change their case?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Yes</u></b>, since Java is case-sensitive, <code>Class</code> or <code>Public</code> are valid identifiers, but <code>class</code> or <code>public</code> are <b><u>not allowed</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. What is the maximum length of an identifier in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>There is <b><u>no limit</u></b> on the number of characters in an identifier in Java. However, practical limits depend on the <b><u>compiler</u></b> and <b><u>readability</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. Can identifiers contain special characters like '@' or '#'</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>No</u></b>, only <code>_</code> (underscore) and <code>$</code> (dollar sign) are allowed special characters in identifiers. Others like <code>@</code>, <code>#</code>, <code>!</code> are invalid.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. Can two identifiers have the same name in the same scope?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>No</u></b>, two identifiers cannot have the same name in the same scope. Doing so will cause a <b><u>compilation error</u></b>.</p>
+      </details>
+    </li>
+</ul>
+
+
     
 
-    <h1 id="Operator">OPERATOR</h1>
+<h1 id="Operator">OPERATOR</h1>
 
-    <h1 id="increment-decrement-operator">Increment and Decrement Operator</h1>
+<h1 id="increment-decrement-operator">Increment and Decrement Operator</h1>
     
     <ul>
     <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
@@ -2031,6 +2296,8 @@ public class Main {
     </li>
   
 
+    
+
   <!-- Hard Level -->
     <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
   
@@ -2052,76 +2319,159 @@ public class Main {
 </ul>
 
 
-<h1 id="overloaded-method">Overloaded method</h1>
 <ul>
-    
+<h1 id="static-method">Static method</h1>
+
     <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
-    <!-- EASY QUESTIONS -->
-    <li><span class="section-title">1. What is method overloading?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>If a <b><u>class</u></b> has <b><u>multiple methods with the same name but different formal arguments</u></b>, it is known as <b><u>method overloading</u></b>.</p>
-        </details>
-    </li>
-
-    <li><span class="section-title">2. What is method overriding?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b><u>Method overriding</u></b> occurs when a <b><u>subclass</u></b> provides a <b><u>specific implementation</u></b> of a method that is already defined in its <b><u>superclass</u></b>. The method in the subclass must have the <b><u>same name</u></b>, <b><u>return type</u></b>, and <b><u>parameters</u></b> as the method in the superclass.</p>
-        </details>
-    </li>
-
-    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
-
-    <!-- MEDIUM QUESTIONS -->
-    <li><span class="section-title">3. Why do we use method overloading?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b><u>Method overloading</u></b> allows <b><u>multiple methods with the same name but different parameters</u></b> to <b><u>handle different inputs</u></b> efficiently.</p>
-        </details>
-    </li>
-
-    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
-
-    <!-- HARD QUESTIONS -->
-    <li><span class="section-title">4. Can you give an example of method overloading?</span>
-        <details>
-            <summary>Answer</summary>
-            <p>The <code>println</code> method of the <b><u>PrintStream</u></b> class is an example of <b><u>method overloading</u></b>.</p>
-        </details>
-    </li>
-
-    <li><span class="section-title">5. Can we have more than one method with the same name and same formal arguments? Can we overload them?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b><u>No</u></b>, we cannot do that because they have the <b><u>same formal arguments</u></b>, which violates the <b><u>rules of method overloading</u></b>.</p>
-        </details>
-    </li>
-
-    <li><span class="section-title">6. Can the main method be overloaded?</span>
-        <details>
-            <summary>Answer</summary>
-            <p><b><u>Yes</u></b>, the <b><u>main method</u></b> can be <b><u>overloaded</u></b> in Java by using a <b><u>different parameter list</u></b>.</p>
-            <pre><code>
-public class MainOverload {
-    public static void main(String[] args) {
-        System.out.println("Main method with String[] args");
-        main(10);    // Calls the overloaded main method with int
-        main(3.14);  // Calls the overloaded main method with double
-    }
-
-    public static void main(int num) {
-        System.out.println("Overloaded main method with int: " + num);
-    }
-
-    public static void main(double num) {
-        System.out.println("Overloaded main method with double: " + num);
+  
+    <li>
+      <span class="section-title">1. What is a static method in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>A <strong><u>static method</u></strong> is a <strong><u>method</u></strong> that belongs to the <strong><u>class</u></strong> rather than an object. It can be called without creating an object.</p>
+        <pre><code>class MathUtils {
+    static int square(int x) {
+        return x * x;
     }
 }
-            </code></pre>
-        </details>
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(MathUtils.square(5));
+    }
+}</code></pre>
+        <p><strong>Output:</strong></p>
+        <pre><code>25</code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. What is the syntax of defining a static method?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The syntax is:</p>
+        <pre><code>static returnType methodName(parameters) {
+    // code
+}</code></pre>
+        <p>Here, the <strong><u>static keyword</u></strong> indicates that the method belongs to the <strong><u>class</u></strong>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. What are some examples of static methods in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Examples: <strong><u>main()</u></strong>, <strong><u>Math.sqrt()</u></strong>, <strong><u>Math.max()</u></strong>, etc. These can be called directly using the <strong><u>class name</u></strong> without creating objects.</p>
+      </details>
+    </li>
+  
+
+  <!-- Medium Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+  
+    <li>
+      <span class="section-title">4. How do you call a static method in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>A <strong><u>static method</u></strong> is called using the <strong><u>class name</u></strong> directly, e.g., <code>ClassName.methodName()</code>.</p>
+        <pre><code>class MathUtils {
+    static int cube(int x) {
+        return x * x * x;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(MathUtils.cube(3));
+    }
+}</code></pre>
+        <p><strong>Output:</strong></p>
+        <pre><code>27</code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. How do static methods differ from instance methods?</span>
+      <details>
+        <summary>Answer</summary>
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Static Method</th>
+              <th>Instance Method</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Belongs To</td>
+              <td><strong><u>Class</u></strong></td>
+              <td><strong><u>Object</u></strong></td>
+            </tr>
+            <tr>
+              <td>Access</td>
+              <td>Can only access <strong><u>static members</u></strong></td>
+              <td>Can access <strong><u>instance & static members</u></strong></td>
+            </tr>
+            <tr>
+              <td>Invocation</td>
+              <td>Called using <strong><u>class name</u></strong></td>
+              <td>Called using <strong><u>object reference</u></strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. How does memory allocation work for static methods?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>A <strong><u>static method</u></strong> is stored in the <strong><u>method area of JVM</u></strong> and is <strong><u>shared among all objects</u></strong> of the class, which saves memory.</p>
+      </details>
+    </li>
+  
+
+  <!-- Hard Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+  
+    <li>
+      <span class="section-title">7. Why can't static methods access non-static variables directly?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Because <strong><u>non-static variables</u></strong> belong to <strong><u>objects</u></strong>, while a <strong><u>static method</u></strong> belongs to the <strong><u>class</u></strong>. At the time a static method is called, an object may not exist, so instance variables cannot be accessed directly.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. Why is the main() method in Java static?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <strong><u>main() method</u></strong> is <strong><u>static</u></strong> so the JVM can call it <strong><u>without creating an object</u></strong>. This ensures program execution begins immediately when the class is loaded.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. When should you use static methods instead of instance methods?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Use <strong><u>static methods</u></strong> when the operation does not depend on <strong><u>object state</u></strong> (e.g., utility or helper methods). Use <strong><u>instance methods</u></strong> when the method requires <strong><u>object-specific data</u></strong>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. Why should you avoid excessive use of static methods?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Excessive use of <strong><u>static methods</u></strong> can cause <strong><u>tight coupling</u></strong> and <strong><u>poor object-oriented design</u></strong>, since they cannot be <strong><u>overridden</u></strong> and reduce flexibility.</p>
+      </details>
     </li>
 </ul>
+
+
+
+
+
 
 <h1 id="method-binding">Method Binding</h1>
 <ul>
@@ -2228,10 +2578,280 @@ public class MainOverload {
         <summary>Answer</summary>
         <p>Yes, by using a <b><u>proper base condition</u></b> in <b><u>recursive methods</u></b>.</p>
     </details>
+</li>    
+</ul>
+
+
+
+<h1 id="parameterized-method">Parameterized Method</h1>
+
+<!-- Easy Level -->
+<h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+<li>
+  <span class="section-title">1. What is a parameterized method in Java?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>A <b><u>parameterized method</u></b> is a method that accepts values (parameters) when it is called. This allows the method to work with different inputs.</p>
+    <pre><code>class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        System.out.println(calc.add(5, 10));
+    }
+}</code></pre>
+    <p><b>Output:</b></p>
+    <pre><code>15</code></pre>
+  </details>
 </li>
 
-    
+<li>
+  <span class="section-title">2. What is the syntax of defining a parameterized method?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>The syntax is:</p>
+    <pre><code>returnType methodName(parameterType1 param1, parameterType2 param2, ...) {
+    // code
+}</code></pre>
+    <p>Here, parameters act as variables that store values passed during the method call.</p>
+  </details>
+</li>
+
+<li>
+  <span class="section-title">3. What are some examples of parameterized methods in Java?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>Examples include <b><u>String.substring(int begin, int end)</u></b>, <b><u>Math.pow(double a, double b)</u></b>, etc., where values are passed as parameters.</p>
+  </details>
+</li>
+
+<!-- Medium Level -->
+<h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+<li>
+  <span class="section-title">4. How do you call a parameterized method in Java?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>Pass arguments inside parentheses when calling the method.</p>
+    <pre><code>class MathUtils {
+    int multiply(int a, int b) {
+        return a * b;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MathUtils m = new MathUtils();
+        System.out.println(m.multiply(4, 6));
+    }
+}</code></pre>
+    <p><b>Output:</b></p>
+    <pre><code>24</code></pre>
+  </details>
+</li>
+
+<li>
+  <span class="section-title">5. What is the difference between parameterized and non-parameterized methods?</span>
+  <details>
+    <summary>Answer</summary>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Parameterized Method</th>
+          <th>Non-Parameterized Method</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Parameters</td>
+          <td>Accepts input values</td>
+          <td>Does not accept input values</td>
+        </tr>
+        <tr>
+          <td>Flexibility</td>
+          <td>Can be reused with different inputs</td>
+          <td>Always runs with same logic and no input</td>
+        </tr>
+        <tr>
+          <td>Example</td>
+          <td><code>int add(int a, int b)</code></td>
+          <td><code>void display()</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+</li>
+
+<li>
+  <span class="section-title">6. How many parameters can a method have in Java?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>A method can have <b><u>zero or more parameters</u></b>. However, too many parameters reduce readability, so it's better to use objects or arrays.</p>
+  </details>
+</li>
+
+<!-- Hard Level -->
+<h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+<li>
+  <span class="section-title">7. Can parameterized methods have default values in Java?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>No, Java does not support default parameter values directly (unlike C++). Instead, <b><u>method overloading</u></b> is used to achieve similar functionality.</p>
+    <pre><code>class Display {
+    void show(String msg) {
+        System.out.println(msg);
+    }
+    void show() {
+        System.out.println("Default Message");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Display d = new Display();
+        d.show("Hello");
+        d.show();
+    }
+}</code></pre>
+    <p><b>Output:</b></p>
+    <pre><code>Hello
+Default Message</code></pre>
+  </details>
+</li>
+
+<li>
+  <span class="section-title">8. Can a parameterized method accept different data types?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>Yes, methods can accept multiple parameters of different data types.</p>
+    <pre><code>class Info {
+    void display(String name, int age) {
+        System.out.println(name + " is " + age + " years old.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Info i = new Info();
+        i.display("Alice", 22);
+    }
+}</code></pre>
+    <p><b>Output:</b></p>
+    <pre><code>Alice is 22 years old.</code></pre>
+  </details>
+</li>
+
+<li>
+  <span class="section-title">9. Can parameterized methods return values?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>Yes, parameterized methods can return values after processing the inputs.</p>
+    <pre><code>class MathUtils {
+    double average(int a, int b, int c) {
+        return (a + b + c) / 3.0;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MathUtils m = new MathUtils();
+        System.out.println(m.average(10, 20, 30));
+    }
+}</code></pre>
+    <p><b>Output:</b></p>
+    <pre><code>20.0</code></pre>
+  </details>
+</li>
+
+<li>
+  <span class="section-title">10. Why should you use parameterized methods?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>Parameterized methods improve <b><u>reusability</u></b>, <b><u>flexibility</u></b>, and <b><u>maintainability</u></b> by allowing the same method to work with different data inputs.</p>
+  </details>
+</li>
 </ul>
+
+
+
+<h1 id="overloaded-method">Overloaded method</h1>
+<ul>
+    
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+    <!-- EASY QUESTIONS -->
+    <li><span class="section-title">1. What is method overloading?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>If a <b><u>class</u></b> has <b><u>multiple methods with the same name but different formal arguments</u></b>, it is known as <b><u>method overloading</u></b>.</p>
+        </details>
+    </li>
+
+    <li><span class="section-title">2. What is method overriding?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>Method overriding</u></b> occurs when a <b><u>subclass</u></b> provides a <b><u>specific implementation</u></b> of a method that is already defined in its <b><u>superclass</u></b>. The method in the subclass must have the <b><u>same name</u></b>, <b><u>return type</u></b>, and <b><u>parameters</u></b> as the method in the superclass.</p>
+        </details>
+    </li>
+
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <!-- MEDIUM QUESTIONS -->
+    <li><span class="section-title">3. Why do we use method overloading?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>Method overloading</u></b> allows <b><u>multiple methods with the same name but different parameters</u></b> to <b><u>handle different inputs</u></b> efficiently.</p>
+        </details>
+    </li>
+
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <!-- HARD QUESTIONS -->
+    <li><span class="section-title">4. Can you give an example of method overloading?</span>
+        <details>
+            <summary>Answer</summary>
+            <p>The <code>println</code> method of the <b><u>PrintStream</u></b> class is an example of <b><u>method overloading</u></b>.</p>
+        </details>
+    </li>
+
+    <li><span class="section-title">5. Can we have more than one method with the same name and same formal arguments? Can we overload them?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>No</u></b>, we cannot do that because they have the <b><u>same formal arguments</u></b>, which violates the <b><u>rules of method overloading</u></b>.</p>
+        </details>
+    </li>
+
+    <li><span class="section-title">6. Can the main method be overloaded?</span>
+        <details>
+            <summary>Answer</summary>
+            <p><b><u>Yes</u></b>, the <b><u>main method</u></b> can be <b><u>overloaded</u></b> in Java by using a <b><u>different parameter list</u></b>.</p>
+            <pre><code>
+public class MainOverload {
+    public static void main(String[] args) {
+        System.out.println("Main method with String[] args");
+        main(10);    // Calls the overloaded main method with int
+        main(3.14);  // Calls the overloaded main method with double
+    }
+
+    public static void main(int num) {
+        System.out.println("Overloaded main method with int: " + num);
+    }
+
+    public static void main(double num) {
+        System.out.println("Overloaded main method with double: " + num);
+    }
+}
+            </code></pre>
+        </details>
+    </li>
+</ul>
+
 
 <h1 id="return-method"> Return in method</h1>
 <ul>
@@ -6361,6 +6981,94 @@ const questions = [
     "answer": "They provide a deeper understanding of how computers work, are useful in embedded systems, device drivers, and performance-critical applications, and help in writing optimized low-level code."
 },
 
+//////////////////////////// Keywords//////////////////////////////
+
+ {
+    "question": "What are keywords in Java?",
+    "answer": "Keywords in Java are reserved words that have a predefined meaning in the language. They cannot be used as identifiers (like variable names, class names, etc.). Examples: class, public, static, void, etc."
+  },
+  {
+    "question": "How many keywords are there in Java?",
+    "answer": "There are 50+ reserved keywords in Java (exact number depends on Java version). Common ones include if, else, for, while, switch, etc."
+  },
+  {
+    "question": "Can keywords be written in uppercase in Java?",
+    "answer": "Java keywords are case-sensitive and must always be written in lowercase. For example, class is valid but Class is not."
+  },
+  {
+    "question": "What is the difference between 'final', 'finally', and 'finalize' in Java?",
+    "answer": "final is used to declare constants, prevent inheritance, and stop method overriding. finally is a block used in exception handling to execute important code (always runs). finalize is a method used by the Garbage Collector before destroying an object."
+  },
+  {
+    "question": "What is the difference between 'this' and 'super' keywords?",
+    "answer": "this refers to the current object of the class, while super refers to the immediate parent class object."
+  },
+  {
+    "question": "What is the difference between 'break' and 'continue' keywords?",
+    "answer": "break is used to terminate a loop or switch, while continue skips the current iteration and proceeds with the next one."
+  },
+  {
+    "question": "Can we use keywords as identifiers in Java?",
+    "answer": "No, keywords are reserved and cannot be used as identifiers (variable names, class names, etc.). For example, int class = 10; will cause a compilation error."
+  },
+  {
+    "question": "What is the role of the 'volatile' keyword in Java?",
+    "answer": "The volatile keyword ensures that a variable is always read from and written to main memory, not from the thread's cache. It is used in multithreading to maintain data consistency."
+  },
+  {
+    "question": "What is the role of the 'synchronized' keyword in Java?",
+    "answer": "The synchronized keyword is used to control access to critical sections of code by multiple threads, ensuring only one thread executes the block at a time."
+  },
+  {
+    "question": "What happens if we use 'goto' keyword in Java?",
+    "answer": "The goto keyword is reserved but not used in Java. It is kept for future use but has no functionality. Using it will cause a compilation error."
+  },
+
+
+
+///////////////////////// Identifiers //////////////////////////////////
+
+  {
+    "question": "What are identifiers in Java?",
+    "answer": "Identifiers in Java are names given to variables, methods, classes, packages, and interfaces. They are used to identify different elements of a program. Examples: Student, age, calculateSum()."
+  },
+  {
+    "question": "What are the rules for defining identifiers in Java?",
+    "answer": "Identifiers must begin with a letter, underscore (_), or dollar sign ($). They can contain letters, digits, _, and $. They cannot be a keyword and are case-sensitive."
+  },
+  {
+    "question": "Can identifiers in Java start with a digit?",
+    "answer": "No, identifiers cannot start with a digit. For example, 123name is invalid, but name123 is valid."
+  },
+  {
+    "question": "What is the difference between valid and invalid identifiers in Java?",
+    "answer": "Valid identifiers follow naming rules, while invalid ones break them. Examples of valid: name, _value, $price, sum1. Examples of invalid: 123abc, class, a-b, my name."
+  },
+  {
+    "question": "Are identifiers and variables the same in Java?",
+    "answer": "No, identifiers are general names given to entities (class, method, variable, etc.), while variables are just one type of identifier used to store data."
+  },
+  {
+    "question": "Are Java identifiers case-sensitive?",
+    "answer": "Yes, Java identifiers are case-sensitive. For example, student and Student are treated as different identifiers."
+  },
+  {
+    "question": "Can we use Java keywords as identifiers if we change their case?",
+    "answer": "Yes, since Java is case-sensitive, Class or Public are valid identifiers, but class or public are not allowed."
+  },
+  {
+    "question": "What is the maximum length of an identifier in Java?",
+    "answer": "There is no limit on the number of characters in an identifier in Java. However, practical limits depend on the compiler and readability."
+  },
+  {
+    "question": "Can identifiers contain special characters like '@' or '#'?",
+    "answer": "No, only _ (underscore) and $ (dollar sign) are allowed special characters in identifiers. Others like @, #, ! are invalid."
+  },
+  {
+    "question": "Can two identifiers have the same name in the same scope?",
+    "answer": "No, two identifiers cannot have the same name in the same scope. Doing so will cause a compilation error."
+  },
+
 
 
     // Continue adding your questions and answers here
@@ -6591,7 +7299,7 @@ const questions = [
     ////////////////////////////////  Abstract Method /////////////////////////////////////////////////
 
 
-    {
+  {
     "question": "What is an Abstract Method in Java?",
     "answer": "An abstract method is a method declared without implementation (no body). It only has a method signature and ends with a semicolon."
   },
@@ -6630,7 +7338,7 @@ const questions = [
   {
     "question": "Why can abstract methods not have a body?",
     "answer": "An abstract method represents only the method definition without implementation. If a body is given, it violates the rule of abstraction and causes a compile-time error."
-  }
+  },
 
   //////////////////////////////// Instance Method /////////////////////////////////////////////////
 
@@ -6665,7 +7373,95 @@ const questions = [
   {
     "question": "Why can instance methods be overridden but static methods cannot?",
     "answer": "Instance methods belong to the object and support runtime polymorphism, so they can be overridden. Static methods belong to the class and are resolved at compile-time, so they cannot be overridden (only hidden)."
-  }
+  },
+
+////////////////////////////////  Static Method /////////////////////////////////////////////////
+
+  {
+    "question": "What is a static method in Java?",
+    "answer": "A static method is a method that belongs to the class rather than an object. It can be called without creating an object."
+  },
+  {
+    "question": "What is the syntax of defining a static method?",
+    "answer": "The syntax is: static returnType methodName(parameters) { // code }. Here, the static keyword indicates that the method belongs to the class."
+  },
+  {
+    "question": "What are some examples of static methods in Java?",
+    "answer": "Examples: main(), Math.sqrt(), Math.max(), etc. These can be called directly using the class name without creating objects."
+  },
+  {
+    "question": "How do you call a static method in Java?",
+    "answer": "A static method is called using the class name directly, e.g., ClassName.methodName()."
+  },
+  {
+    "question": "How do static methods differ from instance methods?",
+    "answer": "Static methods belong to the class, can only access static members, and are called using the class name. Instance methods belong to objects, can access both instance and static members, and are called using an object reference."
+  },
+  {
+    "question": "How does memory allocation work for static methods?",
+    "answer": "A static method is stored in the method area of JVM and is shared among all objects of the class, which saves memory."
+  },
+  {
+    "question": "Why can't static methods access non-static variables directly?",
+    "answer": "Because non-static variables belong to objects, while a static method belongs to the class. At the time a static method is called, an object may not exist, so instance variables cannot be accessed directly."
+  },
+  {
+    "question": "Why is the main() method in Java static?",
+    "answer": "The main() method is static so the JVM can call it without creating an object. This ensures program execution begins immediately when the class is loaded."
+  },
+  {
+    "question": "When should you use static methods instead of instance methods?",
+    "answer": "Use static methods when the operation does not depend on object state (e.g., utility or helper methods). Use instance methods when the method requires object-specific data."
+  },
+  {
+    "question": "Why should you avoid excessive use of static methods?",
+    "answer": "Excessive use of static methods can cause tight coupling and poor object-oriented design, since they cannot be overridden and reduce flexibility."
+  },
+
+////////////////////////////////  Parameterized Method /////////////////////////////////////////////////
+
+
+   {
+    "question": "What is a parameterized method in Java?",
+    "answer": "A parameterized method is a method that accepts values (parameters) when it is called. This allows the method to work with different inputs."
+  },
+  {
+    "question": "What is the syntax of defining a parameterized method?",
+    "answer": "The syntax is: returnType methodName(parameterType1 param1, parameterType2 param2, ...) { // code }. Parameters act as variables that store values passed during the method call."
+  },
+  {
+    "question": "What are some examples of parameterized methods in Java?",
+    "answer": "Examples include String.substring(int begin, int end), Math.pow(double a, double b), etc., where values are passed as parameters."
+  },
+  {
+    "question": "How do you call a parameterized method in Java?",
+    "answer": "A parameterized method is called by passing arguments inside parentheses when calling the method, e.g., obj.methodName(value1, value2)."
+  },
+  {
+    "question": "What is the difference between parameterized and non-parameterized methods?",
+    "answer": "Parameterized methods accept input values and can be reused with different inputs, while non-parameterized methods do not accept input values and always run with the same logic."
+  },
+  {
+    "question": "How many parameters can a method have in Java?",
+    "answer": "A method can have zero or more parameters. However, too many parameters reduce readability, so it's better to use objects or arrays."
+  },
+  {
+    "question": "Can parameterized methods have default values in Java?",
+    "answer": "No, Java does not support default parameter values directly. Instead, method overloading is used to achieve similar functionality."
+  },
+  {
+    "question": "Can a parameterized method accept different data types?",
+    "answer": "Yes, methods can accept multiple parameters of different data types, e.g., void display(String name, int age)."
+  },
+  {
+    "question": "Can parameterized methods return values?",
+    "answer": "Yes, parameterized methods can process the inputs and return values, e.g., double average(int a, int b, int c)."
+  },
+  {
+    "question": "Why should you use parameterized methods?",
+    "answer": "Parameterized methods improve reusability, flexibility, and maintainability by allowing the same method to work with different data inputs."
+  },
+
 //////////////////////////////// Method Overloding/////////////////////////////////////////////////
 
 
