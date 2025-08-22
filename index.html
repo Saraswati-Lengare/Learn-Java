@@ -547,12 +547,12 @@ figcaption {
 
 
 
-     <div class="dropdown">
+    <div class="dropdown">
 
-         <button class="dropdown-button" onclick="toggleDropdown()">
+        <button class="dropdown-button" onclick="toggleDropdown()">
             <i class="fas fa-ellipsis-h"></i>
-         </button>
-         <div class="dropdown-content" id="dropdownContent">
+        </button>
+        <div class="dropdown-content" id="dropdownContent">
             <a href="#section1">Basic Concepts </a>
     
             <!-- Token Nested Dropdown -->
@@ -568,11 +568,11 @@ figcaption {
                     <a href="#identifiers">Identifiers</a>
                 </div>
             </div>
-            <a href="#section3">Conventions</a>
-            <a href="#section3">Literals</a>
-            <a href="#section3">ASCII</a>
-            <a href="#section3">Data Types</a>
-            <a href="#section3">Variable Initilization Statement</a>
+            <a href="#Conventions">Conventions</a>
+            <a href="#Literals">Literals</a>
+            <a href="#ASCII">ASCII</a>
+            <a href="#Data Types">Data Types</a>
+            <a href="#Variable Initilization Statement">Variable Initilization Statement</a>
 
             
 
@@ -585,8 +585,8 @@ figcaption {
          </svg>
          </a>
           <div class="nested-dropdown-content" id="variableInitilizationStatementDropdownContent">
-          <a href="#section3">Local Variable</a>
-          <a href="#section4">Global Variable</a>
+          <a href="#Local Variable">Local Variable</a>
+          <a href="#Global Variable">Global Variable</a>
 
 
 
@@ -619,8 +619,8 @@ figcaption {
                 </div>
             </div>
     
-            <a href="#section3">Control Flow Statements</a>
-            <a href="#section4">Dynamic Reading</a>
+            <a href="#Control Flow Statements">Control Flow Statements</a>
+            <a href="#Dynamic Reading">Dynamic Reading</a>
 
 <!-- //////////////////////////////////////////////////////////////////////////// -->
                          <!-- this drop down for method -->
@@ -1003,6 +1003,8 @@ figcaption {
 </ul>
 
 
+    <!------------------------------- Keywords -------------------------------->
+
 <ul>
 <h1 id="keyword">Keywords</h1>
 
@@ -1154,6 +1156,9 @@ Child</code></pre>
 </ul>
 
 
+<!------------------------------- Identifiers -------------------------------->
+
+
 <ul>
 <h1 id="identifiers">Identifiers</h1>
 
@@ -1267,7 +1272,885 @@ Child</code></pre>
     </li>
 </ul>
 
+<!------------------------------- Naming Conventions -------------------------------->
 
+<ul>
+<h1 id="Conventions">Naming Conventions</h1>
+
+    <!-- Easy Level -->
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What are naming conventions in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Naming conventions in Java are <b><u>standard rules</u></b> that developers follow to give names to classes, methods, variables, and other identifiers. They improve <b><u>readability</u></b> and <b><u>consistency</u></b> in code.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. Why should we follow naming conventions in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Naming conventions make code <b><u>readable</u></b>, <b><u>maintainable</u></b>, and <b><u>standardized</u></b> across teams. They also help in avoiding confusion while debugging or collaborating.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. How should variables be named in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Variables should follow the <b><u>camelCase</u></b> convention (first word starts lowercase, subsequent words start uppercase).</p>
+        <p>Examples: <code>age</code>, <code>studentName</code>, <code>totalMarks</code></p>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">4. What is the convention for naming classes in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Class names should follow <b><u>PascalCase</u></b> (each word starts with an uppercase letter).</p>
+        <p>Examples: <code>Student</code>, <code>EmployeeDetails</code>, <code>BankAccount</code></p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. What is the naming convention for methods in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Method names should follow <b><u>camelCase</u></b> and generally represent an <b><u>action</u></b>.</p>
+        <p>Examples: <code>calculateSum()</code>, <code>getStudentName()</code>, <code>displayResult()</code></p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. What is the convention for constants in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Constants should be written in <b><u>UPPERCASE</u></b> letters, with words separated by underscores.</p>
+        <p>Examples: <code>MAX_VALUE</code>, <code>PI</code>, <code>TAX_RATE</code></p>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">7. What are the naming conventions for packages in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Package names should be written in <b><u>lowercase</u></b> to avoid conflicts.</p>
+        <p>Examples: <code>java.util</code>, <code>com.companyname.project</code></p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. How should interfaces be named according to convention?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Interfaces should follow <b><u>PascalCase</u></b> and often use adjectives to describe capability.</p>
+        <p>Examples: <code>Runnable</code>, <code>Readable</code>, <code>Serializable</code></p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. What is the convention for naming arrays in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Array names should also follow <b><u>camelCase</u></b>, and usually represent <b><u>plural nouns</u></b>.</p>
+        <p>Examples: <code>students</code>, <code>marksList</code>, <code>employeeSalaries</code></p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. What happens if we do not follow naming conventions?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Code will still <b><u>compile and run</u></b>, but it will be <b><u>hard to read</u></b>, <b><u>maintain</u></b>, and <b><u>understand</u></b> for other developers.</p>
+      </details>
+    </li>
+</ul>
+
+
+<!------------------------------- Literals -------------------------------->
+
+
+<ul>
+<h1 id="Literals">Literals</h1>
+
+    <!-- Easy Level -->
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What are literals in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Literals in Java are <b><u>constant values</u></b> that are directly assigned to variables. They represent fixed values in the program.</p>
+        <p>Examples: <code>10</code>, <code>'A'</code>, <code>true</code>, <code>"Hello"</code></p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. What are the types of literals in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Java provides several types of literals:</p>
+        <ul>
+          <li><b><u>Integer literals</u></b> (e.g., <code>10</code>, <code>-25</code>)</li>
+          <li><b><u>Floating-point literals</u></b> (e.g., <code>3.14</code>, <code>2.5f</code>)</li>
+          <li><b><u>Character literals</u></b> (e.g., <code>'A'</code>, <code>'9'</code>)</li>
+          <li><b><u>String literals</u></b> (e.g., <code>"Java"</code>, <code>"Hello"</code>)</li>
+          <li><b><u>Boolean literals</u></b> (<code>true</code>, <code>false</code>)</li>
+          <li><b><u>Null literal</u></b> (<code>null</code>)</li>
+        </ul>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. What is the difference between integer and floating-point literals?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Integer literals</u></b> represent whole numbers (e.g., <code>100</code>), while <b><u>floating-point literals</u></b> represent decimal values (e.g., <code>10.5</code>).</p>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">4. What are character literals in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Character literals represent a single character enclosed in <b><u>single quotes</u></b>.</p>
+        <p>Examples: <code>'A'</code>, <code>'z'</code>, <code>'9'</code></p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. What are string literals in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>String literals represent a sequence of characters enclosed in <b><u>double quotes</u></b>.</p>
+        <p>Examples: <code>"Hello"</code>, <code>"Java Programming"</code></p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. What is a boolean literal in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>A boolean literal can have only two possible values: <code>true</code> or <code>false</code>.</p>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">7. What are the different number systems for integer literals in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Integer literals in Java can be represented in different number systems:</p>
+        <ul>
+          <li><b><u>Decimal</u></b> (base 10) → <code>100</code></li>
+          <li><b><u>Octal</u></b> (base 8, prefix <code>0</code>) → <code>012</code></li>
+          <li><b><u>Hexadecimal</u></b> (base 16, prefix <code>0x</code> or <code>0X</code>) → <code>0x1A</code></li>
+          <li><b><u>Binary</u></b> (base 2, prefix <code>0b</code> or <code>0B</code>) → <code>0b1010</code></li>
+        </ul>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. What is a null literal in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <code>null</code> literal represents the absence of any object reference. It can only be assigned to reference types (not primitives).</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. Can we use underscores in numeric literals?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Yes</u></b>, Java allows underscores in numeric literals (since Java 7) to improve readability.</p>
+        <p>Example: <code>1_000_000</code> (one million).</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. What happens if we assign a literal of the wrong type to a variable?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>A <b><u>compilation error</u></b> will occur. For example, assigning <code>10.5</code> (double literal) to an <code>int</code> variable without casting is invalid.</p>
+      </details>
+    </li>
+</ul>
+
+
+<!------------------------------- ASCII -------------------------------->
+
+<ul>
+<h1 id="ASCII">ASCII Values</h1>
+
+    <!-- Easy Level -->
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What is ASCII?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>ASCII (American Standard Code for Information Interchange) is a <b><u>character encoding standard</u></b> that represents characters using numeric codes ranging from <code>0</code> to <code>127</code>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. How many characters are represented in ASCII?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>ASCII represents a total of <b><u>128 characters</u></b> (0–127), including letters, digits, punctuation marks, and control characters.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. What is the ASCII value of character 'A'?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The ASCII value of <code>'A'</code> is <b><u>65</u></b>.</p>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">4. What is the ASCII value of lowercase 'a'?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The ASCII value of <code>'a'</code> is <b><u>97</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. What is the ASCII range for digits '0' to '9'?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The ASCII values for digits <code>'0'</code> to <code>'9'</code> range from <b><u>48 to 57</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. How can we get the ASCII value of a character in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>We can typecast a character to an integer to get its ASCII value.</p>
+        <p>Example:</p>
+        <pre><code>
+char ch = 'A';
+int ascii = (int) ch; 
+System.out.println(ascii); // Output: 65
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">7. What is the ASCII value of space (' ')?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The ASCII value of a space <code>' '</code> is <b><u>32</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. What is the ASCII range of uppercase alphabets?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The ASCII values for uppercase letters <code>'A'</code> to <code>'Z'</code> range from <b><u>65 to 90</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. What is the ASCII range of lowercase alphabets?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The ASCII values for lowercase letters <code>'a'</code> to <code>'z'</code> range from <b><u>97 to 122</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. What happens if we use a number outside ASCII range (0–127)?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>ASCII is limited to <b><u>0–127</u></b>. Numbers outside this range are part of <b><u>Extended ASCII or Unicode</u></b>, which Java supports using <code>UTF-16</code>.</p>
+      </details>
+    </li>
+</ul>
+
+
+<!------------------------------- Data Types -------------------------------->
+
+
+<ul>
+<h1 id="Data Types">Data Types</h1>
+
+    <!-- Easy Level -->
+    <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What are data types in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Data types in Java specify the <b><u>type of data</u></b> that a variable can hold. They define the <b><u>size</u></b> and <b><u>type of values</u></b> that can be stored in memory.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. What are the two categories of data types in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Java data types are divided into two categories:</p>
+        <ul>
+          <li><b><u>Primitive data types</u></b> (e.g., int, float, char, boolean)</li>
+          <li><b><u>Non-primitive (reference) data types</u></b> (e.g., String, Arrays, Objects)</li>
+        </ul>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. How many primitive data types are there in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Java provides <b><u>8 primitive data types</u></b>: <b><u>byte</u></b>, <b><u>short</u></b>, <b><u>int</u></b>, <b><u>long</u></b>, <b><u>float</u></b>, <b><u>double</u></b>, <b><u>char</u></b>, and <b><u>boolean</u></b>.</p>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">4. What is the default value of primitive data types?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Default values of <b><u>primitive types</u></b>:</p>
+        <ul>
+          <li><code>byte, short, int, long</code> → <b><u>0</u></b></li>
+          <li><code>float, double</code> → <b><u>0.0</u></b></li>
+          <li><code>char</code> → <b><u>'\u0000'</u></b></li>
+          <li><code>boolean</code> → <b><u>false</u></b></li>
+        </ul>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. What is the difference between primitive and non-primitive data types?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Primitive data types</u></b> store <b><u>simple values</u></b> (e.g., int = 10), while <b><u>non-primitive data types</u></b> store <b><u>references to objects</u></b> (e.g., String s = "Java").</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. What is the size of an int data type in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <code>int</code> data type in Java is a <b><u>32-bit signed integer</u></b>, with a range from <b><u>-2,147,483,648 to 2,147,483,647</u></b>.</p>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 id="section1" style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">7. What is type casting in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Type casting</u></b> is converting one <b><u>data type</u></b> into another.</p>
+        <p>Types:</p>
+        <ul>
+          <li><b><u>Implicit (widening)</u></b> → automatic conversion (e.g., int to double)</li>
+          <li><b><u>Explicit (narrowing)</u></b> → requires casting (e.g., double to int)</li>
+        </ul>
+        <pre><code>
+int x = 10;
+double y = x; // Implicit casting
+double a = 9.8;
+int b = (int) a; // Explicit casting
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. What is the size and range of byte in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <code>byte</code> data type is <b><u>8-bit signed integer</u></b>. Its range is from <b><u>-128 to 127</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. Why is String not a primitive data type?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>String</u></b> is a <b><u>class</u></b> in Java, not a primitive type. It represents a <b><u>sequence of characters</u></b> and provides many <b><u>methods</u></b> for manipulation.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. What is the difference between float and double data types?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><code>float</code> is a <b><u>32-bit single-precision decimal type</u></b>, while <code>double</code> is a <b><u>64-bit double-precision type</u></b>. <b><u>Double</u></b> is more <b><u>precise</u></b> and is generally <b><u>preferred</u></b> for decimal values.</p>
+      </details>
+    </li>
+</ul>
+
+
+<!------------------------------- Variable Initialization Statements -------------------------------->
+
+<ul>
+<h1 id="Variable Initilization Statement">Variable Initialization Statements</h1>
+
+    <!-- Easy Level -->
+    <h2 style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What is variable initialization in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Variable initialization means assigning an <b><u>initial value</u></b> to a <b><u>variable</u></b> at the time of <b><u>declaration</u></b>.</p>
+        <pre><code>int x = 10;</code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. Can we declare a variable without initializing it?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, but we must <b><u>initialize</u></b> it before <b><u>use</u></b>, otherwise the <b><u>compiler</u></b> throws an <b><u>error</u></b>.</p>
+        <pre><code>int x; 
+x = 20; // valid
+System.out.println(x);</code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. What are the types of variable initialization in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <ul>
+          <li><b><u>Static Initialization</u></b></li>
+          <li><b><u>Dynamic Initialization</u></b></li>
+          <li><b><u>Constructor Initialization</u></b></li>
+        </ul>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">4. What is the default value of local variables?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Local variables</u></b> have <b><u>no default value</u></b>. They must be <b><u>explicitly initialized</u></b> before <b><u>use</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. What is the default value of instance and static variables?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Instance variables</u></b> and <b><u>static variables</u></b> are initialized with <b><u>default values</u></b> (e.g., <b><u>int = 0</u></b>, <b><u>boolean = false</u></b>).</p>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">6. What is the difference between declaration and initialization?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Declaration</u></b> defines a <b><u>variable</u></b> (e.g., <code>int x;</code>), while <b><u>initialization</u></b> assigns a <b><u>value</u></b> (e.g., <code>x = 10;</code>).</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">7. What is dynamic initialization?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Dynamic initialization</u></b> means assigning <b><u>values</u></b> at <b><u>runtime</u></b> using <b><u>expressions</u></b> or <b><u>methods</u></b>.</p>
+        <pre><code>int a = 10, b = 20;
+int sum = a + b;</code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. What happens if we use an uninitialized local variable?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Compiler error</u></b> occurs because <b><u>local variables</u></b> must be <b><u>explicitly initialized</u></b> before <b><u>use</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. How are final variables initialized?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Final variables</u></b> must be <b><u>initialized once</u></b>, either at <b><u>declaration</u></b>, inside a <b><u>constructor</u></b>, or in an <b><u>initializer block</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. Can variables be re-initialized?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, except <b><u>final variables</u></b>. Other <b><u>variables</u></b> can be assigned <b><u>new values</u></b> multiple times.</p>
+        <pre><code>int x = 5;
+x = 15; // re-initialization</code></pre>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">11. What is constructor initialization?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>When <b><u>variables</u></b> are initialized through <b><u>constructors</u></b> while creating <b><u>objects</u></b>.</p>
+        <pre><code>
+class Student {
+    int age;
+    Student(int a) { age = a; }
+}
+Student s = new Student(20);
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">12. What is static initialization?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Static variables</u></b> can be initialized in <b><u>static blocks</u></b> that run <b><u>once</u></b> when the <b><u>class</u></b> is <b><u>loaded</u></b>.</p>
+        <pre><code>
+class Test {
+    static int x;
+    static {
+        x = 100;
+    }
+}
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">13. Can we initialize multiple variables in a single statement?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, multiple <b><u>variables</u></b> of the same <b><u>type</u></b> can be initialized in one <b><u>line</u></b>.</p>
+        <pre><code>int a = 5, b = 10, c = 15;</code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">14. What is instance initialization block?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>A <b><u>block of code</u></b> that runs whenever an <b><u>object</u></b> is <b><u>created</u></b>, used to initialize <b><u>instance variables</u></b>.</p>
+        <pre><code>
+class Test {
+    int x;
+    { x = 50; } // instance initializer
+}
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">15. Can arrays be initialized at the time of declaration?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, <b><u>arrays</u></b> can be directly <b><u>initialized</u></b> with <b><u>values</u></b> at <b><u>declaration</u></b>.</p>
+        <pre><code>
+int[] arr = {1, 2, 3, 4, 5};
+        </code></pre>
+      </details>
+    </li>
+
+</ul>
+
+
+
+<!------------------------------- Local Variables -------------------------------->
+
+
+<ul>
+<h1 id="Local Variable">Local Variables</h1>
+
+    <!-- Easy Level -->
+    <h2 style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What is a local variable in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>A <b><u>local variable</u></b> is a variable declared <b><u>inside a method, constructor, or block</u></b> and can only be accessed within that scope.</p>
+        <pre><code>
+class Test {
+    void display() {
+        int x = 10; // local variable
+        System.out.println(x);
+    }
+}
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. What is the lifetime of a local variable?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>A <b><u>local variable</u></b> exists only while the <b><u>method or block</u></b> is executing. After that, it is destroyed.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. Do local variables have default values?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>No, <b><u>local variables</u></b> do not have default values. They must be <b><u>explicitly initialized</u></b> before use.</p>
+        <pre><code>
+void test() {
+    int num;
+    // System.out.println(num); // ❌ Error: num not initialized
+}
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">4. Can local variables be accessed outside the method?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>No, <b><u>local variables</u></b> are <b><u>not accessible</u></b> outside the method, constructor, or block in which they are declared.</p>
+        <pre><code>
+class Test {
+    void method() {
+        int a = 5;
+        System.out.println(a);
+    }
+}
+Test t = new Test();
+// System.out.println(t.a); // ❌ Error: a not accessible
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. Can local variables be static?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>No, <b><u>local variables</u></b> cannot be declared as <b><u>static</u></b>, because they belong to the <b><u>method instance</u></b>, not the class.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. Can a local variable shadow an instance variable?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, a <b><u>local variable</u></b> with the same name as an <b><u>instance variable</u></b> will <b><u>hide</u></b> the instance variable within that method.</p>
+        <pre><code>
+class Test {
+    int x = 20;
+    void show() {
+        int x = 10; // shadows instance variable
+        System.out.println(x); // prints 10
+    }
+}
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">7. Can local variables be final?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, <b><u>local variables</u></b> can be declared as <b><u>final</u></b>. Once initialized, their values cannot be changed.</p>
+        <pre><code>
+void method() {
+    final int num = 50;
+    // num = 60; // ❌ Error: cannot reassign final variable
+}
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. What is a local variable in a for loop?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>A <b><u>loop variable</u></b> declared inside a <b><u>for loop</u></b> is also a <b><u>local variable</u></b> and exists only within the loop.</p>
+        <pre><code>
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+// System.out.println(i); // ❌ Error: i not accessible
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. Why must local variables be initialized before use?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Because <b><u>Java compiler</u></b> does not automatically assign <b><u>default values</u></b> to <b><u>local variables</u></b>, they must be <b><u>explicitly initialized</u></b> before use.</p>
+      </details>
+    </li>
+
+</ul>
+
+
+<!------------------------------- Global Variables -------------------------------->
+
+
+<ul>
+<h1 id="Global Variable">Global Variables</h1>
+
+    <!-- Easy Level -->
+    <h2 style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What is a global variable in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>A <b><u>global variable</u></b> in Java is typically a <b><u>static variable</u></b> declared inside a class but <b><u>outside any method, constructor, or block</u></b>. It can be accessed throughout the class and from other classes using the class name.</p>
+        <pre><code>
+class Test {
+    static int count = 100; // global variable
+}
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. What is the default value of a global variable?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Global variables</u></b> (static variables) are automatically assigned <b><u>default values</u></b> (e.g., int = 0, boolean = false, object = null).</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. Where are global variables stored in memory?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Global variables</u></b> are stored in the <b><u>method area (class area)</u></b> of memory and are shared across all objects of the class.</p>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">4. How do we access a global variable from another class?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Global variables</u></b> can be accessed using the <b><u>class name</u></b> directly without creating an object.</p>
+        <pre><code>
+class Test {
+    static int num = 50; // global variable
+}
+class Main {
+    public static void main(String[] args) {
+        System.out.println(Test.num); // Accessing global variable
+    }
+}
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. Can global variables be private?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, a <b><u>global variable</u></b> can be declared <b><u>private</u></b>, but then it can only be accessed within the same class. To access it outside, we use <b><u>getter and setter methods</u></b>.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. Can global variables be changed?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, unless they are declared as <b><u>final</u></b>, <b><u>global variables</u></b> can be modified and the change is reflected across all objects of the class.</p>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">7. Can global variables be final?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, if a <b><u>global variable</u></b> is declared <b><u>final</u></b>, its value cannot be changed once initialized.</p>
+        <pre><code>
+class Test {
+    static final int MAX = 100; // constant global variable
+}
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. How do global variables differ from local variables?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Global variables</u></b> (static) have <b><u>class-wide scope</u></b> and default values, while <b><u>local variables</u></b> are <b><u>method-scoped</u></b> and must be <b><u>explicitly initialized</u></b> before use.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. Can global variables cause memory issues?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, <b><u>global variables</u></b> remain in memory as long as the class is loaded, so excessive use can cause <b><u>high memory consumption</u></b> and make debugging harder.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. Can we use global variables in multithreaded programs?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, but <b><u>global variables</u></b> can cause <b><u>data inconsistency</u></b> in multithreaded environments if multiple threads modify them simultaneously. To handle this, we use <b><u>synchronization</u></b> or <b><u>volatile</u></b> keyword.</p>
+        <pre><code>
+class Counter {
+    static int count = 0;
+    synchronized void increment() {
+        count++;
+    }
+}
+        </code></pre>
+      </details>
+    </li>
+
+</ul>
+
+
+
+
+
+
+<!------------------------------- Operator -------------------------------->
     
 
 <h1 id="Operator">OPERATOR</h1>
@@ -1377,7 +2260,7 @@ Child</code></pre>
 
         
 
-    </ul>
+</ul>
 
     <h1 id="logical-operator" style="color: rgb(147, 112, 219);">Logical Operator</h1>
 <ul>
@@ -1448,9 +2331,9 @@ Child</code></pre>
 
 </ul>
 
-  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <!-- //////////////////////////////////////////// Control Flow Statements ///////////////////////////////////////////////////// -->
 
-  <h1 id="section3">Control Flow Statements</h1>
+  <h1 id="Control Flow Statements">Control Flow Statements</h1>
   <ul>
 
     <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
@@ -1687,7 +2570,7 @@ if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
 
 
 <!-- ///////////////////////////////////////////////////////////// -->
-<h1 id="section4">Dynamic Reading</h1>
+<h1 id="Dynamic Reading">Dynamic Reading</h1>
 <ul>
     
     <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
@@ -7069,10 +7952,308 @@ const questions = [
     "answer": "No, two identifiers cannot have the same name in the same scope. Doing so will cause a compilation error."
   },
 
+///////////////////////// conventions ///////////////////////////////
 
 
-    // Continue adding your questions and answers here
-    // control flow statement
+   {
+    "question": "What are naming conventions in Java?",
+    "answer": "Naming conventions in Java are standard rules that developers follow to give names to classes, methods, variables, and other identifiers. They improve readability and consistency in code."
+  },
+  {
+    "question": "Why should we follow naming conventions in Java?",
+    "answer": "Naming conventions make code readable, maintainable, and standardized across teams. They also help in avoiding confusion while debugging or collaborating."
+  },
+  {
+    "question": "How should variables be named in Java?",
+    "answer": "Variables should follow the camelCase convention (first word starts lowercase, subsequent words start uppercase). Examples: age, studentName, totalMarks."
+  },
+  {
+    "question": "What is the convention for naming classes in Java?",
+    "answer": "Class names should follow PascalCase (each word starts with an uppercase letter). Examples: Student, EmployeeDetails, BankAccount."
+  },
+  {
+    "question": "What is the naming convention for methods in Java?",
+    "answer": "Method names should follow camelCase and generally represent an action. Examples: calculateSum(), getStudentName(), displayResult()."
+  },
+  {
+    "question": "What is the convention for constants in Java?",
+    "answer": "Constants should be written in UPPERCASE letters, with words separated by underscores. Examples: MAX_VALUE, PI, TAX_RATE."
+  },
+  {
+    "question": "What are the naming conventions for packages in Java?",
+    "answer": "Package names should be written in lowercase to avoid conflicts. Examples: java.util, com.companyname.project."
+  },
+  {
+    "question": "How should interfaces be named according to convention?",
+    "answer": "Interfaces should follow PascalCase and often use adjectives to describe capability. Examples: Runnable, Readable, Serializable."
+  },
+  {
+    "question": "What is the convention for naming arrays in Java?",
+    "answer": "Array names should follow camelCase, and usually represent plural nouns. Examples: students, marksList, employeeSalaries."
+  },
+  {
+    "question": "What happens if we do not follow naming conventions?",
+    "answer": "Code will still compile and run, but it will be hard to read, maintain, and understand for other developers."
+  },
+
+
+
+  
+///////////////////////// Literals ///////////////////////////////
+
+
+
+{
+    "question": "What are literals in Java?",
+    "answer": "Literals in Java are constant values that are directly assigned to variables. They represent fixed values in the program. Examples: 10, 'A', true, \"Hello\"."
+  },
+  {
+    "question": "What are the types of literals in Java?",
+    "answer": "Java provides several types of literals: Integer literals (10, -25), Floating-point literals (3.14, 2.5f), Character literals ('A', '9'), String literals (\"Java\", \"Hello\"), Boolean literals (true, false), and Null literal (null)."
+  },
+  {
+    "question": "What is the difference between integer and floating-point literals?",
+    "answer": "Integer literals represent whole numbers (e.g., 100), while floating-point literals represent decimal values (e.g., 10.5)."
+  },
+  {
+    "question": "What are character literals in Java?",
+    "answer": "Character literals represent a single character enclosed in single quotes. Examples: 'A', 'z', '9'."
+  },
+  {
+    "question": "What are string literals in Java?",
+    "answer": "String literals represent a sequence of characters enclosed in double quotes. Examples: \"Hello\", \"Java Programming\"."
+  },
+  {
+    "question": "What is a boolean literal in Java?",
+    "answer": "A boolean literal can have only two possible values: true or false."
+  },
+  {
+    "question": "What are the different number systems for integer literals in Java?",
+    "answer": "Integer literals in Java can be represented in different number systems: Decimal (100), Octal (prefix 0, e.g., 012), Hexadecimal (prefix 0x or 0X, e.g., 0x1A), Binary (prefix 0b or 0B, e.g., 0b1010)."
+  },
+  {
+    "question": "What is a null literal in Java?",
+    "answer": "The null literal represents the absence of any object reference. It can only be assigned to reference types, not primitives."
+  },
+  {
+    "question": "Can we use underscores in numeric literals?",
+    "answer": "Yes, Java allows underscores in numeric literals (since Java 7) to improve readability. Example: 1_000_000."
+  },
+  {
+    "question": "What happens if we assign a literal of the wrong type to a variable?",
+    "answer": "A compilation error will occur. For example, assigning 10.5 (double literal) to an int variable without casting is invalid."
+  },
+
+
+
+////////////////////////////////////// ASCII Values /////////////////////////////////
+
+
+  {
+    "question": "What is ASCII?",
+    "answer": "ASCII (American Standard Code for Information Interchange) is a character encoding standard that represents characters using numeric codes ranging from 0 to 127."
+  },
+  {
+    "question": "How many characters are represented in ASCII?",
+    "answer": "ASCII represents a total of 128 characters (0–127), including letters, digits, punctuation marks, and control characters."
+  },
+  {
+    "question": "What is the ASCII value of character 'A'?",
+    "answer": "The ASCII value of 'A' is 65."
+  },
+  {
+    "question": "What is the ASCII value of lowercase 'a'?",
+    "answer": "The ASCII value of 'a' is 97."
+  },
+  {
+    "question": "What is the ASCII range for digits '0' to '9'?",
+    "answer": "The ASCII values for digits '0' to '9' range from 48 to 57."
+  },
+  {
+    "question": "How can we get the ASCII value of a character in Java?",
+    "answer": "We can typecast a character to an integer to get its ASCII value. Example: char ch = 'A'; int ascii = (int) ch; // ascii = 65"
+  },
+  {
+    "question": "What is the ASCII value of space (' ')?",
+    "answer": "The ASCII value of space (' ') is 32."
+  },
+  {
+    "question": "What is the ASCII range of uppercase alphabets?",
+    "answer": "The ASCII values for uppercase letters 'A' to 'Z' range from 65 to 90."
+  },
+  {
+    "question": "What is the ASCII range of lowercase alphabets?",
+    "answer": "The ASCII values for lowercase letters 'a' to 'z' range from 97 to 122."
+  },
+  {
+    "question": "What happens if we use a number outside ASCII range (0–127)?",
+    "answer": "ASCII is limited to 0–127. Numbers outside this range are part of Extended ASCII or Unicode, which Java supports using UTF-16."
+  },
+
+
+////////////////////////////////////// Data Types /////////////////////////////////
+
+
+  {
+    "question": "What are data types in Java?",
+    "answer": "Data types in Java specify the type of data that a variable can hold. They define the size and type of values that can be stored in memory."
+  },
+  {
+    "question": "What are the two categories of data types in Java?",
+    "answer": "Java data types are divided into two categories: Primitive data types (e.g., int, float, char, boolean) and Non-primitive (reference) data types (e.g., String, Arrays, Objects)."
+  },
+  {
+    "question": "How many primitive data types are there in Java?",
+    "answer": "Java provides 8 primitive data types: byte, short, int, long, float, double, char, and boolean."
+  },
+  {
+    "question": "What is the default value of primitive data types?",
+    "answer": "Default values of primitive types are: byte, short, int, long → 0; float, double → 0.0; char → '\\u0000'; boolean → false."
+  },
+  {
+    "question": "What is the difference between primitive and non-primitive data types?",
+    "answer": "Primitive data types store simple values (e.g., int = 10), while non-primitive data types store references to objects (e.g., String s = \"Java\")."
+  },
+  {
+    "question": "What is the size of an int data type in Java?",
+    "answer": "The int data type in Java is a 32-bit signed integer, with a range from -2,147,483,648 to 2,147,483,647."
+  },
+  {
+    "question": "What is type casting in Java?",
+    "answer": "Type casting is converting one data type into another. It can be implicit (widening, e.g., int to double) or explicit (narrowing, e.g., double to int)."
+  },
+  {
+    "question": "What is the size and range of byte in Java?",
+    "answer": "The byte data type is an 8-bit signed integer. Its range is from -128 to 127."
+  },
+  {
+    "question": "Why is String not a primitive data type?",
+    "answer": "String is a class in Java, not a primitive type. It represents a sequence of characters and provides many methods for manipulation."
+  },
+  {
+    "question": "What is the difference between float and double data types?",
+    "answer": "float is a 32-bit single-precision decimal type, while double is a 64-bit double-precision type. double is more precise and generally preferred for decimal values."
+  },
+
+
+////////////////////////////////////// Variable Initialization statements /////////////////////////////////
+
+
+ { "question": "What is variable initialization in Java?", 
+   "answer": "Variable initialization means assigning an initial value to a variable at the time of declaration. Example: int x = 10;" },
+
+  { "question": "Can we declare a variable without initializing it?",
+    "answer": "Yes, but we must initialize it before use, otherwise the compiler throws an error." },
+
+  { "question": "What are the types of variable initialization in Java?",
+    "answer": "The types are: Static Initialization, Dynamic Initialization, and Constructor Initialization." },
+
+  { "question": "What is the default value of local variables?",
+    "answer": "Local variables have no default value. They must be explicitly initialized before use." },
+
+  { "question": "What is the default value of instance and static variables?",
+    "answer": "Instance and static variables are initialized with default values (e.g., int = 0, boolean = false)." },
+
+  { "question": "What is the difference between declaration and initialization?",
+    "answer": "Declaration defines a variable (e.g., int x;), while initialization assigns a value (e.g., x = 10;)." },
+
+  { "question": "What is dynamic initialization?",
+    "answer": "Dynamic initialization means assigning values at runtime using expressions or methods." },
+
+  { "question": "What happens if we use an uninitialized local variable?",
+    "answer": "A compiler error occurs because local variables must be explicitly initialized before use." },
+
+  { "question": "How are final variables initialized?",
+    "answer": "Final variables must be initialized once, either at declaration, inside a constructor, or in an initializer block." },
+
+  { "question": "Can variables be re-initialized?",
+    "answer": "Yes, except final variables. Other variables can be assigned new values multiple times." },
+
+  { "question": "What is constructor initialization?",
+    "answer": "Constructor initialization means variables are initialized through constructors while creating objects." },
+
+  { "question": "What is static initialization?",
+    "answer": "Static variables can be initialized in static blocks that run once when the class is loaded." },
+
+  { "question": "Can we initialize multiple variables in a single statement?",
+    "answer": "Yes, multiple variables of the same type can be initialized in one line. Example: int a = 5, b = 10, c = 15;" },
+
+  { "question": "What is instance initialization block?",
+    "answer": "An instance initialization block is a block of code that runs whenever an object is created, used to initialize instance variables." },
+
+  { "question": "Can arrays be initialized at the time of declaration?",
+    "answer": "Yes, arrays can be directly initialized with values at the time of declaration. Example: int[] arr = {1, 2, 3, 4, 5};" },
+
+
+
+    ////////////////////////////////////// Local Variable /////////////////////////////////
+
+
+
+  { "question": "What is a local variable in Java?",
+    "answer": "A local variable is a variable declared inside a method, constructor, or block and can only be accessed within that scope." },
+
+  { "question": "What is the lifetime of a local variable?",
+    "answer": "A local variable exists only while the method or block is executing. After that, it is destroyed." },
+
+  { "question": "Do local variables have default values?",
+    "answer": "No, local variables do not have default values. They must be explicitly initialized before use." },
+
+  { "question": "Can local variables be accessed outside the method?",
+    "answer": "No, local variables are not accessible outside the method, constructor, or block in which they are declared." },
+
+  { "question": "Can local variables be static?",
+    "answer": "No, local variables cannot be declared as static, because they belong to the method instance, not the class." },
+
+  { "question": "Can a local variable shadow an instance variable?",
+    "answer": "Yes, a local variable with the same name as an instance variable will hide the instance variable within that method." },
+
+  { "question": "Can local variables be final?",
+    "answer": "Yes, local variables can be declared as final. Once initialized, their values cannot be changed." },
+
+  { "question": "What is a local variable in a for loop?",
+    "answer": "A loop variable declared inside a for loop is also a local variable and exists only within the loop." },
+
+  { "question": "Why must local variables be initialized before use?",
+    "answer": "Because Java compiler does not automatically assign default values to local variables, they must be explicitly initialized before use." },
+
+
+////////////////////////////////////// Global Variable /////////////////////////////////
+
+
+  { "question": "What is a global variable in Java?",
+    "answer": "A global variable in Java is typically a static variable declared inside a class but outside any method, constructor, or block. It can be accessed throughout the class and from other classes using the class name." },
+
+  { "question": "What is the default value of a global variable?",
+    "answer": "Global variables (static variables) are automatically assigned default values (e.g., int = 0, boolean = false, object = null)." },
+
+  { "question": "Where are global variables stored in memory?", 
+    "answer": "Global variables are stored in the method area (class area) of memory and are shared across all objects of the class." },
+
+  { "question": "How do we access a global variable from another class?",
+    "answer": "Global variables can be accessed using the class name directly without creating an object." },
+
+  { "question": "Can global variables be private?",
+    "answer": "Yes, a global variable can be declared private, but then it can only be accessed within the same class. To access it outside, getter and setter methods are used." },
+
+  { "question": "Can global variables be changed?",
+    "answer": "Yes, unless they are declared as final, global variables can be modified and the change is reflected across all objects of the class." },
+
+  { "question": "Can global variables be final?",
+    "answer": "Yes, if a global variable is declared final, its value cannot be changed once initialized." },
+
+  { "question": "How do global variables differ from local variables?",
+    "answer": "Global variables (static) have class-wide scope and default values, while local variables are method-scoped and must be explicitly initialized before use." },
+
+  { "question": "Can global variables cause memory issues?",
+    "answer": "Yes, global variables remain in memory as long as the class is loaded, so excessive use can cause high memory consumption and make debugging harder." },
+
+  { "question": "Can we use global variables in multithreaded programs?",
+    "answer": "Yes, but global variables can cause data inconsistency in multithreaded environments if multiple threads modify them simultaneously. Synchronization or the volatile keyword should be used to handle this." },
+
+
+    ////////////////////////////////////// control flow statement /////////////////////////////////
+    
 {
     question: "What is a control flow statement?",
 
@@ -8327,7 +9508,7 @@ const questions = [
 
 
 
-  {
+{
     question: "What is Polymorphism?",
     answer: "\"Poly\" means many, and \"morph\" means form. Polymorphism in Java is the ability of a member (variable or method) to have one name but many forms.\n\nOr\n\nIt is a concept where we can perform a single action in different ways."
 },
@@ -8398,8 +9579,8 @@ const questions = [
 {
     question: "What is operator overloading?",
     answer: "Operator overloading allows different behaviors for an operator; Java supports it only for + in string concatenation."
-}
-,
+},
+
 
 //////////////////////////////////    Abstraction ////////////////////////////////////////////////////////////////////
  
