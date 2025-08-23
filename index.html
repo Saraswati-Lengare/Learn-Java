@@ -671,6 +671,7 @@ figcaption {
             <a href="#final">Final</a>
             <a href="#arrays">Arrays</a>
             <a href="#string">String</a>
+            <a href="#Problems Based On Numbers">Problems Based On Numbers</a>
 
 
             
@@ -2155,9 +2156,772 @@ class Counter {
 
 <h1 id="Operator">OPERATOR</h1>
 
-<h1 id="increment-decrement-operator">Increment and Decrement Operator</h1>
+
+<!------------------------------- Arithmetic Operator -------------------------------->
+
+<ul>
+<h1 id="arithmetic-operator">Arithmetic Operators</h1>
+
+    <!-- Easy Level -->
+    <h2 style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What are arithmetic operators in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Arithmetic operators</u></b> in Java are used to perform basic mathematical operations like addition, subtraction, multiplication, division, and modulus.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. List the arithmetic operators in Java.</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The arithmetic operators in Java are:</p>
+        <ul>
+          <li><code>+</code> → Addition</li>
+          <li><code>-</code> → Subtraction</li>
+          <li><code>*</code> → Multiplication</li>
+          <li><code>/</code> → Division</li>
+          <li><code>%</code> → Modulus (remainder)</li>
+        </ul>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. What is the result of division between two integers?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>If both operands are integers, the result will also be an <b><u>integer</u></b> (decimal part is truncated).</p>
+        <pre><code>
+System.out.println(7 / 2); // Output: 3
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">4. What is the difference between division (/) and modulus (%)?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Division (/)</u></b> gives the quotient, while <b><u>modulus (%)</u></b> gives the remainder.</p>
+        <pre><code>
+System.out.println(10 / 3); // Output: 3
+System.out.println(10 % 3); // Output: 1
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. Can arithmetic operators be used with characters?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, since characters are stored as <b><u>Unicode values</u></b>, arithmetic operations can be performed on them.</p>
+        <pre><code>
+char c = 'A';
+System.out.println(c + 1); // Output: 66 (since 'A' = 65)
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. What happens when division is performed by zero?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>If the divisor is <b><u>zero</u></b>:
+          <ul>
+            <li>For integers → <b><u>ArithmeticException</u></b></li>
+            <li>For floating-point → <b><u>Infinity</u></b> or <b><u>NaN</u></b></li>
+          </ul>
+        </p>
+        <pre><code>
+System.out.println(10 / 0);   // Exception
+System.out.println(10.0 / 0); // Infinity
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">7. How do arithmetic operators behave with mixed data types?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>In Java, smaller data types are <b><u>promoted</u></b> to larger ones during operations. For example, int + double → double.</p>
+        <pre><code>
+int a = 5;
+double b = 2.5;
+System.out.println(a + b); // Output: 7.5
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. What is the effect of overflow in arithmetic operations?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>If the result of an arithmetic operation exceeds the range of the data type, <b><u>overflow</u></b> occurs and the value wraps around.</p>
+        <pre><code>
+int x = Integer.MAX_VALUE;
+System.out.println(x + 1); // Output: -2147483648
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. Can arithmetic operators be overloaded in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>No, Java does not support operator overloading. However, the <b><u>+</u></b> operator is special because it is also used for <b><u>string concatenation</u></b>.</p>
+        <pre><code>
+System.out.println("Hello " + "World"); // Output: Hello World
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. How are arithmetic operations handled in multithreading?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>When multiple threads modify the same variable with arithmetic operators, <b><u>race conditions</u></b> may occur. To prevent this, use <b><u>synchronization</u></b> or <b><u>Atomic variables</u></b>.</p>
+        <pre><code>
+import java.util.concurrent.atomic.AtomicInteger;
+class Counter {
+    static AtomicInteger count = new AtomicInteger(0);
+    void increment() {
+        count.incrementAndGet();
+    }
+}
+        </code></pre>
+      </details>
+    </li>
+
+</ul>
+
+
+
+<!------------------------------- Assignment Operator -------------------------------->
+
+<ul>
+<h1 id="assignment-operator">Assignment Operators</h1>
+
+    <!-- Easy Level -->
+    <h2 style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What are assignment operators in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Assignment operators</u></b> in Java are used to <b><u>assign values</u></b> to variables. The simplest is <code>=</code>, which assigns the right-hand value to the left-hand variable.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. List the compound assignment operators in Java.</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Some commonly used compound assignment operators are:</p>
+        <ul>
+          <li><code>+=</code> → Add and assign</li>
+          <li><code>-=</code> → Subtract and assign</li>
+          <li><code>*=</code> → Multiply and assign</li>
+          <li><code>/=</code> → Divide and assign</li>
+          <li><code>%=</code> → Modulus and assign</li>
+        </ul>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. How does <code>+=</code> work?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <code>+=</code> operator adds the right-hand value to the left-hand variable and stores the result in the same variable.</p>
+        <pre><code>
+int x = 5;
+x += 3; // same as x = x + 3
+System.out.println(x); // Output: 8
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">4. Can assignment operators be used with different data types?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, but Java performs <b><u>type conversion</u></b> automatically if compatible. Narrowing conversion requires explicit casting.</p>
+        <pre><code>
+int a = 10;
+double b = 2.5;
+a += b; // a = (int)(a + b), result = 12
+System.out.println(a);
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. What is the difference between <code>=</code> and <code>==</code>?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><code>=</code> is the <b><u>assignment operator</u></b>, used to assign values. <code>==</code> is the <b><u>equality operator</u></b>, used to compare two values.</p>
+        <pre><code>
+int x = 10; // assignment
+System.out.println(x == 10); // true, comparison
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. Can assignment operators be chained?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, assignment operators can be chained, and evaluation happens from <b><u>right to left</u></b>.</p>
+        <pre><code>
+int a, b, c;
+a = b = c = 20;
+System.out.println(a + " " + b + " " + c); // Output: 20 20 20
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">7. Can assignment operators be used with objects?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, but in the case of objects, the assignment operator copies the <b><u>reference</u></b>, not the actual object.</p>
+        <pre><code>
+class Test {
+    int num;
+}
+public class Main {
+    public static void main(String[] args) {
+        Test t1 = new Test();
+        t1.num = 100;
+        Test t2 = t1; // reference copy
+        t2.num = 200;
+        System.out.println(t1.num); // Output: 200
+    }
+}
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. Can assignment operators cause implicit casting issues?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, when assigning larger types to smaller ones, <b><u>data loss</u></b> may occur unless explicit casting is used.</p>
+        <pre><code>
+double d = 9.7;
+int x = (int) d; // explicit casting required
+System.out.println(x); // Output: 9
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. Are assignment operators overloaded in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>No, Java does not support operator overloading, so the meaning of <b><u>=</u></b> and compound assignment operators cannot be changed.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. Can assignment operators be used in conditional expressions?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, but it is risky since <b><u>=</u></b> assigns a value instead of checking equality. This often leads to logical errors if mistaken for <code>==</code>.</p>
+        <pre><code>
+int x = 0;
+if (x = 1) {  // ❌ Compilation error (boolean required)
+}
+        </code></pre>
+        <p>But in boolean context:</p>
+        <pre><code>
+boolean flag = false;
+if (flag = true) {
+    System.out.println("This runs!");
+}
+        </code></pre>
+      </details>
+    </li>
+
+</ul>
+
+
+<!------------------------------- Relational Operator -------------------------------->
+
+
+
+<ul>
+<h1 id="relational-operator">Relational Operators</h1>
+
+    <!-- Easy Level -->
+    <h2 style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What are relational operators in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Relational operators</u></b> are used to <b><u>compare two values</u></b>. They return a <b><u>boolean result</u></b> (<code>true</code> or <code>false</code>).</p>
+        <pre><code>
+int a = 10, b = 20;
+System.out.println(a < b); // true
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. List the relational operators in Java.</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Java provides the following <b><u>relational operators</u></b>:</p>
+        <ul>
+          <li><code>==</code> → <b><u>equal to</u></b></li>
+          <li><code>!=</code> → <b><u>not equal to</u></b></li>
+          <li><code>&gt;</code> → <b><u>greater than</u></b></li>
+          <li><code>&lt;</code> → <b><u>less than</u></b></li>
+          <li><code>&gt;=</code> → <b><u>greater than or equal to</u></b></li>
+          <li><code>&lt;=</code> → <b><u>less than or equal to</u></b></li>
+        </ul>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. What is the difference between == and !=?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><code><b><u>==</u></b></code> checks if <b><u>two values are equal</u></b>, while <code><b><u>!=</u></b></code> checks if <b><u>they are not equal</u></b>.</p>
+        <pre><code>
+int x = 5, y = 10;
+System.out.println(x == y); // false
+System.out.println(x != y); // true
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">4. Can relational operators be used with different data types?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, <b><u>relational operators</u></b> can compare <b><u>different numeric types</u></b> due to <b><u>type promotion</u></b>, but they cannot be applied directly to <b><u>boolean values</u></b>.</p>
+        <pre><code>
+int a = 5;
+double b = 5.0;
+System.out.println(a == b); // true (int promoted to double)
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. Can relational operators be used with objects?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>No, <b><u>relational operators</u></b> cannot directly compare <b><u>objects</u></b> (except <code><b><u>==</u></b></code> and <code><b><u>!=</u></b></code>, which compare <b><u>references</u></b>, not values). For <b><u>content comparison</u></b>, we use <b><u>equals()</u></b>.</p>
+        <pre><code>
+String s1 = new String("Java");
+String s2 = new String("Java");
+System.out.println(s1 == s2);      // false (different references)
+System.out.println(s1.equals(s2)); // true (same content)
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. What happens if we use relational operators with boolean values?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Relational operators</u></b> (<code>&lt;, &gt;, &lt;=, &gt;=</code>) <b><u>cannot</u></b> be used with <b><u>boolean values</u></b>. Only <code><b><u>==</u></b></code> and <code><b><u>!=</u></b></code> can be applied to <b><u>booleans</u></b>.</p>
+        <pre><code>
+boolean a = true, b = false;
+System.out.println(a == b); // false
+System.out.println(a != b); // true
+// System.out.println(a > b); // ❌ Compilation error
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">7. Can relational operators be chained in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>No, <b><u>relational operators</u></b> <b><u>cannot</u></b> be <b><u>chained</u></b> like in mathematics. Each <b><u>comparison</u></b> must be separate.</p>
+        <pre><code>
+int x = 5;
+int y = 10;
+int z = 15;
+// System.out.println(x < y < z); // ❌ Error
+System.out.println(x < y && y < z); // ✅ true
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. How do relational operators behave with floating-point numbers?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>They work normally, but special cases like <code><b><u>NaN</u></b></code> (<b><u>Not-a-Number</u></b>) always return <b><u>false</u></b> for <code>&lt;, &gt;, ==</code> comparisons.</p>
+        <pre><code>
+double d = Double.NaN;
+System.out.println(d == d); // false
+System.out.println(d != d); // true
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. What is the result type of a relational expression?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Relational operators</u></b> always return a <b><u>boolean value</u></b> (<code>true</code> or <code>false</code>).</p>
+        <pre><code>
+int a = 7, b = 3;
+boolean result = a > b;
+System.out.println(result); // true
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. Can relational operators be overloaded in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>No, Java <b><u>does not support operator overloading</u></b>. The <b><u>behavior</u></b> of <b><u>relational operators</u></b> is <b><u>fixed</u></b>.</p>
+      </details>
+    </li>
+
+</ul>
+
+
+
+
+<!------------------------------- Conditional Operator -------------------------------->
+
+<ul>
+<h1 id="conditional-operator">Conditional (Ternary) Operator</h1>
+
+    <!-- Easy Level -->
+    <h2 style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What is the conditional operator in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <b><u>conditional operator</u></b> (also called the <b><u>ternary operator</u></b>) is a shorthand for <b><u>if-else statements</u></b>. It uses the syntax: <code>condition ? expression1 : expression2</code>.</p>
+        <pre><code>
+int a = 10, b = 20;
+int max = (a > b) ? a : b;
+System.out.println("Maximum = " + max); // 20
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. How many operands does the conditional operator take?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <b><u>conditional operator</u></b> is the <b><u>only ternary operator</u></b> in Java, meaning it requires <b><u>three operands</u></b>: a <b><u>condition</u></b>, an <b><u>expression if true</u></b>, and an <b><u>expression if false</u></b>.</p>
+        <pre><code>
+int num = 7;
+String result = (num % 2 == 0) ? "Even" : "Odd";
+System.out.println(result); // Odd
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. Can the conditional operator replace simple if-else statements?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, the <b><u>conditional operator</u></b> is often used to <b><u>simplify short if-else statements</u></b> into a <b><u>single line</u></b>.</p>
+        <pre><code>
+int age = 18;
+String status = (age >= 18) ? "Adult" : "Minor";
+System.out.println(status); // Adult
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">4. Can the conditional operator return different data types?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, the <b><u>conditional operator</u></b> can return <b><u>different data types</u></b> as long as they are <b><u>compatible</u></b> or can be <b><u>type promoted</u></b>.</p>
+        <pre><code>
+int x = 5;
+double y = 2.5;
+double result = (x > y) ? x : y; 
+System.out.println(result); // 5.0
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. Can conditional operators be nested?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, <b><u>conditional operators</u></b> can be <b><u>nested</u></b>, but too much nesting makes code <b><u>hard to read</u></b>.</p>
+        <pre><code>
+int a = 5, b = 10, c = 15;
+int max = (a > b) ? (a > c ? a : c) : (b > c ? b : c);
+System.out.println("Maximum = " + max); // 15
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. What is the difference between conditional operator and if-else?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <b><u>conditional operator</u></b> is used for <b><u>expressions</u></b> that return a <b><u>value</u></b>, while <b><u>if-else</u></b> is a <b><u>statement</u></b> that controls <b><u>flow of execution</u></b>.</p>
+        <pre><code>
+// Using conditional operator
+int x = 5, y = 8;
+int min = (x < y) ? x : y;
+
+// Equivalent if-else
+int min2;
+if (x < y)
+    min2 = x;
+else
+    min2 = y;
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">7. Can conditional operators cause ambiguity in complex expressions?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, excessive use of <b><u>nested conditional operators</u></b> can make expressions <b><u>difficult to understand</u></b>. In such cases, <b><u>if-else</u></b> is preferred for clarity.</p>
+        <pre><code>
+int marks = 75;
+String grade = (marks >= 90) ? "A" :
+               (marks >= 75) ? "B" :
+               (marks >= 50) ? "C" : "D";
+System.out.println("Grade = " + grade); // B
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. Can the conditional operator be used inside print statements?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, the <b><u>conditional operator</u></b> can be used <b><u>directly inside output statements</u></b> for quick decisions.</p>
+        <pre><code>
+int n = 4;
+System.out.println((n % 2 == 0) ? "Even Number" : "Odd Number");
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. What happens if both expressions in a conditional operator are incompatible?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>If the <b><u>two expressions</u></b> in the <b><u>conditional operator</u></b> are <b><u>incompatible types</u></b>, the code will cause a <b><u>compilation error</u></b>.</p>
+        <pre><code>
+// ❌ Error: incompatible types
+// int result = (true) ? 10 : "Hello";
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. Is the conditional operator right-associative?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, the <b><u>conditional operator</u></b> is <b><u>right-associative</u></b>, meaning evaluation proceeds <b><u>from right to left</u></b> in nested conditions.</p>
+        <pre><code>
+int a = 5, b = 10, c = 15;
+int result = true ? false ? a : b : c;
+System.out.println(result); // 10
+        </code></pre>
+      </details>
+    </li>
+
+</ul>
+
+
+<!------------------------------- Bitwise Operator -------------------------------->
+
+
+<ul>
+<h1 id="bitwise-operator">Bitwise Operators</h1>
+
+    <!-- Easy Level -->
+    <h2 style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What are bitwise operators in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Bitwise operators</u></b> are used to perform <b><u>operations on individual bits</u></b> of integer types (<code>int</code>, <code>long</code>, <code>short</code>, <code>byte</code>, <code>char</code>).</p>
+        <pre><code>
+int a = 5, b = 3; 
+System.out.println(a & b); // 1 (0101 & 0011 = 0001)
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. List the bitwise operators in Java.</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Java provides the following <b><u>bitwise operators</u></b>:</p>
+        <ul>
+          <li><code>&amp;</code> → <b><u>Bitwise AND</u></b></li>
+          <li><code>|</code> → <b><u>Bitwise OR</u></b></li>
+          <li><code>^</code> → <b><u>Bitwise XOR</u></b></li>
+          <li><code>~</code> → <b><u>Bitwise Complement</u></b></li>
+          <li><code>&lt;&lt;</code> → <b><u>Left Shift</u></b></li>
+          <li><code>&gt;&gt;</code> → <b><u>Right Shift</u></b></li>
+          <li><code>&gt;&gt;&gt;</code> → <b><u>Unsigned Right Shift</u></b></li>
+        </ul>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. What is the difference between & and &&?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><code>&amp;</code> is a <b><u>bitwise AND</u></b> operator that works on bits, while <code>&amp;&amp;</code> is a <b><u>logical AND</u></b> operator that works on boolean expressions.</p>
+        <pre><code>
+int x = 5, y = 3;
+System.out.println(x & y); // 1 (bitwise AND)
+
+boolean a = true, b = false;
+System.out.println(a && b); // false (logical AND)
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">4. How does the bitwise OR (|) operator work?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <b><u>bitwise OR</u></b> (<code>|</code>) sets each bit to <code>1</code> if at least one of the corresponding bits is <code>1</code>.</p>
+        <pre><code>
+int a = 5, b = 3;
+System.out.println(a | b); // 7 (0101 | 0011 = 0111)
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. How does the bitwise XOR (^) operator work?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <b><u>bitwise XOR</u></b> (<code>^</code>) sets each bit to <code>1</code> if the corresponding bits are <b><u>different</u></b>.</p>
+        <pre><code>
+int a = 5, b = 3;
+System.out.println(a ^ b); // 6 (0101 ^ 0011 = 0110)
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. What does the bitwise complement (~) operator do?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <b><u>bitwise complement</u></b> (<code>~</code>) <b><u>inverts all bits</u></b>, changing <code>1</code> to <code>0</code> and <code>0</code> to <code>1</code>. In Java, this also flips the <b><u>sign bit</u></b>.</p>
+        <pre><code>
+int a = 5;
+System.out.println(~a); // -6 (in 2’s complement form)
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">7. What is the difference between >> and >>> in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><code>&gt;&gt;</code> is a <b><u>signed right shift</u></b> (preserves the sign bit), while <code>&gt;&gt;&gt;</code> is an <b><u>unsigned right shift</u></b> (fills leftmost bits with <code>0</code>).</p>
+        <pre><code>
+int a = -8;
+System.out.println(a >> 2);  // -2 (sign preserved)
+System.out.println(a >>> 2); // 1073741822 (fills with 0s)
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. How does the left shift (<<) operator work?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>The <b><u>left shift</u></b> (<code>&lt;&lt;</code>) shifts all bits to the <b><u>left</u></b>, filling the rightmost bits with <code>0</code>. Each shift is equivalent to multiplying by <code>2</code>.</p>
+        <pre><code>
+int a = 5;
+System.out.println(a << 1); // 10 (0101 << 1 = 1010)
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. Can bitwise operators be used with boolean values?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, <b><u>bitwise operators</u></b> (<code>&amp;</code>, <code>|</code>, <code>^</code>) can be applied to <b><u>boolean operands</u></b>, but they behave like <b><u>logical operators</u></b> without short-circuiting.</p>
+        <pre><code>
+boolean x = true, y = false;
+System.out.println(x & y); // false
+System.out.println(x | y); // true
+System.out.println(x ^ y); // true
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. Can bitwise operators be used for performance optimization?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, <b><u>bitwise operators</u></b> are often used for <b><u>performance optimization</u></b> in tasks like <b><u>checking even/odd</u></b>, <b><u>multiplying/dividing by 2</u></b>, or <b><u>masking bits</u></b>.</p>
+        <pre><code>
+// Check even or odd using bitwise AND
+int n = 7;
+System.out.println((n & 1) == 0 ? "Even" : "Odd"); // Odd
+        </code></pre>
+      </details>
+    </li>
+
+</ul>
+
+
+
+
+<!------------------------------- Increment Operator -------------------------------->
     
     <ul>
+
+    <h1 id="increment-decrement-operator">Increment and Decrement Operator</h1>
     <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
         
     <!-- EASY QUESTIONS -->
@@ -2262,8 +3026,12 @@ class Counter {
 
 </ul>
 
-    <h1 id="logical-operator" style="color: rgb(147, 112, 219);">Logical Operator</h1>
+<!------------------------------- Logical Operator -------------------------------->
+
+
 <ul>
+
+    <h1 id="logical-operator" style="color: rgb(147, 112, 219);">Logical Operator</h1>
 
     <h2 id="section2" style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
     <!-- EASY QUESTIONS -->
@@ -2330,6 +3098,269 @@ class Counter {
     </li>
 
 </ul>
+
+
+<!------------------------------- Compound Assignment Operator -------------------------------->
+
+<ul>
+<h1 id="compound-assignment-operator">Compound Assignment Operators</h1>
+
+    <!-- Easy Level -->
+    <h2 style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">1. What are compound assignment operators in Java?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><b><u>Compound assignment operators</u></b> combine an <b><u>arithmetic</u></b> or <b><u>bitwise operator</u></b> with <b><u>assignment</u></b>. They provide a shorthand for operations like <code>a = a + b</code>.</p>
+        <pre><code>
+int a = 5;
+a += 3; // same as a = a + 3
+System.out.println(a); // 8
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">2. List some compound assignment operators in Java.</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Common <b><u>compound assignment operators</u></b> include:</p>
+        <ul>
+          <li><code>+=</code> → <b><u>addition assignment</u></b></li>
+          <li><code>-=</code> → <b><u>subtraction assignment</u></b></li>
+          <li><code>*=</code> → <b><u>multiplication assignment</u></b></li>
+          <li><code>/=</code> → <b><u>division assignment</u></b></li>
+          <li><code>%=</code> → <b><u>modulus assignment</u></b></li>
+          <li><code>&=</code> → <b><u>bitwise AND assignment</u></b></li>
+          <li><code>|=</code> → <b><u>bitwise OR assignment</u></b></li>
+          <li><code>^=</code> → <b><u>bitwise XOR assignment</u></b></li>
+          <li><code>&lt;&lt;=</code> → <b><u>left shift assignment</u></b></li>
+          <li><code>&gt;&gt;=</code> → <b><u>right shift assignment</u></b></li>
+          <li><code>&gt;&gt;&gt;=</code> → <b><u>unsigned right shift assignment</u></b></li>
+        </ul>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">3. How is <code>a += b</code> different from <code>a = a + b</code>?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Both give the same result, but <b><u>automatic type casting</u></b> happens in <b><u>compound assignment</u></b>. For example, <code>byte += int</code> compiles without an explicit cast, but <code>byte = byte + int</code> gives an <b><u>error</u></b>.</p>
+        <pre><code>
+byte x = 10;
+x += 5;  // works fine
+// x = x + 5; // compilation error (needs explicit cast)
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Medium Level -->
+    <h2 style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">4. Can compound assignment operators be used with floating-point values?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, <b><u>compound assignment operators</u></b> work with <b><u>floating-point types</u></b> like <code>float</code> and <code>double</code>.</p>
+        <pre><code>
+double d = 10.5;
+d *= 2; 
+System.out.println(d); // 21.0
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">5. Can compound assignment operators be used with boolean values?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>No, <b><u>compound assignment operators</u></b> cannot be applied to <b><u>boolean</u></b> because they require <b><u>arithmetic</u></b> or <b><u>bitwise operations</u></b>, which are not defined for boolean type.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">6. How does the <code>&lt;&lt;=</code> operator work?</span>
+      <details>
+        <summary>Answer</summary>
+        <p><code>&lt;&lt;=</code> performs a <b><u>left shift</u></b> on the bits of the variable and assigns the <b><u>result</u></b> back.</p>
+        <pre><code>
+int a = 5;
+a <<= 1; 
+System.out.println(a); // 10 (0101 << 1 = 1010)
+        </code></pre>
+      </details>
+    </li>
+
+    <!-- Hard Level -->
+    <h2 style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+    <li>
+      <span class="section-title">7. Do compound assignment operators perform implicit type casting?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, they perform <b><u>implicit type casting</u></b>. For example, in <code>short x = 5; x *= 2.5;</code>, the <b><u>result</u></b> is automatically cast back to <b><u>short</u></b>.</p>
+        <pre><code>
+short x = 5;
+x *= 2.5;
+System.out.println(x); // 12 (truncated after casting)
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">8. Can compound assignment operators cause data loss?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>Yes, with smaller data types like <b><u>byte</u></b> or <b><u>short</u></b>, automatic <b><u>casting</u></b> may cause <b><u>data loss</u></b> if the result <b><u>overflows</u></b> their range.</p>
+        <pre><code>
+byte b = 120;
+b += 20; 
+System.out.println(b); // -116 (overflow occurs)
+        </code></pre>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">9. Can compound assignment operators be chained?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>No, <b><u>compound assignment operators</u></b> cannot be <b><u>chained</u></b> directly like <code>a += b += c</code>. Such expressions are <b><u>invalid</u></b> in Java.</p>
+      </details>
+    </li>
+
+    <li>
+      <span class="section-title">10. Why are compound assignment operators preferred in some cases?</span>
+      <details>
+        <summary>Answer</summary>
+        <p>They make the code more <b><u>concise</u></b>, improve <b><u>readability</u></b>, and reduce the need for <b><u>explicit type casting</u></b>.</p>
+      </details>
+    </li>
+
+</ul>
+
+
+
+<!------------------------------- Miscellaneous Operator -------------------------------->
+
+<ul>
+<h1 id="miscellaneous-operator">Miscellaneous Operators</h1>
+
+<!-- Easy Level -->
+<h2 style="text-align:center; color:rgb(127, 229, 127);">EASY QUESTIONS</h2>
+
+<li>
+  <span class="section-title">1. What are miscellaneous operators in Java?</span>
+  <details>
+    <summary>Answer</summary>
+    <p><b><u>Miscellaneous operators</u></b> in Java include the <b><u>ternary operator</u></b> (<code>?:</code>) and the <b><u>instanceof operator</u></b>.</p>
+  </details>
+</li>
+
+<li>
+  <span class="section-title">2. What is the ternary (?:) operator in Java?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>The <b><u>ternary operator</u></b> is a shorthand for <b><u>if-else</u></b> statements. It evaluates a <b><u>boolean condition</u></b> and returns one of two values.</p>
+    <pre><code>
+int a = 10, b = 20;
+int max = (a > b) ? a : b;
+System.out.println(max); // 20
+    </code></pre>
+  </details>
+</li>
+
+<li>
+  <span class="section-title">3. What is the instanceof operator in Java?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>The <b><u>instanceof operator</u></b> checks whether an <b><u>object</u></b> is an <b><u>instance</u></b> of a particular <b><u>class</u></b> or <b><u>subclass</u></b>.</p>
+    <pre><code>
+String str = "Hello";
+System.out.println(str instanceof String); // true
+    </code></pre>
+  </details>
+</li>
+
+<!-- Medium Level -->
+<h2 style="text-align:center; color:rgb(44, 252, 25);">MEDIUM QUESTIONS</h2>
+
+<li>
+  <span class="section-title">4. Can the ternary operator replace all if-else statements?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>No, the <b><u>ternary operator</u></b> can only replace <b><u>simple if-else</u></b> expressions, not <b><u>blocks</u></b> of code with multiple statements.</p>
+  </details>
+</li>
+
+<li>
+  <span class="section-title">5. Can instanceof be used with null values?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>Yes, but it always returns <b><u>false</u></b> if the reference is <b><u>null</u></b>.</p>
+    <pre><code>
+String s = null;
+System.out.println(s instanceof String); // false
+    </code></pre>
+  </details>
+</li>
+
+<li>
+  <span class="section-title">6. Can instanceof be used with interfaces?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>Yes, <b><u>instanceof</u></b> can check whether an object implements a particular <b><u>interface</u></b>.</p>
+    <pre><code>
+List<Integer> list = new ArrayList<>();
+System.out.println(list instanceof List); // true
+    </code></pre>
+  </details>
+</li>
+
+<!-- Hard Level -->
+<h2 style="text-align:center; color:rgb(3, 165, 3);">HARD QUESTIONS</h2>
+
+<li>
+  <span class="section-title">7. Is instanceof operator compile-time or runtime?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>The <b><u>instanceof operator</u></b> is evaluated at <b><u>runtime</u></b>, but the compiler also ensures that the check is <b><u>type-compatible</u></b>.</p>
+  </details>
+</li>
+
+<li>
+  <span class="section-title">8. Can ternary operators be nested?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>Yes, ternary operators can be <b><u>nested</u></b>, but they reduce <b><u>readability</u></b> and should be used carefully.</p>
+    <pre><code>
+int a = 5, b = 10, c = 15;
+int max = (a > b) ? (a > c ? a : c) : (b > c ? b : c);
+System.out.println(max); // 15
+    </code></pre>
+  </details>
+</li>
+
+<li>
+  <span class="section-title">9. Can instanceof be used with generics?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>No, due to <b><u>type erasure</u></b>, you cannot use <code>instanceof</code> with <b><u>parameterized types</u></b> like <code>ArrayList&lt;String&gt;</code>.</p>
+  </details>
+</li>
+
+<li>
+  <span class="section-title">10. Why are miscellaneous operators useful?</span>
+  <details>
+    <summary>Answer</summary>
+    <p>They provide <b><u>concise</u></b>, <b><u>efficient</u></b> ways to handle <b><u>conditions</u></b> and <b><u>type checks</u></b> in Java.</p>
+  </details>
+</li>
+
+</ul>
+
+
+
 
   <!-- //////////////////////////////////////////// Control Flow Statements ///////////////////////////////////////////////////// -->
 
@@ -7592,6 +8623,823 @@ Student[ID=101, Name=Rahul]
 
 </ul>
 
+<h1 id="Problems Based On Numbers">Problems Based On Numbers</h1>
+
+<ul>
+
+  <!-- 1) Even / Odd -->
+  <li>
+    <span class="section-title">1. Even / Odd Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> An even number is divisible by 2, and an odd number is not divisible by 2.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int n1 = 24;
+        if(n1 % 2 == 0)
+            System.out.println(n1 + " is Even");
+        else
+            System.out.println(n1 + " is Odd");
+
+        int n2 = 17;
+        if(n2 % 2 == 0)
+            System.out.println(n2 + " is Even");
+        else
+            System.out.println(n2 + " is Odd");
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>24 is Even<br>17 is Odd</p>
+    </details>
+  </li>
+
+  <!-- 2) Prime -->
+  <li>
+    <span class="section-title">2. Prime Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A prime number is greater than 1 and divisible only by 1 and itself.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args) {
+        int[] numbers = {29, 28}; // numbers to check
+
+        for (int n = 0; n < numbers.length; n++) {
+            int num = numbers[n];
+
+            if (num <= 1) {
+                System.out.println(num + " is not Prime");
+            } else {
+                int i;
+                for (i = 2; i < num; i++) {
+                    if (num % i == 0) {
+                        System.out.println(num + " is not Prime");
+                        break;
+                    }
+                }
+                if (i == num) {
+                    System.out.println(num + " is Prime");
+                }
+            }
+        }
+    }
+}
+
+</code></pre>
+      <p><b>Output:</b><br>29 is Prime<br>28 is not Prime</p>
+    </details>
+  </li>
+
+  <!-- 3) Composite -->
+  <li>
+    <span class="section-title">3. Composite Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A composite number is greater than 1 and has more than two factors.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int n1 = 28;
+        int count1 = 0;
+        for(int i=1; i<=n1; i++){
+            if(n1 % i == 0) count1++;
+        }
+        if(count1 > 2)
+            System.out.println(n1 + " is Composite");
+        else
+            System.out.println(n1 + " is not Composite");
+
+        int n2 = 29;
+        int count2 = 0;
+        for(int i=1; i<=n2; i++){
+            if(n2 % i == 0) count2++;
+        }
+        if(count2 > 2)
+            System.out.println(n2 + " is Composite");
+        else
+            System.out.println(n2 + " is not Composite");
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>28 is Composite<br>29 is not Composite</p>
+    </details>
+  </li>
+
+  <li>
+    <span class="section-title">4. Palindrome Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A palindrome number reads the same forwards and backwards.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int n1 = 121;
+        int temp = n1, rev = 0;
+        while(temp > 0){
+            rev = rev * 10 + temp % 10;
+            temp /= 10;
+        }
+        if(rev == n1)
+            System.out.println(n1 + " is Palindrome");
+        else
+            System.out.println(n1 + " is not Palindrome");
+
+        int n2 = 123;
+        temp = n2;
+        rev = 0;
+        while(temp > 0){
+            rev = rev * 10 + temp % 10;
+            temp /= 10;
+        }
+        if(rev == n2)
+            System.out.println(n2 + " is Palindrome");
+        else
+            System.out.println(n2 + " is not Palindrome");
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>121 is Palindrome<br>123 is not Palindrome</p>
+    </details>
+  </li>
+
+  <!-- Q5) Armstrong -->
+  <li>
+    <span class="section-title">5. Armstrong Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> An Armstrong number is equal to the sum of cubes of its digits (for 3-digit numbers).</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int n1 = 153, sum = 0, temp = n1;
+        while(temp > 0){
+            int d = temp % 10;
+            sum += d * d * d;
+            temp /= 10;
+        }
+        if(sum == n1)
+            System.out.println(n1 + " is Armstrong");
+        else
+            System.out.println(n1 + " is not Armstrong");
+
+        int n2 = 123;
+        sum = 0;
+        temp = n2;
+        while(temp > 0){
+            int d = temp % 10;
+            sum += d * d * d;
+            temp /= 10;
+        }
+        if(sum == n2)
+            System.out.println(n2 + " is Armstrong");
+        else
+            System.out.println(n2 + " is not Armstrong");
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>153 is Armstrong<br>123 is not Armstrong</p>
+    </details>
+  </li>
+
+  <!-- Q6) Strong Number -->
+  <li>
+    <span class="section-title">6. Strong Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A Strong number is equal to the sum of factorials of its digits.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int n1 = 145, temp = n1, sum = 0;
+        while(temp > 0){
+            int d = temp % 10;
+            int fact = 1;
+            for(int i = 1; i <= d; i++) fact *= i;
+            sum += fact;
+            temp /= 10;
+        }
+        if(sum == n1)
+            System.out.println(n1 + " is Strong");
+        else
+            System.out.println(n1 + " is not Strong");
+
+        int n2 = 123;
+        temp = n2; sum = 0;
+        while(temp > 0){
+            int d = temp % 10;
+            int fact = 1;
+            for(int i = 1; i <= d; i++) fact *= i;
+            sum += fact;
+            temp /= 10;
+        }
+        if(sum == n2)
+            System.out.println(n2 + " is Strong");
+        else
+            System.out.println(n2 + " is not Strong");
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>145 is Strong<br>123 is not Strong</p>
+    </details>
+  </li>
+
+  <!-- Q7) Perfect Number -->
+  <li>
+    <span class="section-title">7. Perfect Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A Perfect number is equal to the sum of its proper divisors (excluding itself).</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int n1 = 28, sum = 0;
+        for(int i = 1; i < n1; i++){
+            if(n1 % i == 0) sum += i;
+        }
+        if(sum == n1)
+            System.out.println(n1 + " is Perfect");
+        else
+            System.out.println(n1 + " is not Perfect");
+
+        int n2 = 12; sum = 0;
+        for(int i = 1; i < n2; i++){
+            if(n2 % i == 0) sum += i;
+        }
+        if(sum == n2)
+            System.out.println(n2 + " is Perfect");
+        else
+            System.out.println(n2 + " is not Perfect");
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>28 is Perfect<br>12 is not Perfect</p>
+    </details>
+  </li>
+
+  <!-- Q8) Harshad -->
+  <li>
+    <span class="section-title">8. Harshad Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A Harshad number is divisible by the sum of its digits.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int n1 = 18, temp = n1, sum = 0;
+        while(temp > 0){
+            sum += temp % 10;
+            temp /= 10;
+        }
+        if(n1 % sum == 0)
+            System.out.println(n1 + " is Harshad");
+        else
+            System.out.println(n1 + " is not Harshad");
+
+        int n2 = 19; temp = n2; sum = 0;
+        while(temp > 0){
+            sum += temp % 10;
+            temp /= 10;
+        }
+        if(n2 % sum == 0)
+            System.out.println(n2 + " is Harshad");
+        else
+            System.out.println(n2 + " is not Harshad");
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>18 is Harshad<br>19 is not Harshad</p>
+    </details>
+  </li>
+
+  <!-- Q9) Automorphic -->
+  <li>
+    <span class="section-title">9. Automorphic Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> An Automorphic number’s square ends with the same digits as the number itself.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args) {
+        int n1 = 25, sq = n1 * n1;
+        int digits1 = 0, temp1 = n1;
+
+        // count digits manually
+        while (temp1 > 0) {
+            digits1++;
+            temp1 = temp1 / 10;
+        }
+
+        int mod1 = 1;
+        for (int i = 1; i <= digits1; i++) {
+            mod1 = mod1 * 10;
+        }
+
+        if (sq % mod1 == n1)
+            System.out.println(n1 + " is Automorphic");
+        else
+            System.out.println(n1 + " is not Automorphic");
+
+
+        int n2 = 12; sq = n2 * n2;
+        int digits2 = 0, temp2 = n2;
+
+        // count digits manually
+        while (temp2 > 0) {
+            digits2++;
+            temp2 = temp2 / 10;
+        }
+
+        int mod2 = 1;
+        for (int i = 1; i <= digits2; i++) {
+            mod2 = mod2 * 10;
+        }
+
+        if (sq % mod2 == n2)
+            System.out.println(n2 + " is Automorphic");
+        else
+            System.out.println(n2 + " is not Automorphic");
+    }
+}
+
+</code></pre>
+      <p><b>Output:</b><br>25 is Automorphic<br>12 is not Automorphic</p>
+    </details>
+  </li>
+
+  <!-- Q10) Neon -->
+  <li>
+    <span class="section-title">10. Neon Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A Neon number is a number where the sum of digits of its square equals the number itself.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int n1 = 9, sq = n1 * n1, sum = 0, temp = sq;
+        while(temp > 0){
+            sum += temp % 10;
+            temp /= 10;
+        }
+        if(sum == n1)
+            System.out.println(n1 + " is Neon");
+        else
+            System.out.println(n1 + " is not Neon");
+
+        int n2 = 12; sq = n2 * n2; sum = 0; temp = sq;
+        while(temp > 0){
+            sum += temp % 10;
+            temp /= 10;
+        }
+        if(sum == n2)
+            System.out.println(n2 + " is Neon");
+        else
+            System.out.println(n2 + " is not Neon");
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>9 is Neon<br>12 is not Neon</p>
+    </details>
+  </li>
+
+  <!-- Q11) Spy Number -->
+  <li>
+    <span class="section-title">11. Spy Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A Spy number has the sum of digits equal to the product of its digits.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int n1 = 1124, sum = 0, prod = 1, temp = n1;
+        while(temp > 0){
+            int d = temp % 10;
+            sum += d;
+            prod *= d;
+            temp /= 10;
+        }
+        if(sum == prod)
+            System.out.println(n1 + " is Spy");
+        else
+            System.out.println(n1 + " is not Spy");
+
+        int n2 = 123; sum = 0; prod = 1; temp = n2;
+        while(temp > 0){
+            int d = temp % 10;
+            sum += d;
+            prod *= d;
+            temp /= 10;
+        }
+        if(sum == prod)
+            System.out.println(n2 + " is Spy");
+        else
+            System.out.println(n2 + " is not Spy");
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>1124 is Spy<br>123 is not Spy</p>
+    </details>
+  </li>
+
+  <!-- Q12) Duck Number -->
+  <li>
+    <span class="section-title">12. Duck Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A Duck number contains at least one zero, but it should not begin with zero.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args) {
+        int n1 = 1203;
+        int n2 = 123;
+
+        // ---- Check for n1 ----
+        int temp = n1;
+        int flag = 0;  // 0 = not duck, 1 = duck
+        while (temp > 0) {
+            int digit = temp % 10;
+            if (digit == 0) {
+                flag = 1;
+                break;
+            }
+            temp /= 10;
+        }
+        if (flag == 1)
+            System.out.println(n1 + " is Duck");
+        else
+            System.out.println(n1 + " is not Duck");
+
+        // ---- Check for n2 ----
+        temp = n2;
+        flag = 0;
+        while (temp > 0) {
+            int digit = temp % 10;
+            if (digit == 0) {
+                flag = 1;
+                break;
+            }
+            temp /= 10;
+        }
+        if (flag == 1)
+            System.out.println(n2 + " is Duck");
+        else
+            System.out.println(n2 + " is not Duck");
+    }
+}
+
+</code></pre>
+      <p><b>Output:</b><br>1203 is Duck<br>123 is not Duck</p>
+    </details>
+  </li>
+
+  <!-- Q13) Sunny Number -->
+  <li>
+    <span class="section-title">13. Sunny Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A Sunny number is when (n + 1) is a perfect square.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int n1 = 8, sq = 1;
+        while(sq * sq < n1 + 1) sq++;
+        if(sq * sq == n1 + 1)
+            System.out.println(n1 + " is Sunny");
+        else
+            System.out.println(n1 + " is not Sunny");
+
+        int n2 = 10; sq = 1;
+        while(sq * sq < n2 + 1) sq++;
+        if(sq * sq == n2 + 1)
+            System.out.println(n2 + " is Sunny");
+        else
+            System.out.println(n2 + " is not Sunny");
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>8 is Sunny<br>10 is not Sunny</p>
+    </details>
+  </li>
+
+  <!-- Q14) Pronic Number -->
+  <li>
+    <span class="section-title">14. Pronic Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A Pronic number is the product of two consecutive integers.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int n1 = 12, found = 0;
+        for(int i = 0; i <= n1; i++){
+            if(i * (i + 1) == n1){
+                found = 1;
+                break;
+            }
+        }
+        if(found == 1)
+            System.out.println(n1 + " is Pronic");
+        else
+            System.out.println(n1 + " is not Pronic");
+
+        int n2 = 13; found = 0;
+        for(int i = 0; i <= n2; i++){
+            if(i * (i + 1) == n2){
+                found = 1;
+                break;
+            }
+        }
+        if(found == 1)
+            System.out.println(n2 + " is Pronic");
+        else
+            System.out.println(n2 + " is not Pronic");
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>12 is Pronic<br>13 is not Pronic</p>
+    </details>
+  </li>
+
+  <!-- Q15) Happy Number -->
+  <li>
+    <span class="section-title">15. Happy Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A Happy number eventually reaches 1 when repeatedly replaced by the sum of squares of its digits.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args) {
+        int[] nums = {19, 20};   // numbers to check
+
+        for (int n : nums) {
+            int slow = n, fast = n;
+            do {
+                // slow = 1 step
+                int sum1 = 0, temp1 = slow;
+                while (temp1 > 0) {
+                    int d = temp1 % 10;
+                    sum1 += d * d;
+                    temp1 /= 10;
+                }
+                slow = sum1;
+
+                // fast = 2 steps
+                for (int k = 0; k < 2; k++) {
+                    int sum2 = 0, temp2 = fast;
+                    while (temp2 > 0) {
+                        int d = temp2 % 10;
+                        sum2 += d * d;
+                        temp2 /= 10;
+                    }
+                    fast = sum2;
+                }
+
+            } while (slow != fast);
+
+            if (slow == 1)
+                System.out.println(n + " is Happy");
+            else
+                System.out.println(n + " is not Happy");
+        }
+    }
+}
+
+</code></pre>
+      <p><b>Output:</b><br>19 is Happy<br>20 is not Happy</p>
+    </details>
+  </li>
+
+  <!-- Q16) Buzz Number -->
+  <li>
+    <span class="section-title">16. Buzz Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A Buzz number ends with 7 or is divisible by 7.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int[] nums = {27, 14, 19};
+        for(int n : nums){
+            if(n % 10 == 7 || n % 7 == 0)
+                System.out.println(n + " is Buzz");
+            else
+                System.out.println(n + " is not Buzz");
+        }
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>27 is Buzz<br>14 is Buzz<br>19 is not Buzz</p>
+    </details>
+  </li>
+
+  <!-- Q17) Smith Number -->
+  <li>
+    <span class="section-title">17. Smith Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A Smith number is a composite number whose sum of digits equals the sum of digits of its prime factors.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int n1 = 666, n2 = 22;
+        int[] nums = {n1, n2};
+        for(int n : nums){
+            int sumDigits = 0, sumFactors = 0, temp = n;
+            int temp2 = temp;
+            while(temp2 > 0){
+                sumDigits += temp2 % 10;
+                temp2 /= 10;
+            }
+            for(int i = 2; i <= temp; i++){
+                while(temp % i == 0){
+                    int t = i;
+                    while(t > 0){
+                        sumFactors += t % 10;
+                        t /= 10;
+                    }
+                    temp /= i;
+                }
+            }
+            if(sumDigits == sumFactors && n != sumDigits)
+                System.out.println(n + " is Smith");
+            else
+                System.out.println(n + " is not Smith");
+        }
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>666 is Smith<br>22 is not Smith</p>
+    </details>
+  </li>
+
+  <!-- Q18) Emirp Number -->
+  <li>
+    <span class="section-title">18. Emirp Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> An Emirp number is a prime number whose reverse is also prime.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args) {
+        int n1 = 13, n2 = 17;
+        int[] nums = {n1, n2};
+
+        for (int n : nums) {
+            // ---------- Check if n is prime ----------
+            int primeCount1 = 0;
+            if (n > 1) {
+                for (int i = 2; i <= n / 2; i++) {
+                    if (n % i == 0) {
+                        primeCount1++;
+                        break;
+                    }
+                }
+            } else {
+                primeCount1 = 1; // mark not prime
+            }
+
+            // ---------- Reverse number manually ----------
+            int temp = n;
+            int rev = 0;
+            while (temp > 0) {
+                int digit = temp % 10;
+                rev = rev * 10 + digit;
+                temp = temp / 10;
+            }
+
+            // ---------- Check if reverse is prime ----------
+            int primeCount2 = 0;
+            if (rev > 1) {
+                for (int i = 2; i <= rev / 2; i++) {
+                    if (rev % i == 0) {
+                        primeCount2++;
+                        break;
+                    }
+                }
+            } else {
+                primeCount2 = 1; // mark not prime
+            }
+
+            // ---------- Final Emirp check ----------
+            if (primeCount1 == 0 && primeCount2 == 0 && n != rev) {
+                System.out.println(n + " is Emirp");
+            } else {
+                System.out.println(n + " is not Emirp");
+            }
+        }
+    }
+}
+
+</code></pre>
+      <p><b>Output:</b><br>13 is Emirp<br>17 is Emirp</p>
+    </details>
+  </li>
+
+  <!-- Q19) Fibonacci Series -->
+  <li>
+    <span class="section-title">19. Fibonacci Series</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> Fibonacci series is a sequence where each number is the sum of the previous two numbers.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int n = 10, a = 0, b = 1;
+        System.out.print(a + " " + b + " ");
+        for(int i = 2; i < n; i++){
+            int c = a + b;
+            System.out.print(c + " ");
+            a = b;
+            b = c;
+        }
+        System.out.println();
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>0 1 1 2 3 5 8 13 21 34</p>
+    </details>
+  </li>
+
+  <!-- Q20) Kaprekar Number -->
+  <li>
+    <span class="section-title">20. Kaprekar Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A Kaprekar number is a number whose square can be split into two parts that add up to the original number.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args) {
+        int n1 = 45, n2 = 10;
+        int[] nums = {n1, n2};
+
+        for (int n : nums) {
+            int sq = n * n;
+
+            // Count digits in square
+            int temp = sq, count = 0;
+            while (temp > 0) {
+                count++;
+                temp /= 10;
+            }
+
+            // Find divisor = 10^(count/2)
+            int d = count / 2;
+            int divisor = 1;
+            for (int i = 0; i < d; i++) {
+                divisor *= 10;
+            }
+
+            int left = sq / divisor;
+            int right = sq % divisor;
+
+            if (left + right == n)
+                System.out.println(n + " is Kaprekar");
+            else
+                System.out.println(n + " is not Kaprekar");
+        }
+    }
+}
+
+</code></pre>
+      <p><b>Output:</b><br>45 is Kaprekar<br>10 is not Kaprekar</p>
+    </details>
+  </li>
+
+  <!-- Q21) Magic Number -->
+  <li>
+    <span class="section-title">21. Magic Number</span>
+    <details>
+      <summary>Answer & Code</summary>
+      <p><b>Definition:</b> A Magic number repeatedly adds digits until a single digit is obtained, and if it is 1, then it is a Magic number.</p>
+<pre><code>
+class NumberChecks {
+    public static void main(String[] args){
+        int n1 = 19, n2 = 123;
+        int[] nums = {n1, n2};
+        for(int n : nums){
+            int sum = n;
+            while(sum > 9){
+                int temp = sum;
+                sum = 0;
+                while(temp > 0){
+                    sum += temp % 10;
+                    temp /= 10;
+                }
+            }
+            if(sum == 1)
+                System.out.println(n + " is Magic");
+            else
+                System.out.println(n + " is not Magic");
+        }
+    }
+}
+</code></pre>
+      <p><b>Output:</b><br>19 is Magic<br>123 is not Magic</p>
+    </details>
+  </li>
+
+</ul>
+
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
@@ -8252,6 +10100,316 @@ const questions = [
     "answer": "Yes, but global variables can cause data inconsistency in multithreaded environments if multiple threads modify them simultaneously. Synchronization or the volatile keyword should be used to handle this." },
 
 
+///////////////////////////////////// Arithmetic operator /////////////////////////////////
+
+
+
+  { "question": "What are arithmetic operators in Java?", 
+    "answer": "Arithmetic operators in Java are used to perform basic mathematical operations like addition, subtraction, multiplication, division, and modulus." },
+
+  { "question": "List the arithmetic operators in Java.", 
+    "answer": "The arithmetic operators in Java are: + (Addition), - (Subtraction), * (Multiplication), / (Division), % (Modulus)." },
+
+  { "question": "What is the result of division between two integers?", 
+    "answer": "If both operands are integers, the result will also be an integer (decimal part is truncated). Example: 7 / 2 = 3." },
+
+  { "question": "What is the difference between division (/) and modulus (%)?", 
+    "answer": "Division (/) gives the quotient, while modulus (%) gives the remainder. Example: 10 / 3 = 3, 10 % 3 = 1." },
+
+  { "question": "Can arithmetic operators be used with characters?", 
+    "answer": "Yes, since characters are stored as Unicode values, arithmetic operations can be performed on them. Example: 'A' + 1 = 66." },
+
+  { "question": "What happens when division is performed by zero?", 
+    "answer": "If the divisor is zero: For integers → ArithmeticException occurs. For floating-point → result is Infinity or NaN." },
+
+  { "question": "How do arithmetic operators behave with mixed data types?", 
+    "answer": "In Java, smaller data types are promoted to larger ones during operations. Example: int + double results in double." },
+
+  { "question": "What is the effect of overflow in arithmetic operations?", 
+    "answer": "If the result of an arithmetic operation exceeds the range of the data type, overflow occurs and the value wraps around. Example: Integer.MAX_VALUE + 1 = -2147483648." },
+
+  { "question": "Can arithmetic operators be overloaded in Java?", 
+    "answer": "No, Java does not support operator overloading. However, the + operator is special because it is also used for string concatenation." },
+
+  { "question": "How are arithmetic operations handled in multithreading?", 
+    "answer": "When multiple threads modify the same variable using arithmetic operators, race conditions may occur. To prevent this, synchronization or atomic variables should be used." },
+
+
+////////////////////////////////////// Assignment operator /////////////////////////////////
+
+{
+    "question": "What are assignment operators in Java?",
+    "answer": "Assignment operators in Java are used to assign values to variables. The simplest is =, which assigns the right-hand value to the left-hand variable."
+  },
+  {
+    "question": "List the compound assignment operators in Java.",
+    "answer": "The commonly used compound assignment operators are: += (Add and assign), -= (Subtract and assign), *= (Multiply and assign), /= (Divide and assign), %= (Modulus and assign)."
+  },
+  {
+    "question": "How does += work?",
+    "answer": "The += operator adds the right-hand value to the left-hand variable and stores the result in the same variable. Example: int x = 5; x += 3; // x = 8."
+  },
+  {
+    "question": "Can assignment operators be used with different data types?",
+    "answer": "Yes, Java performs type conversion automatically if compatible. Narrowing conversion requires explicit casting. Example: int a = 10; double b = 2.5; a += b; // a = 12."
+  },
+  {
+    "question": "What is the difference between = and ==?",
+    "answer": "= is the assignment operator, used to assign values. == is the equality operator, used to compare two values."
+  },
+  {
+    "question": "Can assignment operators be chained?",
+    "answer": "Yes, assignment operators can be chained, and evaluation happens from right to left. Example: a = b = c = 20; assigns 20 to all variables."
+  },
+  {
+    "question": "Can assignment operators be used with objects?",
+    "answer": "Yes, but in the case of objects, the assignment operator copies the reference, not the actual object. Changing one reference affects the other."
+  },
+  {
+    "question": "Can assignment operators cause implicit casting issues?",
+    "answer": "Yes, when assigning larger types to smaller ones, data loss may occur unless explicit casting is used. Example: double d = 9.7; int x = (int) d; // x = 9."
+  },
+  {
+    "question": "Are assignment operators overloaded in Java?",
+    "answer": "No, Java does not support operator overloading, so the meaning of = and compound assignment operators cannot be changed."
+  },
+  {
+    "question": "Can assignment operators be used in conditional expressions?",
+    "answer": "Yes, but it is risky since = assigns a value instead of checking equality. This often causes logical errors when confused with ==."
+  },
+
+
+
+
+  ////////////////////////////////////// Relational operator /////////////////////////////////
+
+
+{ 
+    "question": "What are relational operators in Java?", 
+    "answer": "Relational operators are used to compare two values. They return a boolean result (true or false)." 
+  },
+  { 
+    "question": "List the relational operators in Java.", 
+    "answer": "Java provides the following relational operators: == (equal to), != (not equal to), > (greater than), < (less than), >= (greater than or equal to), <= (less than or equal to)." 
+  },
+  { 
+    "question": "What is the difference between == and !=?", 
+    "answer": "== checks if two values are equal, while != checks if they are not equal." 
+  },
+  { 
+    "question": "Can relational operators be used with different data types?", 
+    "answer": "Yes, relational operators can compare different numeric types due to type promotion, but they cannot be applied directly to boolean values." 
+  },
+  { 
+    "question": "Can relational operators be used with objects?", 
+    "answer": "No, relational operators cannot directly compare objects (except == and !=, which compare references, not values). For content comparison, we use equals()." 
+  },
+  { 
+    "question": "What happens if we use relational operators with boolean values?", 
+    "answer": "Relational operators (<, >, <=, >=) cannot be used with boolean values. Only == and != can be applied to booleans." 
+  },
+  { 
+    "question": "Can relational operators be chained in Java?", 
+    "answer": "No, relational operators cannot be chained like in mathematics. Each comparison must be separate." 
+  },
+  { 
+    "question": "How do relational operators behave with floating-point numbers?", 
+    "answer": "They work normally, but special cases like NaN (Not-a-Number) always return false for <, >, == comparisons." 
+  },
+  { 
+    "question": "What is the result type of a relational expression?", 
+    "answer": "Relational operators always return a boolean value (true or false)." 
+  },
+  { 
+    "question": "Can relational operators be overloaded in Java?", 
+    "answer": "No, Java does not support operator overloading. The behavior of relational operators is fixed." 
+  },
+
+
+
+
+  ///////////////////////////////////// Conditional operator /////////////////////////////////
+
+
+ {
+    "question": "What is the conditional operator in Java?",
+    "answer": "The conditional operator (also called the ternary operator) is a shorthand for if-else statements. It uses the syntax: condition ? expression1 : expression2."
+  },
+  {
+    "question": "How many operands does the conditional operator take?",
+    "answer": "The conditional operator is the only ternary operator in Java, meaning it requires three operands: a condition, an expression if true, and an expression if false."
+  },
+  {
+    "question": "Can the conditional operator replace simple if-else statements?",
+    "answer": "Yes, the conditional operator is often used to simplify short if-else statements into a single line."
+  },
+  {
+    "question": "Can the conditional operator return different data types?",
+    "answer": "Yes, the conditional operator can return different data types as long as they are compatible or can be type promoted."
+  },
+  {
+    "question": "Can conditional operators be nested?",
+    "answer": "Yes, conditional operators can be nested, but too much nesting makes code hard to read."
+  },
+  {
+    "question": "What is the difference between conditional operator and if-else?",
+    "answer": "The conditional operator is used for expressions that return a value, while if-else is a statement that controls flow of execution."
+  },
+  {
+    "question": "Can conditional operators cause ambiguity in complex expressions?",
+    "answer": "Yes, excessive use of nested conditional operators can make expressions difficult to understand. In such cases, if-else is preferred for clarity."
+  },
+  {
+    "question": "Can the conditional operator be used inside print statements?",
+    "answer": "Yes, the conditional operator can be used directly inside output statements for quick decisions."
+  },
+  {
+    "question": "What happens if both expressions in a conditional operator are incompatible?",
+    "answer": "If the two expressions in the conditional operator are incompatible types, the code will cause a compilation error."
+  },
+  {
+    "question": "Is the conditional operator right-associative?",
+    "answer": "Yes, the conditional operator is right-associative, meaning evaluation proceeds from right to left in nested conditions."
+  },
+
+///////////////////////////////////// Conditional operator //////////////////////////////////
+
+
+  {
+    "question": "What are bitwise operators in Java?",
+    "answer": "Bitwise operators are used to perform operations on individual bits of integer types (int, long, short, byte, char)."
+  },
+  {
+    "question": "List the bitwise operators in Java.",
+    "answer": "Java provides the following bitwise operators: & (Bitwise AND), | (Bitwise OR), ^ (Bitwise XOR), ~ (Bitwise Complement), << (Left Shift), >> (Right Shift), >>> (Unsigned Right Shift)."
+  },
+  {
+    "question": "What is the difference between & and &&?",
+    "answer": "& is a bitwise AND operator that works on bits, while && is a logical AND operator that works on boolean expressions."
+  },
+  {
+    "question": "How does the bitwise OR (|) operator work?",
+    "answer": "The bitwise OR (|) sets each bit to 1 if at least one of the corresponding bits is 1."
+  },
+  {
+    "question": "How does the bitwise XOR (^) operator work?",
+    "answer": "The bitwise XOR (^) sets each bit to 1 if the corresponding bits are different."
+  },
+  {
+    "question": "What does the bitwise complement (~) operator do?",
+    "answer": "The bitwise complement (~) inverts all bits, changing 1 to 0 and 0 to 1. In Java, this also flips the sign bit."
+  },
+  {
+    "question": "What is the difference between >> and >>> in Java?",
+    "answer": ">> is a signed right shift (preserves the sign bit), while >>> is an unsigned right shift (fills leftmost bits with 0)."
+  },
+  {
+    "question": "How does the left shift (<<) operator work?",
+    "answer": "The left shift (<<) shifts all bits to the left, filling the rightmost bits with 0. Each shift is equivalent to multiplying by 2."
+  },
+  {
+    "question": "Can bitwise operators be used with boolean values?",
+    "answer": "Yes, bitwise operators (&, |, ^) can be applied to boolean operands, but they behave like logical operators without short-circuiting."
+  },
+  {
+    "question": "Can bitwise operators be used for performance optimization?",
+    "answer": "Yes, bitwise operators are often used for performance optimization in tasks like checking even/odd, multiplying/dividing by 2, or masking bits."
+  },
+
+
+///////////////////////////////////// Compound Assignment operator //////////////////////////////////
+
+ {
+    "question": "What are compound assignment operators in Java?",
+    "answer": "Compound assignment operators combine an arithmetic or bitwise operator with assignment. They provide a shorthand for operations like a = a + b."
+  },
+  {
+    "question": "List some compound assignment operators in Java.",
+    "answer": "Common compound assignment operators include: += (addition assignment), -= (subtraction assignment), *= (multiplication assignment), /= (division assignment), %= (modulus assignment), &= (bitwise AND assignment), |= (bitwise OR assignment), ^= (bitwise XOR assignment), <<= (left shift assignment), >>= (right shift assignment), >>>= (unsigned right shift assignment)."
+  },
+  {
+    "question": "How is a += b different from a = a + b?",
+    "answer": "Both give the same result, but automatic type casting happens in compound assignment. For example, byte += int compiles without an explicit cast, but byte = byte + int gives an error."
+  },
+  {
+    "question": "Can compound assignment operators be used with floating-point values?",
+    "answer": "Yes, compound assignment operators work with floating-point types like float and double."
+  },
+  {
+    "question": "Can compound assignment operators be used with boolean values?",
+    "answer": "No, compound assignment operators cannot be applied to boolean because they require arithmetic or bitwise operations, which are not defined for boolean type."
+  },
+  {
+    "question": "How does the <<= operator work?",
+    "answer": "<<= performs a left shift on the bits of the variable and assigns the result back."
+  },
+  {
+    "question": "Do compound assignment operators perform implicit type casting?",
+    "answer": "Yes, they perform implicit type casting. For example, in short x = 5; x *= 2.5;, the result is automatically cast back to short."
+  },
+  {
+    "question": "Can compound assignment operators cause data loss?",
+    "answer": "Yes, with smaller data types like byte or short, automatic casting may cause data loss if the result overflows their range."
+  },
+  {
+    "question": "Can compound assignment operators be chained?",
+    "answer": "No, compound assignment operators cannot be chained directly like a += b += c. Such expressions are invalid in Java."
+  },
+  {
+    "question": "Why are compound assignment operators preferred in some cases?",
+    "answer": "They make the code more concise, improve readability, and reduce the need for explicit type casting."
+  },
+
+
+
+  ///////////////////////////////////// Miscellaneous operator //////////////////////////////////
+
+  
+{ 
+    "question": "What are miscellaneous operators in Java?", 
+    "answer": "Miscellaneous operators in Java include the ternary operator (?:) and the instanceof operator." 
+  },
+  { 
+    "question": "What is the ternary (?:) operator in Java?", 
+    "answer": "The ternary operator is a shorthand for if-else statements. It evaluates a boolean condition and returns one of two values." 
+  },
+  { 
+    "question": "What is the instanceof operator in Java?", 
+    "answer": "The instanceof operator checks whether an object is an instance of a particular class or subclass." 
+  },
+  { 
+    "question": "Can the ternary operator replace all if-else statements?", 
+    "answer": "No, the ternary operator can only replace simple if-else expressions, not blocks of code with multiple statements." 
+  },
+  { 
+    "question": "Can instanceof be used with null values?", 
+    "answer": "Yes, but it always returns false if the reference is null." 
+  },
+  { 
+    "question": "Can instanceof be used with interfaces?", 
+    "answer": "Yes, instanceof can check whether an object implements a particular interface." 
+  },
+  { 
+    "question": "Is instanceof operator compile-time or runtime?", 
+    "answer": "The instanceof operator is evaluated at runtime, but the compiler also ensures that the check is type-compatible." 
+  },
+  { 
+    "question": "Can ternary operators be nested?", 
+    "answer": "Yes, ternary operators can be nested, but they reduce readability and should be used carefully." 
+  },
+  { 
+    "question": "Can instanceof be used with generics?", 
+    "answer": "No, due to type erasure, you cannot use instanceof with parameterized types like ArrayList<String>." 
+  },
+  { 
+    "question": "Why are miscellaneous operators useful?", 
+    "answer": "They provide concise, efficient ways to handle conditions and type checks in Java." 
+  },
+
+  
+
+
+
     ////////////////////////////////////// control flow statement /////////////////////////////////
     
 {
@@ -8786,7 +10944,7 @@ const questions = [
         "question": "If we have any statement after return what do we get?",
         "answer": "We get the unreachable compile time error."
     },
-    ///////////////////////////////////    Stati initializer  ///////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////    Static initializer  ///////////////////////////////////////////////////////////////////////////
 
     {
         "question": "What is a static initializer?",
@@ -10225,7 +12383,7 @@ From class A
     },
 
 
-    /////////////////////////////////////////////////////////////////    String        ////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////// String ////////////////////////////////////////////////////////////////////////////////
 
     {   "question": "What is a String in Java?", 
         "answer": "A String is a sequence of characters enclosed in double quotes (\" \")."
@@ -10286,7 +12444,107 @@ From class A
     },
     {   "question": "Can we reverse a string using StringBuilder?", 
         "answer": "Yes, use StringBuilder.reverse() method to reverse the string." 
-    }
+    },
+
+
+
+///////////////////////////////////////////////////////////////// Problems Based On Numbers /////////////////////////////////////////////////////////
+    
+  
+  {
+    "question": "Even / Odd Number",
+    "answer": "An even number is divisible by 2, and an odd number is not divisible by 2.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int n1 = 24;\n        if(n1 % 2 == 0)\n            System.out.println(n1 + \" is Even\");\n        else\n            System.out.println(n1 + \" is Odd\");\n\n        int n2 = 17;\n        if(n2 % 2 == 0)\n            System.out.println(n2 + \" is Even\");\n        else\n            System.out.println(n2 + \" is Odd\");\n    }\n}\n\n// Output:\n// 24 is Even\n// 17 is Odd"
+  },
+  {
+    "question": "Prime Number",
+    "answer": "A prime number is greater than 1 and divisible only by 1 and itself.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int[] numbers = {29, 28};\n        for(int num : numbers){\n            boolean isPrime = true;\n            if(num <= 1) isPrime = false;\n            for(int i = 2; i <= num / 2; i++){\n                if(num % i == 0){\n                    isPrime = false;\n                    break;\n                }\n            }\n            if(isPrime) System.out.println(num + \" is Prime\");\n            else System.out.println(num + \" is not Prime\");\n        }\n    }\n}\n\n// Output:\n// 29 is Prime\n// 28 is not Prime"
+  },
+  {
+    "question": "Composite Number",
+    "answer": "A composite number is greater than 1 and has more than two factors.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int[] numbers = {28, 29};\n        for(int num : numbers){\n            int count = 0;\n            for(int i = 1; i <= num; i++) if(num % i == 0) count++;\n            if(count > 2) System.out.println(num + \" is Composite\");\n            else System.out.println(num + \" is not Composite\");\n        }\n    }\n}\n\n// Output:\n// 28 is Composite\n// 29 is not Composite"
+  },
+  {
+    "question": "Palindrome Number",
+    "answer": "A palindrome number reads the same forwards and backwards.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int[] numbers = {121, 123};\n        for(int num : numbers){\n            int temp = num, rev = 0;\n            while(temp > 0){\n                rev = rev * 10 + temp % 10;\n                temp /= 10;\n            }\n            if(rev == num) System.out.println(num + \" is Palindrome\");\n            else System.out.println(num + \" is not Palindrome\");\n        }\n    }\n}\n\n// Output:\n// 121 is Palindrome\n// 123 is not Palindrome"
+  },
+  {
+    "question": "Armstrong Number",
+    "answer": "An Armstrong number is equal to the sum of cubes of its digits (for 3-digit numbers).\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int[] numbers = {153, 123};\n        for(int num : numbers){\n            int temp = num, sum = 0;\n            while(temp > 0){\n                int d = temp % 10;\n                sum += d * d * d;\n                temp /= 10;\n            }\n            if(sum == num) System.out.println(num + \" is Armstrong\");\n            else System.out.println(num + \" is not Armstrong\");\n        }\n    }\n}\n\n// Output:\n// 153 is Armstrong\n// 123 is not Armstrong"
+  },
+  {
+    "question": "Strong Number",
+    "answer": "A Strong number is equal to the sum of factorials of its digits.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int[] numbers = {145, 123};\n        for(int num : numbers){\n            int temp = num, sum = 0;\n            while(temp > 0){\n                int d = temp % 10, fact = 1;\n                for(int i = 1; i <= d; i++) fact *= i;\n                sum += fact;\n                temp /= 10;\n            }\n            if(sum == num) System.out.println(num + \" is Strong\");\n            else System.out.println(num + \" is not Strong\");\n        }\n    }\n}\n\n// Output:\n// 145 is Strong\n// 123 is not Strong"
+  },
+
+  
+  {
+    "question": "Perfect Number",
+    "answer": "A Perfect number is equal to the sum of its proper divisors (excluding itself).\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int[] numbers = {28, 12};\n        for(int num : numbers){\n            int sum = 0;\n            for(int i = 1; i < num; i++) if(num % i == 0) sum += i;\n            if(sum == num) System.out.println(num + \" is Perfect\");\n            else System.out.println(num + \" is not Perfect\");\n        }\n    }\n}\n\n// Output:\n// 28 is Perfect\n// 12 is not Perfect"
+  },
+  {
+    "question": "Harshad Number",
+    "answer": "A Harshad number is divisible by the sum of its digits.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int[] numbers = {18, 19};\n        for(int num : numbers){\n            int temp = num, sum = 0;\n            while(temp > 0){\n                sum += temp % 10;\n                temp /= 10;\n            }\n            if(num % sum == 0) System.out.println(num + \" is Harshad\");\n            else System.out.println(num + \" is not Harshad\");\n        }\n    }\n}\n\n// Output:\n// 18 is Harshad\n// 19 is not Harshad"
+  },
+  {
+    "question": "Fibonacci Series",
+    "answer": "Fibonacci series starts with 0 and 1, and each subsequent number is the sum of the previous two numbers.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int n = 10, a = 0, b = 1;\n        System.out.print(a + \" \" + b);\n        for(int i = 2; i < n; i++){\n            int c = a + b;\n            System.out.print(\" \" + c);\n            a = b; b = c;\n        }\n    }\n}\n\n// Output:\n// 0 1 1 2 3 5 8 13 21 34"
+  },
+  {
+    "question": "Factorial of a Number",
+    "answer": "Factorial of n (n!) is the product of all positive integers up to n.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int n1 = 5, fact = 1;\n        for(int i = 1; i <= n1; i++) fact *= i;\n        System.out.println(\"Factorial of \" + n1 + \" is \" + fact);\n\n        int n2 = 7; fact = 1;\n        for(int i = 1; i <= n2; i++) fact *= i;\n        System.out.println(\"Factorial of \" + n2 + \" is \" + fact);\n    }\n}\n\n// Output:\n// Factorial of 5 is 120\n// Factorial of 7 is 5040"
+  },
+  {
+    "question": "GCD of Two Numbers",
+    "answer": "The GCD (Greatest Common Divisor) is the largest number that divides both numbers.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int a = 54, b = 24, x = a, y = b;\n        while(y != 0){\n            int temp = y;\n            y = x % y;\n            x = temp;\n        }\n        System.out.println(\"GCD of 54 and 24 is \" + x);\n    }\n}\n\n// Output:\n// GCD of 54 and 24 is 6"
+  },
+  {
+    "question": "LCM of Two Numbers",
+    "answer": "The LCM (Least Common Multiple) is the smallest number divisible by both numbers.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int a = 12, b = 18;\n        int gcd = 1;\n        for(int i = 1; i <= a && i <= b; i++) if(a % i == 0 && b % i == 0) gcd = i;\n        int lcm = (a * b) / gcd;\n        System.out.println(\"LCM of 12 and 18 is \" + lcm);\n    }\n}\n\n// Output:\n// LCM of 12 and 18 is 36"
+  },
+
+  
+  {
+    "question": "Sum of Digits of a Number",
+    "answer": "The sum of digits is the sum of all individual digits in a number.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int num = 1234, sum = 0, temp = num;\n        while(temp > 0){\n            sum += temp % 10;\n            temp /= 10;\n        }\n        System.out.println(\"Sum of digits of 1234 is \" + sum);\n    }\n}\n\n// Output:\n// Sum of digits of 1234 is 10"
+  },
+  {
+    "question": "Reverse of a Number",
+    "answer": "Reversing a number means writing its digits in reverse order.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int num = 1234, rev = 0, temp = num;\n        while(temp > 0){\n            rev = rev * 10 + temp % 10;\n            temp /= 10;\n        }\n        System.out.println(\"Reverse of 1234 is \" + rev);\n    }\n}\n\n// Output:\n// Reverse of 1234 is 4321"
+  },
+  {
+    "question": "Count Number of Digits",
+    "answer": "Counting digits means determining how many digits are in a number.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int num = 12345, count = 0, temp = num;\n        while(temp > 0){\n            count++;\n            temp /= 10;\n        }\n        System.out.println(\"Number of digits in 12345 is \" + count);\n    }\n}\n\n// Output:\n// Number of digits in 12345 is 5"
+  },
+  {
+    "question": "Sum of Even and Odd Digits",
+    "answer": "Calculate the sum of even and odd digits separately.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int num = 1234, sumEven = 0, sumOdd = 0, temp = num;\n        while(temp > 0){\n            int d = temp % 10;\n            if(d % 2 == 0) sumEven += d;\n            else sumOdd += d;\n            temp /= 10;\n        }\n        System.out.println(\"Sum of Even digits: \" + sumEven);\n        System.out.println(\"Sum of Odd digits: \" + sumOdd);\n    }\n}\n\n// Output:\n// Sum of Even digits: 6\n// Sum of Odd digits: 4"
+  },
+  {
+    "question": "Square of a Number",
+    "answer": "Square of a number is the number multiplied by itself.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int n = 7;\n        System.out.println(\"Square of 7 is \" + (n * n));\n    }\n}\n\n// Output:\n// Square of 7 is 49"
+  },
+  {
+    "question": "Cube of a Number",
+    "answer": "Cube of a number is the number multiplied by itself twice.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int n = 4;\n        System.out.println(\"Cube of 4 is \" + (n * n * n));\n    }\n}\n\n// Output:\n// Cube of 4 is 64"
+  },
+  {
+    "question": "Sum of Natural Numbers",
+    "answer": "Sum of first n natural numbers is calculated using formula n*(n+1)/2.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int n = 10;\n        int sum = n * (n + 1) / 2;\n        System.out.println(\"Sum of first 10 natural numbers is \" + sum);\n    }\n}\n\n// Output:\n// Sum of first 10 natural numbers is 55"
+  },
+  {
+    "question": "Product of Natural Numbers",
+    "answer": "Product of first n natural numbers is calculated using factorial.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int n = 5, prod = 1;\n        for(int i = 1; i <= n; i++) prod *= i;\n        System.out.println(\"Product of first 5 natural numbers is \" + prod);\n    }\n}\n\n// Output:\n// Product of first 5 natural numbers is 120"
+  },
+  {
+    "question": "Check Armstrong Number (Any Digit Length)",
+    "answer": "An Armstrong number of n digits is equal to the sum of its digits each raised to the power n.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int[] numbers = {9474, 1234};\n        for(int num : numbers){\n            int temp = num, sum = 0, n = 0;\n            int t = num;\n            while(t > 0){ n++; t /= 10; }\n            while(temp > 0){\n                int d = temp % 10;\n                sum += Math.pow(d, n);\n                temp /= 10;\n            }\n            if(sum == num) System.out.println(num + \" is Armstrong\");\n            else System.out.println(num + \" is not Armstrong\");\n        }\n    }\n}\n\n// Output:\n// 9474 is Armstrong\n// 1234 is not Armstrong"
+  },
+  {
+    "question": "Check Strong Number (Any Digit Length)",
+    "answer": "A Strong number is equal to the sum of factorials of its digits.\n\nCorrect Code and Output:\n\nclass NumberChecks {\n    public static void main(String[] args){\n        int[] numbers = {145, 40585};\n        for(int num : numbers){\n            int temp = num, sum = 0;\n            while(temp > 0){\n                int d = temp % 10, fact = 1;\n                for(int i = 1; i <= d; i++) fact *= i;\n                sum += fact;\n                temp /= 10;\n            }\n            if(sum == num) System.out.println(num + \" is Strong\");\n            else System.out.println(num + \" is not Strong\");\n        }\n    }\n}\n\n// Output:\n// 145 is Strong\n// 40585 is Strong"
+  }
+
+
 
 ];
 
